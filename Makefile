@@ -1,14 +1,17 @@
 clean:
 	lein clean
-	rm -rf public
+	rm -rf public/*
 build:
 	lein run
 install: build
-	cp resources/public/* public/
+	mkdir -p public
+	cp -r resources/public/* public/
 deploy: install
-	git add public
+	cd public
+	git add -A
 	git commit -m "deploying"
-	git push
+	git push -u origin master
+	cd ..
 view:
 	lein ring server
 all: clean install
