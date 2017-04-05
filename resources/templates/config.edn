@@ -1,7 +1,7 @@
 {:site-title           "DDFT"
  :author               "ddft.wiki contributors"
  :description          "The missing manual for Legacy Doomsday"
- :site-url             "http://ddftwiki.github.io/"
+ :site-url             "https://ddftwiki.bitbucket.io/"
  :post-root            "posts"
  :page-root            "pages"
  :post-root-uri        "posts-output"
@@ -17,7 +17,7 @@
  :sass-src             "css"
  :sass-path            "/bin/true"
  :compass-path         "/bin/false" ;; "compass"
- :theme                "blue"
+ :theme                "ddftwiki"
  :resources            ["img"]
  :keep-files           [".git"]
  :disqus?              false
