@@ -1,6 +1,7 @@
 {:title "A Post"
  :layout :post
- :tags  ["not fetch"]}
+ :tags  ["not fetch"]
+ :author "emidln"}
 
 ### This Post Not Fetch Enough
 

@@ -1,6 +1,7 @@
 (ns cryogen.core
   (:require [cryogen-core.compiler :refer [compile-assets-timed]]
-            [cryogen-core.plugins :refer [load-plugins]]))
+            [cryogen-core.plugins :refer [load-plugins]]
+            cryogen.selmer))
 
 (defn -main []
   (load-plugins)

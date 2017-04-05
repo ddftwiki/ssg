@@ -29,4 +29,13 @@
  :clean-urls?          true
  :hide-future-posts?   true
  :klipse               {}
+ ;; links for the sidebar
+ :extra-links [["Storm Boards" "https://teamstormboards.proboards.com/"]
+               ["/r/MTGLegacy" "https://reddit.com/r/mtglegacy/"]
+               ["The Source"   "http://mtgthesource.com"]]
+ ;; add yourself in if you'd like
+ :authors              {"emidln" {:name "Brandon Adams"
+                                  :twitter "emidln"
+                                  :email "emidln+ddftwiki@gmail.com"
+                                  :twitch "adam4300"}}
  :debug?               true}

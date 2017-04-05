@@ -1,9 +1,29 @@
 {% extends "/html/base.html" %}
 {%block subtitle %}: Posts by {{author}} {% endblock %}
 {% block content %}
+{% with author-data=authors|get:@author %}
 <div id="posts">
   <div id="page-header" class="post-header">
-    <h2>Posts by {{author}}</h2>
+      <div class="row">
+      <h2>{{ author-data.name }}</h2>
+        <div class="pull-right">
+        {% if author-data.twitter %}
+            <a href="https://twitter.com/{{ author-data.twitter }}">
+                <i class="fa fa-twitter fa-2x"></i>
+            </a>
+        {% endif %}
+        {% if author-data.email %}
+            <a href="mailto:{{ author-data.email }}">
+                <i class="fa fa-envelope-o fa-2x"></i>
+            </a>
+        {% endif %}
+        {% if author-data.twitch %}
+            <a href="https://www.twitch.tv/{{ author-data.twitch }}">
+                <i class="fa fa-twitch fa-2x"></i>
+            </a>
+        {% endif %}
+        </div>
+      </div>
   </div>
   {% for group in groups %}
   <h4>{{group.group}}</h4>
@@ -16,4 +36,5 @@
   </ul>
   {% endfor %}
 </div>
+{% endwith %}
 {% endblock %}
