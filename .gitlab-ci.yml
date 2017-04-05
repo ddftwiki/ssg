@@ -1,9 +1,0 @@
-image: clojure:lein-2.7.1
-job:
-  script:
-    - rm -rf deploy/
-    - lein run
-    - cp -r resources/public/* public/
-  artifacts:
-    paths:
-      - public
