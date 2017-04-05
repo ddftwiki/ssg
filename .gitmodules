@@ -1,0 +1,3 @@
+[submodule "ddftwiki.bitbucket.io"]
+	path = ddftwiki.bitbucket.io
+	url = git@bitbucket.org:ddftwiki/ddftwiki.bitbucket.io
