@@ -1,71 +1,25 @@
 (ns cryogen.dfa
   (:require [clojure.string :as str]
-            [clojure.pprint :as pprint]
-            [clojure.walk :refer [postwalk]]))
+            [clojure.pprint :as pprint]))
 
-(defn insert-card
-  [t card]
-  (assoc-in t (vec (conj (seq card) :card?)) true))
-
-
-(defn remove-empty-values
-  [m]
-  (let [f (fn [[k v]]
-            (when (or (and (not (map? v)) v)
-                      (and (map? v) (not (empty? v))))
-              [k v]))]
-    (postwalk (fn [x]
-                (if (and (map? x)
-                         (not (empty? x)))
-                  (do
-                    (let [r (map f x)]
-                      (into {} r)))
-                  x))
-              m)))
-
-(defn dfa
-  [words]
-  (let [reversed-cards (map str/reverse words)
-        max-length (apply max (map count reversed-cards))
-        padded-reversed-cards (map
-                               (partial pprint/cl-format nil (str "~" max-length ",1,0' @A"))
-                               reversed-cards)
-        levels (apply map
-                      #(->> %&
-                            (map str)
-                            (map keyword)
-                            (into #{}))
-                      padded-reversed-cards)
-        bare-tree (loop [[x & xs] levels
-                         dfa nil]
-                    (if (seq xs)
-                      (recur xs (into {} (map vector x (repeat dfa))))
-                      (into {} (map vector x (repeat dfa)))))
-        full-tree (reduce (fn [t card]
-                            (if card
-                                (let [path (->> (seq card)
-                                                (map str)
-                                                (map keyword)
-                                                reverse
-                                                (cons :card?)
-                                                reverse
-                                                (into []))]
-                                  (assoc-in t path true))
-                              t))
-                          bare-tree
-                          words)]
-    full-tree))
-
-
-(defn card-exists?
-  [dfa card]
+(defn card-path
+  [card]
   (->> (seq card)
        (map str)
        (map keyword)
        reverse
        (cons :card?)
        reverse
-       (into [])
+       (into [])))
+
+(defn dfa
+  [words]
+  (time
+   (reduce (fn [t x] (assoc-in t (card-path x) true)) {} words)))
+
+(defn card-exists?
+  [dfa card]
+  (->> (card-path card)
        (get-in dfa)))
 
 

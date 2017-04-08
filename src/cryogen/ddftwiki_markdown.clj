@@ -7,11 +7,7 @@
 (defn deckbox-card-link-transformer
   [text state]
   (if (state :paragraph)
-    (do (prn "before: " text)
-        (print "processing " (count text) " characters ... ")
-        (let [result [(time (dfa/annotate-stream cards-dfa text)) state]]
-          (prn "after: " (first result))
-          result))
+    [(dfa/annotate-stream cards-dfa text) state]
     [text state]))
 
 (def custom-transformers [deckbox-card-link-transformer])
