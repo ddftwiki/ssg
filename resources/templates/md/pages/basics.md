@@ -1,5 +1,5 @@
 {:title "Basic Doomsday Piles"
- :layout :page
+ :layout :codex
  :author "bennotsi"
  :page-index 11
  :navbar? false
@@ -26,25 +26,25 @@ that we use when writing down piles.
 
 List of cardname abbreviations:
 
-Shorthand | Cardname
---|----
-IU | Ideas Unbound
-SDT | Sensei's Divining Top
-LED | Lion's Eye Diamond
-GP | Gitaxian Probe
-BW | Burning Wish
-ToA | Tendrils of Agony
-BS | Brainstorm
-P | Ponder
-LP | Lotus Petal
-DD | Doomsday
-DR | Dark Ritual
-CoV | Chain of Vapor
-IC | Infernal Contract
-TSP | Time Spiral
-LM | Laboratory Maniac
-SI | Shelldock Isle
-EM | Emrakul, the Aeons Torn
+| Shorthand | Cardname |
+| --------- | ---- |
+| IU | Ideas Unbound |
+| SDT | Sensei's Divining Top |
+| LED | Lion's Eye Diamond |
+| GP | Gitaxian Probe |
+| BW | Burning Wish |
+| ToA | Tendrils of Agony |
+| BS | Brainstorm |
+| P | Ponder |
+| LP | Lotus Petal |
+| DD | Doomsday |
+| DR | Dark Ritual |
+| CoV | Chain of Vapor |
+| IC | Infernal Contract |
+| TSP | Time Spiral |
+| LM | Laboratory Maniac |
+| SI | Shelldock Isle |
+| EM | Emrakul, the Aeons Torn |
 
 Mana costs are represented as follows:  
 W White - U Blue - B Black - R Red - G Green  
