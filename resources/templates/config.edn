@@ -42,4 +42,5 @@
                         "bennotsi" {:name "Ben van Werkhoven"
                                     :email "bennotsi@gmail.com"}
                        }
- :debug?               true}
+ :debug?               true
+ :custom-markdown-transformers [:cryogen.ddftwiki-markdown/custom-transformers]}
