@@ -4,24 +4,17 @@
 
 (defn card-path
   [card]
-  (->> (seq card)
-       (map str)
-       (map keyword)
-       reverse
-       (cons :card?)
-       reverse
-       (into [])))
+  (-> (mapv (comp keyword str) card)
+      (conj :card?)))
 
 (defn dfa
   [words]
-  (time
-   (reduce (fn [t x] (assoc-in t (card-path x) true)) {} words)))
+  (reduce (fn [t x] (assoc-in t (card-path x) true)) {} words))
 
 (defn card-exists?
   [dfa card]
   (->> (card-path card)
        (get-in dfa)))
-
 
 (defn maybe-card
   "true for a card, false for definitely not a card, next state for maybe"
