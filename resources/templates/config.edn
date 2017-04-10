@@ -29,6 +29,7 @@
  :clean-urls?          true
  :hide-future-posts?   true
  :klipse               {}
+ :links                false
  ;; links for the sidebar
  :extra-links [["Storm Boards" "https://teamstormboards.proboards.com/"]
                ["/r/MTGLegacy" "https://reddit.com/r/mtglegacy/"]
@@ -37,5 +38,9 @@
  :authors              {"emidln" {:name "Brandon Adams"
                                   :twitter "emidln"
                                   :email "emidln+ddftwiki@gmail.com"
-                                  :twitch "adam4300"}}
- :debug?               true}
+                                  :twitch "adam4300"},
+                        "bennotsi" {:name "Ben van Werkhoven"
+                                    :email "bennotsi@gmail.com"}
+                       }
+ :debug?               false
+ :custom-markdown-transformers [:cryogen.ddftwiki-markdown/custom-transformers]}
