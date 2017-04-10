@@ -1,5 +1,5 @@
 {:title "Chain of Vapor Piles"
- :layout :page
+ :layout :codex
  :author "bennotsi"
  :page-index 13
  :navbar? false

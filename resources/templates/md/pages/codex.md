@@ -1,5 +1,5 @@
 {:title "The Doomsday Codex"
- :layout :page
+ :layout :codex
  :author "bennotsi"
  :page-index 10
  :navbar? false

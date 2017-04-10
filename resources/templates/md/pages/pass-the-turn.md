@@ -1,5 +1,5 @@
 {:title "Pass the Turn Piles"
- :layout :page
+ :layout :codex
  :author "bennotsi"
  :page-index 17
  :navbar? false

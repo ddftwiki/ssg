@@ -1,5 +1,5 @@
 {:title "Laboratory Maniac"
- :layout :page
+ :layout :codex
  :author "bennotsi"
  :page-index 12
  :navbar? false

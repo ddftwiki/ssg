@@ -1,5 +1,5 @@
 {:title "Shelldock Isle Emrakul"
- :layout :page
+ :layout :codex
  :author "bennotsi"
  :page-index 15
  :navbar? false

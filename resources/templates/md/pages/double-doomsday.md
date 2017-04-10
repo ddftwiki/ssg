@@ -1,5 +1,5 @@
 {:title "Double Doomsday Piles"
- :layout :page
+ :layout :codex
  :author "bennotsi"
  :page-index 14
  :navbar? false

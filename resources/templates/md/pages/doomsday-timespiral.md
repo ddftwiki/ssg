@@ -1,5 +1,5 @@
 {:title "Doomsday Time Spiral Piles"
- :layout :page
+ :layout :codex
  :author "bennotsi"
  :page-index 16
  :navbar? false
