@@ -9,7 +9,8 @@
     <ul>
     {% for author in authors %}
     <li>
-        <a href="/authors-output/{{ author.0 }}/">{{ author.1.name }} ({{ author.0 }})</a>
+        <!--<a href="/authors-output/{{ author.0 }}/">{{ author.1.name }} ({{ author.0 }})</a>!-->
+		<a href="/pages-output/{{author.0}}-author-page/">{{ author.1.name }} ({{ author.0 }})</a>
     </li>
     {% endfor %}
     </ul>

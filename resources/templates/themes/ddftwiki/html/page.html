@@ -4,13 +4,19 @@
 <div id="custom-page">
     <div id="page-header">
         <h2>{{page.title}}</h2>
+		{% if page.author %}
+		<h5>by {{page.author}}</h5>
+		{% endif %}
     </div>
     {% if page.toc %}{{page.toc|safe}}{% endif %}
     {{page.content|safe}}
-
     <div id="prev-next">
         {% if page.prev %}
+		{% ifequal page.title "The Basics" %}
+		<a href="/">&laquo; The Doomsday Codex</a>
+		{% else %}
         <a href="{{page.prev.uri}}">&laquo; {{page.prev.title}}</a>
+		{% endifequal %}
         {% endif %}
         {% if all page.prev page.next %}
         ||

@@ -33,6 +33,11 @@
       {{post.date|date:"MMM dd"}} - <a href="{{post.uri}}">{{post.title}}</a>
     </li>
     {% endfor %}
+	{% for page in group.pages %}
+    <li>
+      <a href="{{page.uri}}">{{page.title}}</a>
+    </li>
+    {% endfor %}
   </ul>
   {% endfor %}
 </div>

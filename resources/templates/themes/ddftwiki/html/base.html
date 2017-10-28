@@ -29,7 +29,7 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ index-uri }}">Home</a></li>
-                <li><a href="{{ archives-uri }}">Archives</a></li>
+                <!--<li><a href="{{ archives-uri }}">Archives</a></li>!-->
                 {% for nav-page in navbar-pages %}
                 <li
                 {%ifequal page.uri nav-page.uri %} class="active" {% endifequal %}>
@@ -62,10 +62,10 @@
                     <li><a href="{{ link.1 }}">{{ link.0 }}</a></li>
                     {% endfor %}
                     {% for page in sidebar-pages %}
-                    <li><a href="{{page.uri}}">{{page.title}}</a></li>
+                    {% if page.sidebar? %}<li><a href="{{page.uri}}">{{page.title}}</a></li>{% endif %}
                     {% endfor %}
                 </ul>
-                {% if latest-posts|not-empty %}
+                <!--{% if latest-posts|not-empty %}
                 <div id="recent">
                     <h3>Recent Posts</h3>
                     <ul>
@@ -73,7 +73,7 @@
                         <li><a href="{{post.uri}}">{{post.title}}</a></li>
                         {% endfor %}
                     </ul>
-                </div>
+                </div> 
                 {% endif %}
                 {% if tags|not-empty %}
                 <div id="tags">
@@ -84,7 +84,7 @@
                         {% endfor %}
                     </ul>
                 </div>
-                {% endif %}
+                {% endif %} !-->
             </div>
         </div>
     </div>
