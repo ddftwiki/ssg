@@ -55,7 +55,7 @@ CB in play+GP:
 -> IU, LED, GP, LED, BW
 ```
 
-This has some overlap with what is described in the [Double Doomsday](https://github.com/Bennotsi-MTG/Doomsday-Codex/blob/master/double-doomsday.md) document. Just as historically you could with Sensei's 
+This has some overlap with what is described in the [Double Doomsday](/pages-output/double-doomsday) document. Just as historically you could with Sensei's 
 Divining Top, Conjurer's Bauble may be used save the draw for the 
 second pile in the play line.
 
@@ -368,4 +368,4 @@ More information on SI + Emrakul piles may be found in the <a href="https://gith
 4. CB can be used to get around some hate cards   
 5. Be mindful of targeted graveyard hate if exposing your cards to the graveyard when using CB    
 
-Hopefully this will allow a greater understanding of how to play through more of the piles that make up the [Pile Document](https://github.com/Bennotsi-MTG/DDFT-PileDoc). Remember as with anything it is better to learn the concepts presented here more so than to try and rote learn piles and of course, practice makes perfect.  
+Hopefully this will allow a greater understanding of how to play through more of the piles that make up the [Pile Document](/pages-output/pile-doc). Remember as with anything it is better to learn the concepts presented here more so than to try and rote learn piles and of course, practice makes perfect.  
