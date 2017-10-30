@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-default {
-    background-color: #428bca;
+    background-color: #000000;
     border: none;
 }
 
@@ -43,16 +43,16 @@ body {
 
 .navbar-default .navbar-nav li a:hover {
     color: #fff;
-    background-color: #3d80ba;
+    background-color: #6b6b6b;
 }
 
 .navbar-default .navbar-nav .active a {
     color: #fff;
-    background-color: #3d80ba;
+    background-color: #a7a7a7;
 }
 
 .navbar-default .navbar-toggle:hover{
-    background-color: #3d80ba;
+    background-color: #6b6b6b;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
