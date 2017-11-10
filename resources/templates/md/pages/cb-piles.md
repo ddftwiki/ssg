@@ -5,7 +5,7 @@
  :home? false
  :author "bennotsi, Doishy"}
 
-At the time of writing (July 2017) this is still a relatively new card 
+At the time of writing (July 2017) this is still a relatively new tech 
 to play around with. Historically Sensei's Divining Top held a place as
 a standard 4-of in the deck to act as deck filtering and a 'free saved'
 card draw for Doomsday piles. More information on how this was used can 
@@ -20,7 +20,7 @@ available in a deck.
 
 The most basic use of the card is of course simply as a cantrip that costs (1).
 It can also be used as a free cantrip if already in play however this does of
-course results in less storm being available for use. In any of the common piles
+course result in less storm being available for use. In any of the common piles
 that require a non-specialist cantrip (such as Brainstorm) this can be used 
 instead of any others which is handy if you only have B post DD for drawing into a
 pile.
@@ -37,8 +37,9 @@ GP:
 -> IU, CB, GP, LED, LM.                  BBB+1UU (6)
 ```
 
+You should recognise the above example from the [Basics](http://ddft.wiki/pages-output/basics/) document.   
 Here you can see we can use CB to have a draw card effect present
-even after we have activated LED for mana.
+even after we have activated our LED for mana.
 
 This is most applicable when you have Conjurer's Bauble in your deck
 alongside an additional cantrip in hand post-Doomsday. You can use
@@ -55,7 +56,7 @@ CB in play+GP:
 -> IU, LED, GP, LED, BW
 ```
 
-This has some overlap with what is described in the [Double Doomsday](/pages-output/double-doomsday) document. Just as historically you could with Sensei's 
+This has some overlap with what is described in the [Double Doomsday](http://ddft.wiki/pages-output/double-doomsday/) document. Just as historically you could with Sensei's 
 Divining Top, Conjurer's Bauble may be used save the draw for the 
 second pile in the play line.
 
@@ -71,7 +72,7 @@ Conjurer's Bauble allows you (as a may effect) to target a card in your graveyar
 and stack it at the bottom of our deck prior to you drawing a card with it.
 Alongside the deck manipulation a resolved Doomsday provides, this lets us do some nifty tricks.
 
-The first is to ignore the downside of Lion's Eye Diamond.   
+The first is to ignore the downside of Lion's Eye Diamond's discard when we have other cards in hand we need.   
 
 Example:
 ```
@@ -104,15 +105,25 @@ LED in play, ToA in hand:
 -> IC, DR, DR, LP, CB                   BBB+1 (4)         6+7 Storm
 ```
 
-In this instance we can play ToA twice. Draw IC for turn. Play IC,
-sacrifice LED in response and play out all your spells resulting
-in 8 black mana being left. Cast ToA with storm count of 6 (and 4
-black floating). Then activate CB to return ToA to hand to cast it
-again for storm count of 7. This results in 13 copies of ToA being
+In this instance we can play ToA twice.    
+We draw IC for our turn.
+1. Cast IC, draw (DR, DR, LP, CB)   
+2. Cast LP   
+    - Crack LP for B    
+3. Cast DR   
+4. Cast DR   
+5. Cast CB    
+6. Cast ToA for 6 storm     
+    - Crack LED for BBB    
+    - Crack CB targeting ToA, draw (ToA)   
+7. Cast ToA for 7 storm.   
+
+This playline results in 13 copies of ToA being
 available off this pile. This example does require some quite
 specific circumstances but it does help illustrate tricks you can
-do with Conjurer's Bauble. Even a low initial storm count of 6 for
-the first copy allows for a total of 13 storm in total.
+do with Conjurer's Bauble. Even a low initial storm count of 5 for
+the first copy allows for a total of 11 storm in total. 
+This is great for when you have excess mana but low spell or card resources available.   
 
 
 ## Using CB to extend the pile
@@ -177,13 +188,13 @@ With the BW example:
 1. Cast Doomsday build -> [LED, IU, LED, LED, CB]
 2. Cast GP, draw (LED)       
 3. Cast LED, crack LED for UUU   
-Activate CB targeting nothing, draw (IU)   
+    - Crack CB targeting nothing, draw (IU)   
 4. Cast IU, draw (LED, LED, CB)   
 5. Cast CB   
 6. Cast LED     
 7. Cast LED    
-Crack LEDs for BBB RRR    
-Crack CB targeting BW, draw (BW)     
+    - Crack LEDs for BBB RRR    
+    - Crack CB targeting BW, draw (BW)     
 8. Cast BW (8) targeting ToA
 9. Cast ToA for 9 storm.     
 
@@ -213,29 +224,29 @@ For only a single mana post DD we have a very impressive potential stormcount
 which can additionally be increased. How do we go about achieving that?   
 Let's take a look:
 
-1. Cast Doomsday build -> [BS, LED, AoI, LED, CB]  
+1. Cast Doomsday build -> [BS, LED, AoI, LED, CB]    
 2. Cast GP, draw (BS)   
 3. Cast BS, draw (LED, AoI, LED), replace (AoI, BW)    
 4. Cast LED     
 5. Cast LED    
-Crack LEDs for BBB RRR     
-Crack CB targeting LED, draw (AoI)     
+    - Crack LEDs for BBB RRR     
+    - Crack CB targeting LED, draw (AoI)     
 6. Cast AoI, exile (BW, CB, LED)     
 7. Cast LED    
-Crack LED for RRR    
+    - Crack LED for RRR    
 8. Cast CB, BBBRR remains in mana pool     
-Crack CB targeting CB, draw (CB)     
+    - Crack CB targeting CB, draw (CB)     
 9. Cast CB, BBBR remains in mana pool     
-Crack CB targeting CB, draw (CB)
+    - Crack CB targeting CB, draw (CB)    
 10. Cast CB, BBB remains in mana pool     
-Crack CB targeting CB, draw (CB)
+    - Crack CB targeting LED, draw (LED)    
 11. Cast LED       
-Crack LED for RRR    
-12. Cast BW targeting ToA
+    - Crack LED for RRR    
+12. Cast BW targeting ToA    
 13. Cast ToA for 13 storm.         
 
 The key point here is the fact that both the second CB and the BW can be 
-cast via LED mana and we can make loops without effecting our exiled BW. 
+cast via LED mana and we can make loops without affecting our exiled BW. 
 This also means that we don't open up our BW to the risk of being hit by an
 opposing Deathrite Shaman or similar as we only care about our artifacts looping
 from the graveyard.
@@ -258,25 +269,25 @@ Cast Doomsday build -> [LED, IC, LED, LED, CB]
 Pass the turn        
 Draw (LED) for turn    
 1. Cast LED         
-Crack LED for BBB       
-Crack CB targeting LED, draw (IC)    
+    - Crack LED for BBB       
+    - Crack CB targeting LED, draw (IC)    
 2. Cast IC, draw (LED, LED, CB, LED)    
 3. Cast LED     
 4. Cast LED     
 5. Cast LED    
-6. Cast CB   
-Crack LEDs for BBB BBB BBB    
-Crack CB targeting CB, draw (CB)     
-7. Cast CB, BBB BBB BB remains in mana pool 
-Crack CB targeting CB, draw (CB)     
-8. Cast CB, BBB BBB B remains in mana pool 
-Crack CB targeting CB, draw (CB)     
-9. Cast CB, BBB BBB remains in mana pool 
-Crack CB targeting CB, draw (CB)     
-10. Cast CB, BBB BB remains in mana pool 
-Crack CB targeting CB, draw (CB)     
-11. Cast CB, BBB B remains in mana pool 
-Crack CB targeting ToA, draw (ToA)    
+6. Cast CB    
+    - Crack LEDs for BBB BBB BBB    
+    - Crack CB targeting CB, draw (CB)     
+7. Cast CB, BBB BBB BB remains in mana pool   
+    - Crack CB targeting CB, draw (CB)     
+8. Cast CB, BBB BBB B remains in mana pool   
+    - Crack CB targeting CB, draw (CB)     
+9. Cast CB, BBB BBB remains in mana pool   
+    - Crack CB targeting CB, draw (CB)     
+10. Cast CB, BBB BB remains in mana pool    
+    - Crack CB targeting CB, draw (CB)     
+11. Cast CB, BBB B remains in mana pool   
+    - Crack CB targeting ToA, draw (ToA)    
 12. Cast ToA for 12 storm.     
 
 
@@ -295,7 +306,7 @@ Surgical Extraction is very effective against Doomsday. It not only takes out
 potential key cards from being used but also forces the player to shuffle their
 Library thereby destroying the order they had stacked it. CB can help protect the 
 pile / deck by acting as a blocker. When Surgical Extraction is cast on something in
-your Graveyard, you can respond by sending the target card to the bottom of the deck
+your graveyard, you can respond by sending the target card to the bottom of the deck
 thus causing the Surgical to 'fizzle' with no valid target. 
 
 The main trick with this is timing. You obviously cannot use the CB as part of the main
@@ -314,7 +325,12 @@ CB in play+GP:
 If they cast Surgical in response to GP, you can use CB to send the target back into 
 the deck. If they cast it in response to AoI you can do the same trick. Once AoI
 has resolved, it does not matter if they cast Surgical as we have one card left in 
-our Library and no copies of it to extract in the Graveyard.
+our Library and no copies of it to extract in the Graveyard.   
+
+This selective blocking of graveyard targets is also great pre-combo against opposing
+Deathrite Shamans. If they target your land to add mana, you may respond with a CB
+activation targeting the same land to gain a draw and deny them mana. This is a
+great way of preventing things like turn 2 Leovolds or similar.
 
 A simple use of CB is simply as a non-U cantrip. Often players will
 bring in Pyroblasts/Red Elemental Blasts to disrupt the combo targeting the
@@ -358,7 +374,7 @@ Goblin Guide no longer draws you a card and thus causes you to lose a turn worth
 When you draw CB you simply play it and use it to draw into SI. You can target the Doomsday 
 that you used to make the pile with in order to give yourself an additional turn worth of 
 Emrakul attacks.
-More information on SI + Emrakul piles may be found in the <a href="https://github.com/Bennotsi-MTG/Doomsday-Codex/blob/master/shelldock-emrakul.md">Shelldock section</a>.
+
 
 ## Summary  
 
@@ -368,4 +384,4 @@ More information on SI + Emrakul piles may be found in the <a href="https://gith
 4. CB can be used to get around some hate cards   
 5. Be mindful of targeted graveyard hate if exposing your cards to the graveyard when using CB    
 
-Hopefully this will allow a greater understanding of how to play through more of the piles that make up the [Pile Document](/pages-output/pile-doc). Remember as with anything it is better to learn the concepts presented here more so than to try and rote learn piles and of course, practice makes perfect.  
+Hopefully this will allow a greater understanding of how to play through more of the piles that make up the [Pile Document](http://ddft.wiki/pages-output/pile-doc/). Remember as with anything it is better to learn the concepts presented here more so than to try and rote learn piles and of course, practice makes perfect.  
