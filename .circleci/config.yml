@@ -51,4 +51,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "ff:ea:c3:fe:29:c2:eb:eb:8c:48:a7:b2:3a:c9:a5:54"
-      - deploy: pushd ddftwiki.github.io && git checkout master && git add -A && git commit --allow-empty -m "deploying" && git push -u origin master -f && popd
+      - deploy:
+          name: "Deploy to ddftwiki.github.io"
+          command: |
+            pushd ddftwiki.github.io && git checkout master && git add -A && git commit --allow-empty -m "deploying" && git push -u origin master -f && popd
