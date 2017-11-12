@@ -1,0 +1,32 @@
+These are the steps I've been following. Please read the whole thing and see the notes at the bottom before you actually do any of it.
+
+How to update the live site:
+
+0)Have leiningen installed properly on your machine
+
+1)Once you have made the updates to the markdown files, etc, open a terminal window in the main folder for the ssg project (shift+rightclick and click 'open command window here' in that folder).
+
+2)type 'lein ring server' in the terminal and hit enter. This should open up a browser window with a local version of the site, so you can make sure everything looks right.
+
+3)close the browser and end the process in your terminal (ctrl+c does it for me)
+
+4)type 'lein clean' and hit enter, and then 'lein run' and hit enter. This builds/compiles the project. I'm not sure the clean in truly needed and I think the run is actually done in step 2 but I do it here just to be safe.
+
+5) open the 'resources/public' folder in this directory and make sure that there's some modified dates within the last few minutes, meaning that step 3 did something and updated all these files.
+
+6) go to the 'ddftwiki.github.io' folder and delete all the contents EXCEPT the .git folder if you see one.
+
+7) go back to the 'resources/public' folder, select everything within the folder (not the 'public' folder itself) and copy it all to the 'ddftwiki.github.io' folder.
+
+8) open a terminal window in the ddftwiki.github.io folder
+
+9) execute the following git commands in the terminal window:
+	git checkout master
+	git add -A
+	git commit -m "a meaningful message"
+	git push -u origin master -f
+
+10) check the live site, hopefully these instructions worked.
+
+NOTES-----
+That last git command, and in particular that -f at the end, is why I think I accidentally wiped out the color scheme changes twice in a row. It basically smashes all the changes in there with no regard for any changes that were made before you. So before you do all the lein run and stuff and the deleting and copying and pasting, just make sure you have everything up to date (do a 'git pull' in ssg or whatever) and it all looks right in the local test. Alternatively you maybe could individually add changed files in step 9 by doing 'git add <file>' but that's a pain and not worth it. Better to just jam it in there and fix mistakes later.
