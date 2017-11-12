@@ -2,7 +2,7 @@
 
 Source code for ddft.wiki. We use a system called [Cryogen](https://cryogenweb.org) to generate the site. A quick overview is here.
 
-## To build
+## To build locally
 
 ```bash
 
@@ -17,6 +17,12 @@ lein run
 lein ring server
 
 ```
+
+## Deployment to ddft.wiki
+
+[![CircleCI](https://circleci.com/gh/ddftwiki/ssg/tree/master.svg?style=svg)](https://circleci.com/gh/ddftwiki/ssg/tree/master)
+
+When we push changes to the `master` branch of this repository, an automatic build is kicked off via [CircleCI](https://circleci.com/gh/ddftwiki/ssg). This executes `lein run` and then pushes the resulting files to our ddftwiki/ddftwiki.github.io repo. This causes github pages (who hosts the site backing ddft.wiki) to publish a new version of our site. 
 
 ## Configuration
 
