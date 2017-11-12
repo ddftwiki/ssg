@@ -31,7 +31,8 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: make clean
+      - run: lein clean
+      - run: rm -rf ddftwiki.github.io/*
       - run: lein deps
 
       - save_cache:
@@ -40,8 +41,8 @@ jobs:
           key: v1-dependencies-{{ checksum "project.clj" }}
 
       # build the html
-      - run: make build
+      - run: lein run
       # copy it to the sub repo
-      - run: make install
+      - run: cp -r resources/public/* ddftwiki.github.io/
       # deploy it
-      - run: make deploy
+      - run: pushd ddftwiki.github.io && git checkout master && git add -A && git commit -m "deploying" && git push -u origin master -f && popd
