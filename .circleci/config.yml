@@ -48,4 +48,4 @@ jobs:
       - run: git config --global user.email "circleci-autobuild@ddft.wiki"
       - run: git config --global user.name "CircleCI Autobuild"
       # deploy it
-      - run: pushd ddftwiki.github.io && git checkout master && git add -A && git commit -m "deploying" && git push -u origin master -f && popd
+      - run: pushd ddftwiki.github.io && git checkout master && git add -A && git commit --allow-empty -m "deploying" && git push -u origin master -f && popd
