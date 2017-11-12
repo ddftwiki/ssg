@@ -32,7 +32,6 @@ jobs:
           - v1-dependencies-
 
       - run: lein clean
-      - run: rm -rf ddftwiki.github.io/*
       - run: lein deps
 
       - save_cache:
@@ -42,16 +41,22 @@ jobs:
 
       # build the html
       - run: lein run
-      # copy it to the sub repo
-      - run: cp -r resources/public/* ddftwiki.github.io/
+
       # setup git
       - run: git config --global user.email "circleci-autobuild@ddft.wiki"
       - run: git config --global user.name "CircleCI Autobuild"
-      # deploy it
+
       - add_ssh_keys:
           fingerprints:
             - "ff:ea:c3:fe:29:c2:eb:eb:8c:48:a7:b2:3a:c9:a5:54"
+
+      # copy it to the sub repo
+      - run: pushd ~ && git clone git@github.com:ddftwiki/ddftwiki.github.io && popd
+      - run: rm -rf ~/ddftwiki.github.io/*
+      - run: cp -r resources/public/* ~/ddftwiki.github.io/
+
+      # deploy it
       - deploy:
           name: "Deploy to ddftwiki.github.io"
           command: |
-            pushd ddftwiki.github.io && git checkout master && git add -A && git commit --allow-empty -m "deploying" && git push -u origin master -f && popd
+            pushd ~/ddftwiki.github.io && git checkout master && git add -A && git commit --allow-empty -m "deploying" && git push -u origin master -f && popd
