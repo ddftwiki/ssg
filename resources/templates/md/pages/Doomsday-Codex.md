@@ -41,5 +41,9 @@ Part 2:
 [Double Doomsday Piles](/pages-output/double-doomsday)   
 [Time Spiral Piles](/pages-output/doosmday-timespiral)    
 [Conjurer's Bauble](/pages-output/cb-piles)  
+[Shelldock Isle/Emrakul](/pages-output/shelldock)  
+
+Part 3:
+[Playing Around Surgical](/pages-output/surgical)  
 
 [Pile Document](/pages-output/pile-doc)
