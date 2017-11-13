@@ -60,3 +60,11 @@ jobs:
           name: "Deploy to ddftwiki.github.io"
           command: |
             pushd ~/ddftwiki.github.io && git checkout master && git add -A && git commit --allow-empty -m "deploying" && git push -u origin master -f && popd
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
