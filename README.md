@@ -46,3 +46,17 @@ You can find pages at `resources/templates/md/pages/`. They are written in Markd
 
 You can find blog posts at `resources/templates/md/posts/`. They are written in Markdown.
 
+
+# License
+
+## Content
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+The website content of this project is licensed under the Creative Commons Attribution 4.0 as found in the LICENSE.content file.
+
+## Code
+
+[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
+
+The software source code of this project is licensed under the Eclipse Public License 1.0 as found in the LICENSE.code file.
