@@ -43,7 +43,7 @@ Part 2:
 [Conjurer's Bauble](/pages-output/cb-piles)  
 [Shelldock Isle/Emrakul](/pages-output/shelldock)  
 
-Part 3:
+Part 3:  
 [Playing Around Surgical](/pages-output/surgical)  
 
 [Pile Document](/pages-output/pile-doc)
