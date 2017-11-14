@@ -31,19 +31,32 @@ This repository, and all of its contents, is licensed under [CC-BY-4.0](https://
 
 # Table of Contents
 
-Part 1:  
-[Basics](/pages-output/basics)  
-[Brainstorm in Doomsday](/pages-output/brainstorm)  
-[Laboratory Maniac](/pages-output/laboratory-maniac)  
-[Pass the Turn](/pages-output/pass-the-turn) 
+Chapter 1, the Fundamentals:  
+[Basics](/pages-output/ch1/basics)  
+[Brainstorm in Doomsday](/pages-output/ch1/brainstorm)  
+[Laboratory Maniac](/pages-output/ch1/laboratory-maniac)  
+[Pass the Turn](/pages-output/ch1/pass-the-turn) 
 
-Part 2:  
-[Double Doomsday Piles](/pages-output/double-doomsday)   
-[Time Spiral Piles](/pages-output/doosmday-timespiral)    
-[Conjurer's Bauble](/pages-output/cb-piles)  
-[Shelldock Isle/Emrakul](/pages-output/shelldock-emrakul)  
+Chapter 2, Supplementary Techniques:  
+[Double Doomsday Piles](/pages-output/ch2/double-doomsday)   
+[Time Spiral Piles](/pages-output/ch2/doosmday-timespiral)    
+[Conjurer's Bauble](/pages-output/ch2/cb-piles)  
+[Shelldock Isle/Emrakul](/pages-output/ch2/shelldock-emrakul)  
 
-Part 3:  
-[Playing Around Surgical](/pages-output/surgical)  
+Chapter 3, Limitations:  
+[Playing Around Surgical](/pages-output/ch3/surgical)  
 
+Chapter 4, Deck Construction:  
+Under Construction  
+
+Chapter 5, Sideboard Specifics:  
+Under Construction  
+
+Chapter 6, Puzzles:  
+Under Construction  
+
+Chapter 7, Miscellaneous:  
+Under Construction  
+
+Appendices:  
 [Pile Document](/pages-output/pile-doc)
