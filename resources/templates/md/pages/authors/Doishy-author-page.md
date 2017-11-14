@@ -13,6 +13,6 @@ I'm a cat person.
 [Pass the Turn](/pages-output/ch1/pass-the-turn) 
 [Double Doomsday Piles](/pages-output/ch2/double-doomsday)   
 [Time Spiral Piles](/pages-output/ch2/doomsday-timespiral)    
-[Conjurer's Bauble](/pages-output/ch2/cb-piles)
-[Surgical Extraction](/pages-output/ch3/surgical)
+[Conjurer's Bauble](/pages-output/ch2/cb-piles)    
+[Surgical Extraction](/pages-output/ch3/surgical)    
  ***
