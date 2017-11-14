@@ -7,11 +7,12 @@ A UB obsessed Doomsday player from Bristol, UK. I enjoy paying my life into obli
 I'm a cat person.
 
 ###Works by Doishy  
-[Basics](/pages-output/basics)  
-[Brainstorm in Doomsday](/pages-output/brainstorm)  
-[Laboratory Maniac](/pages-output/laboratory-maniac)  
-[Pass the Turn](/pages-output/pass-the-turn) 
-[Double Doomsday Piles](/pages-output/double-doomsday)   
-[Time Spiral Piles](/pages-output/doosmday-timespiral)    
-[Conjurer's Bauble](/pages-output/cb-piles)    
+[Basics](/pages-output/ch1/basics)  
+[Brainstorm in Doomsday](/pages-output/ch1/brainstorm)  
+[Laboratory Maniac](/pages-output/ch1/laboratory-maniac)  
+[Pass the Turn](/pages-output/ch1/pass-the-turn) 
+[Double Doomsday Piles](/pages-output/ch2/double-doomsday)   
+[Time Spiral Piles](/pages-output/ch2/doomsday-timespiral)    
+[Conjurer's Bauble](/pages-output/ch2/cb-piles)
+[Surgical Extraction](/pages-output/ch3/surgical)
  ***
