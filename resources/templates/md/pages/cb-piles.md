@@ -110,7 +110,7 @@ In this instance we can play ToA twice.
 We draw IC for our turn.
 
 1. Cast IC, draw (DR, DR, LP, CB)
-2. - Cast LP
+2. Cast LP
    - Crack LP for B
 3. Cast DR
 4. Cast DR
