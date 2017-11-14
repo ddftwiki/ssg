@@ -20,5 +20,5 @@ I got completely intriged with the deck and switched to Doomsday ever since. I s
 [Double Doomsday Piles](/pages-output/ch2/double-doomsday)   
 [Time Spiral Piles](/pages-output/ch2/doomsday-timespiral)    
 [Conjurer's Bauble](/pages-output/ch2/cb-piles)  
-[DDFT-PileDoc](/pages-output/appendix/pile-doc)
+[The Pile Document](/pages-output/appendix/pile-doc)
  ***
