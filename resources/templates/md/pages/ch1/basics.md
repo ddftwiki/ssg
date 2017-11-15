@@ -249,7 +249,5 @@ decklist and start goldfishing trying to figure out what piles to build and how
 to execute them. There are several documents available that list Doomsday piles
 which you can use to get to know more piles. These are very important tools when
 learning to how play the deck.  
-See the [DDFT Pile Document] for a more basic list of different piles.  
+See the [Pile Document](/pages/appendix/pile-doc) for a more basic list of different piles.  
 For some examples of 'proven decklists' can be found [HERE](http://tcdecks.net/archetype.php?archetype=Doomsday&format=Legacy).  
-
-[DDFT Pile Document]: https://github.com/Bennotsi-MTG/ddft-pileDoc/blob/master/README.md
