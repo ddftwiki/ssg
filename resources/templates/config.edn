@@ -1,7 +1,7 @@
 {:site-title           "DDFT.wiki"
  :author               "ddft.wiki contributors"
  :description          "The missing manual for Legacy Doomsday"
- :site-url             "https://ddftwiki.bitbucket.io/"
+ :site-url             "https://ddft.wiki/"
  :post-root            "posts"
  :page-root            "pages"
  :post-root-uri        "posts-output"
