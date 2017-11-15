@@ -39,7 +39,7 @@ Part 1:
 
 Part 2:  
 [Double Doomsday Piles](/pages-output/double-doomsday)   
-[Time Spiral Piles](/pages-output/doosmday-timespiral)    
+[Time Spiral Piles](/pages-output/doomsday-timespiral)    
 [Conjurer's Bauble](/pages-output/cb-piles)  
 [Shelldock Isle/Emrakul](/pages-output/shelldock-emrakul)  
 
