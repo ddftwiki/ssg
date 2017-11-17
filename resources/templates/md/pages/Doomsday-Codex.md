@@ -39,7 +39,7 @@ Chapter 1, the Fundamentals:
 
 Chapter 2, Supplementary Techniques:  
 [Double Doomsday Piles](/pages-output/ch2/double-doomsday)   
-[Time Spiral Piles](/pages-output/ch2/doosmday-timespiral)    
+[Time Spiral Piles](/pages-output/ch2/doomsday-timespiral)    
 [Conjurer's Bauble](/pages-output/ch2/cb-piles)  
 [Shelldock Isle/Emrakul](/pages-output/ch2/shelldock-emrakul)  
 
