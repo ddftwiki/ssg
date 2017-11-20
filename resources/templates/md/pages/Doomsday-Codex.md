@@ -35,7 +35,7 @@ Chapter 1, the Fundamentals:
 [Basics](/pages-output/ch1/basics)  
 [Brainstorm in Doomsday](/pages-output/ch1/brainstorm)  
 [Laboratory Maniac](/pages-output/ch1/laboratory-maniac)  
-[Pass the Turn](/pages-output/ch1/pass-the-turn) 
+[Pass the Turn](/pages-output/ch1/pass-the-turn)  
 
 Chapter 2, Supplementary Techniques:  
 [Double Doomsday Piles](/pages-output/ch2/double-doomsday)   
@@ -49,7 +49,7 @@ Chapter 3, Limitations:
 Chapter 4, Deck Construction:  
 Under Construction  
 
-Chapter 5, Sideboard Specifics:  
+Chapter 5, Gameplay Strategies:  
 Under Construction  
 
 Chapter 6, Puzzles:  
@@ -59,4 +59,5 @@ Chapter 7, Miscellaneous:
 Under Construction  
 
 Appendices:  
-[Pile Document](/pages-output/appendix/pile-doc)
+I. [Pile Document](/pages-output/appendix/pile-doc)
+II. Puzzle answers (Under Construction)
