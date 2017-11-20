@@ -59,5 +59,5 @@ Chapter 7, Miscellaneous:
 Under Construction  
 
 Appendices:  
-I. [Pile Document](/pages-output/appendix/pile-doc)
+I. [Pile Document](/pages-output/appendix/pile-doc)  
 II. Puzzle answers (Under Construction)
