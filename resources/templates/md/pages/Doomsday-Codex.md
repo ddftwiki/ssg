@@ -43,6 +43,7 @@ Chapter 2, Supplementary Techniques:
 [Conjurer's Bauble](/pages-output/ch2/cb-piles)  
 [Shelldock Isle/Emrakul](/pages-output/ch2/shelldock-emrakul)  
 
+
 Chapter 3, Limitations:  
 [Playing Around Surgical](/pages-output/ch3/surgical)  
 
@@ -60,4 +61,5 @@ Under Construction
 
 Appendices:  
 I. [Pile Document](/pages-output/appendix/pile-doc)  
-II. Puzzle answers (Under Construction)
+II. Puzzle answers (Under Construction)  
+III. Sample Decklists (Under Construction)
