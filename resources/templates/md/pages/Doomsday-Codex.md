@@ -38,11 +38,10 @@ Chapter 1, the Fundamentals:
 [Pass the Turn](/pages-output/ch1/pass-the-turn)  
 
 Chapter 2, Supplementary Techniques:  
-[Double Doomsday Piles](/pages-output/ch2/double-doomsday)   
-[Time Spiral Piles](/pages-output/ch2/doomsday-timespiral)    
 [Conjurer's Bauble](/pages-output/ch2/cb-piles)  
 [Shelldock Isle/Emrakul](/pages-output/ch2/shelldock-emrakul)  
-
+[Double Doomsday Piles](/pages-output/ch2/double-doomsday)   
+[Time Spiral Piles](/pages-output/ch2/doomsday-timespiral)  
 
 Chapter 3, Limitations:  
 [Playing Around Surgical](/pages-output/ch3/surgical)  
