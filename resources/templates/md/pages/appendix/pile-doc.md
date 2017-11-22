@@ -1,7 +1,7 @@
 {:title "Doomsday Pile Document"
  :layout :page
  :author "Bennotsi"
- :page-index 100
+ :page-index 900
  :navbar? false
  :home? false}
 
