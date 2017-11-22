@@ -1,6 +1,6 @@
 {:title "The Basics"
  :layout :page
- :page-index 1
+ :page-index 100
  :navbar? false
  :home? false
  :author "bennotsi, Doishy"}
