@@ -1,4 +1,4 @@
-{:title "Shelldock Isle / Emrakul piles" :layout :page :page-index 8 :navbar? false :home? false :author "bennotsi, Doishy"}
+{:title "Shelldock Isle / Emrakul piles" :layout :page :page-index 201 :navbar? false :home? false :author "bennotsi, Doishy"}
 
 The interaction between Doomsday and Shelldock Isle is surprisingly elegant.
 Once you resolve Doomsday you automatically fulfill the otherwise strict
