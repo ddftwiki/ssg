@@ -1,6 +1,6 @@
 {:title "Laboratory Maniac Piles"
  :layout :page
- :page-index 3
+ :page-index 102
  :navbar? false
  :home? false
  :author "bennotsi, Doishy"}
