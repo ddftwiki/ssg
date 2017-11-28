@@ -131,8 +131,7 @@ CB in play. Cantrip in hand:
 -> AoI/TW, LED, LED, GP, BW              BBB+R2    (6)    8 Storm
 ```
 
-This pile is already touched upon in
-[CB_Piles](http://ddft.wiki/pages-output/cb-piles/).  
+This pile has already been touched upon in discussing CB piles. 
 No matter when they play Surgical post DD here, you can respond and negate its
 efficacy.
 
