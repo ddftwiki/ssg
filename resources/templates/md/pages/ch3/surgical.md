@@ -1,4 +1,4 @@
-{:title "Playing Around Surgical Extraction" :layout :page :page-index 9 :navbar? false :home? false :author "bennotsi, Doishy"}
+{:title "Playing Around Surgical Extraction" :layout :page :page-index 300 :navbar? false :home? false :author "bennotsi, Doishy"}
 
 When people are side-boarding to face Doomsday there is one card that they so
 often bring in along with all the discard, counter-magic, spheres and such;

@@ -1,6 +1,6 @@
 {:title "Brainstorm in Doomsday"
  :layout :page
- :page-index 2
+ :page-index 101
  :navbar? false
  :home? false
  :author "bennotsi, Doishy"}
