@@ -29,7 +29,7 @@ So he is what we will reach out to. Understand?"
 "Do we really always have to wear black?"
 ```
 
-## Doomsday by Committee, setting the scene
+## Doomsday by Committee, Setting the Scene
 
 Hello and welcome to the first of what will hopefully be a series
 of articles whereby some players get together and either observe and
@@ -97,7 +97,8 @@ example of how format familiarity goes beyond simply knowing what spells a deck
 plays. Czech Pile rarely plays more than one or two Verdant Catacombs, if any,
 whereas it is essentially always a four-of in 4C Loam.
 
-Doishy's comments: *Our discussion was a tad more in depth here. From a previous
+Doishy's comments:  
+*Our discussion was a tad more in depth here. From a previous
 match we had faced an elves opponent who had started with a dramatically slow
 opening and so pondered whether this was another elves start. It could also have
 been Czech Pile who missed the Ponder/Deathrite opening or even some sort of
@@ -147,7 +148,8 @@ Draw the Volc, crack the petal to brainstormn into AoI, play the Volc and win.
 If at any point they cast Surgical, we Brainstorm after it resolves and hope the
 pieces we need are in the top three.
 
-Doishy's comments: *We dicussed the different interactions that could be found
+Doishy's comments:  
+*We dicussed the different interactions that could be found
 with Natural Order being the primary one. Natural order finding a Craterhoof
 would just kill us there and then so that is one thing we basically had to
 ignore (assuming the opponent had retained the card in their deck post board).
@@ -185,7 +187,8 @@ Grixis, this is discard. Swarm doesn't really help against either of these. I
 think these sideboard slots could be used in a better way, although I'm not
 quite sure how yet.
 
-Doishy's comments: *I personally was against Swarm coming in. Locally my meta is
+Doishy's comments:  
+*I personally was against Swarm coming in. Locally my meta is
 full of Grixis Delver variants and all run Bolt, even post board as, if nothing
 else, it forces us to consider whether we can go off and lose half our life in
 the face of a potential three damage, especially if relying on Probes. As part
@@ -215,7 +218,8 @@ take Force of Will or Leovold, all of these are realistic scenarios where
 Thoughtseize is potentially better than Duress or Therapy. However, the life
 loss would quickly add up so I don't think I want it in multiples just yet.
 
-Doishy's comments: *This observation was in some part due to the fact that d8
+Doishy's comments:  
+*This observation was in some part due to the fact that d8
 would not simply add in an extra discard spell but swap it out for a Therapy.
 There was also some bias here as for the last year I have been running a Miser's
 Thoughtseize main and it whas been very strong, especially in the face of
@@ -225,7 +229,8 @@ Thoughtseize main.*
 
 ### Parting Thoughts:
 
-d8dk32's comments: I often talk to myself when I play online, but it's much more
+d8dk32's comments:  
+I often talk to myself when I play online, but it's much more
 informative to talk to someone else who also knows your deck. Hopefully reading
 this and any future articles we publish will help people learning to play this
 deck, but I think this pair-playing process is a valuable learning tool and if
@@ -237,7 +242,8 @@ and providing a sounding board when the best line isn't clear. Doishy and I
 agreed on most things this time but discussing the reasoning behind our choices
 is helpful regardless.
 
-Doishy's comments: *I for one really enjoyed watching d8 play whilst we
+Doishy's comments:  
+*I for one really enjoyed watching d8 play whilst we
 discussed decisions. What made me feel confidant was, barring some of the
 decision points above, we quite often agreed very quickly on what line to take
 with most being the correct one. In addition to the above we had a classic turn
