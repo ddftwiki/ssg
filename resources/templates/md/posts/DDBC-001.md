@@ -52,7 +52,7 @@ most of the scenarios. Doishy is watching and will add further commentary.
 
 The decklist:  
 
-![d8dk32's decklist](https://github.com/Doishy/Doomsday-Codex/blob/master/Ritual1_decklist.jpg)
+![d8dk32's decklist](/img/Ritual1_decklist.jpg)
 
 `*`*super-secret-shadowy-Doomsday-cabal (TM) might not exist....*  
 
@@ -64,7 +64,7 @@ Opponent leads Turn one Verdant Catacombs and passes. We play a
 Badlands, crack the fetch for an Island, and cast Preordain,
 which brings us to here:
 
-![Scenario 1](https://github.com/Doishy/Doomsday-Codex/blob/master/Ritual1_Scenario1.jpg)
+![Scenario 1](/img/Ritual1_Scenario1.jpg)
 
 Doishy and I quickly agree that we go for it here. By leaving
 both cards on top and drawing Doomsday, we can cast Doomsday
@@ -129,7 +129,7 @@ here is what to put in the pile. To answer this question, we need
 to consider what disruption they could have and what of that we
 can even play around.
 
-![Scenario 2](https://github.com/Doishy/Doomsday-Codex/blob/master/Ritual1_Scenario2.jpg)
+![Scenario 2](/img/Ritual1_Scenario2.jpg)
 
 The pile that quickly jumps to mind is a 'basic' pile like
 [AoI, LED, LM, GP, GP]. This neatly plays around Therapy,
