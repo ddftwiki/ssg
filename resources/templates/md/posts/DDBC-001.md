@@ -199,7 +199,7 @@ less popular choice for Storm sideboards lately but Delver will often
 keep Bolts anyway as a hedge against Xantid Swarm and as reach. Swarm
 can also be blocked by flipped Delvers, which decreases its usefulness
 in the pre-combo turns. Finally, against Delver variants in general,
-countermagic is expected and we can fight through that; It's the additional
+countermagic is expected and we can fight through that; it's the additional
 axis they attack on that causes the problem. In RUG, this is mana denial,
 and in Grixis, this is discard. Swarm doesn't really help against either
 of these. I think these sideboard slots could be used in a better way, although
