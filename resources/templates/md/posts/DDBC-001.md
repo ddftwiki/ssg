@@ -1,3 +1,9 @@
+{:title "Doomsday by Committee, Setting the Scene"
+ :author "Doishy"
+ :date "2017-12-13"
+ :tags ["Doomsday by Committee"]
+ :layout :post
+ :draft? false}
 ```
 "Eye of twilight, give us sight.
 Take our offer, give us might.
