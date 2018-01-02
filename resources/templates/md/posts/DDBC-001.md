@@ -1,6 +1,6 @@
 {:title "Doomsday by Committee, Setting the Scene"
  :author "d8dk32, Doishy"
- :date "2017-12-13"
+ :date "2018-01-03"
  :tags ["Doomsday by Committee"]
  :layout :post
  :draft? false}
