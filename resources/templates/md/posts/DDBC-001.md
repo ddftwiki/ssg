@@ -9,33 +9,20 @@
 Take our offer, give us might.
 Make our power tears of night."
 ...
-"Guys do we really want to try and beckon forth power through the Eye of twilight?"
+
+"Guys do we intend to try and beckon forth power through the Eye of twilight?"
 "Why, what's wrong with the Eye of twilight?"
-"I'm sure there are more powerful entities out there..."
+"I'm sure there are more powerful entities out there."
 "Like whom?"
-"The Serpent of fate?"
-"Bit of a stretch, he always requires a sacrifice."
-"We'll just let them take Yelan."
-"Oi!"
-"Sphinx of kr''l?"
-"Too difficult to work out what he's saying."
-"Lord of the unyielding blood?"
-"Never gives up his secrets."
-"Hanarsh the soul taker?"
-"No virgins available."
-"And whose fault is that...?"
-"Enough! Look, Eye of twilight is the best otherworldly entity that
-may be willing to grant unholy power that we have currently.
-So he is what we will reach out to. Understand?"
+"Hanarsh the soul taker? We have virgins right here..."
+"No! Look, Eye of twilight is the best otherworldly entity that
+may be willing to grant unholy power.So he is what we will reach out to. Understand?"
 "Fine."
 "Sure."
-"Okay."
-"Where were we....Eye of twilight, give us sight..."
+"Okay. Where were we....Eye of twilight, give us sight..."
 ...
 "Do we really always have to wear black?"
 ```
-
-## Doomsday by Committee, Setting the Scene
 
 Hello and welcome to the first of what will hopefully be a series
 of articles whereby some players get together and either observe and
