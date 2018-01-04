@@ -34,9 +34,6 @@ So he is what we will reach out to. Understand?"
 ...
 "Do we really always have to wear black?"
 ```
-
-## Doomsday by Committee, Setting the Scene
-
 Hello and welcome to the first of what will hopefully be a series
 of articles whereby some players get together and either observe and
 discuss live games with DDFT or go over scenarios presented by people.
