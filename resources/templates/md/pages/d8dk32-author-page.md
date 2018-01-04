@@ -6,5 +6,5 @@ I first got into Magic around 2004 but took a break for a few years. After retur
 
 ###Works by d8dk32  
 
-[Doomsday By Committee #1: Setting the Scene](/posts-output/DDBC-001)
+[Doomsday By Committee #1: Setting the Scene](https://ddft.wiki/posts-output/DDBC-001/)
  ***
