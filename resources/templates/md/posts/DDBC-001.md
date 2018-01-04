@@ -9,6 +9,7 @@
 Take our offer, give us might.
 Make our power tears of night."
 ...
+
 "Guys do we intend to try and beckon forth power through the Eye of twilight?"
 "Why, what's wrong with the Eye of twilight?"
 "I'm sure there are more powerful entities out there."
@@ -22,6 +23,7 @@ may be willing to grant unholy power.So he is what we will reach out to. Underst
 ...
 "Do we really always have to wear black?"
 ```
+
 Hello and welcome to the first of what will hopefully be a series
 of articles whereby some players get together and either observe and
 discuss live games with DDFT or go over scenarios presented by people.
