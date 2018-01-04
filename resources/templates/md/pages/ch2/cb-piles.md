@@ -396,6 +396,6 @@ pile with in order to give yourself an additional turn worth of Emrakul attacks.
 
 Hopefully this will allow a greater understanding of how to play through more of
 the piles that make up the
-[Pile Document](http://ddft.wiki/pages-output/pile-doc/). Remember as with
+[Pile Document](http://ddft.wiki/pages-output/appendix/pile-doc/). Remember as with
 anything it is better to learn the concepts presented here more so than to try
 and rote learn piles and of course, practice makes perfect.
