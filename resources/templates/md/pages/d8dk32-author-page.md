@@ -4,6 +4,6 @@
 ###Bio
 I first got into Magic around 2004 but took a break for a few years. After returning to the game around 2011, I started playing Doomsday in varying forms, first in proxy Vintage tournaments, and then in Legacy. I finally scraped together the funds to finish building DDFT in 2015 and have since top 8'd a handful of win-a-duals, 1k events, and locals, and punted myself out of contention deep into Day 1 at a large SCG Event. I'm working on improving my general play-skills and mental stamina in the hopes of finally having a result at a large event.
 
-###Works by d8dk32
+###Works by d8dk32  
 [Doomsday By Committee #1: Setting the Scene](ddft.wiki/posts-output/DDBC-001)
  ***
