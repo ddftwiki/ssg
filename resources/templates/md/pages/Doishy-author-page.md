@@ -15,4 +15,7 @@ I'm a cat person.
 [Time Spiral Piles](/pages-output/ch2/doomsday-timespiral)    
 [Conjurer's Bauble](/pages-output/ch2/cb-piles)    
 [Surgical Extraction](/pages-output/ch3/surgical)    
+
+###Articles by Doishy  
+[Doomsday in 2017](https://ddft.wiki/posts-output/DD_2017/)  
  ***
