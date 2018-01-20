@@ -1,4 +1,10 @@
-
+{:title "Example Decklist Construction"
+ :layout :page
+ :author "Doishy"
+ :page-index 903
+ :navbar? false
+ :home? false}
+ 
 Please find present below the basic setup of how a Doomsday / DDFT decklist
 is normally constructed. As with any Legacy archetype there are a fair few 'flex' slots
 that can be changed around however some pieces are pretty fundamental to the
