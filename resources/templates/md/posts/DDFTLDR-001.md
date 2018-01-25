@@ -299,10 +299,12 @@ I’m not sure where the next Episode of DDFTL;DR will take us.  Clearly, there�
 Let me know what topics you’d like to see discussed via the Doomsday Discord server, Facebook group or on the 
 Stormboards/TheSource forums, and we’ll keep on learning Doomsday together!
 
+TL;DR:  Doomsday is hard.  
+
 Stay hydrated,  
 TH  
 
-#### Shout outs:  
+Shout outs:  
 Grapeshot/Countertoplol for informing me the deck still existed, and explaining the basics to me.  
 Doishy for his really admirable dedication to Doomsday and for editing this article.  
 Everybody who told me not to play Doomsday.  This one’s for you.
