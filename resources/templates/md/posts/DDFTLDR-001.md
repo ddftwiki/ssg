@@ -60,10 +60,10 @@ all of my local paper events.  Because of that, I’m looking to get in as many 
 I can’t promise that these will be on a regular schedule, but I’d like to make them available, both
 to have a record of improvement, but also to get feedback on play from the community.
 - Track Data
-I think we’ve all seen that [Bryant Cook’s spreadsheet]() has been a really great tool for the storm community.
-Doishy started a [similar project]() for the Doomsday cabal, and I’m really excited to contribute my match
-results to this, as well as tracking my own individual results to get a clearer idea of how I’m doing
-relative to the rest of our community.
+I think we’ve all seen that [Bryant Cook’s spreadsheet](https://docs.google.com/spreadsheets/d/1C9N0raG3_o8d4SL6_KjYt6lcuFzY5YxhAKAjIEG_L6M/edit#gid=1782415521) has been a really great
+tool for the storm community. Doishy started a [similar project](https://docs.google.com/spreadsheets/d/14hIVFCCxK6v6PHzj_7opfigFWVGV73kv59OdeN-J95I/edit#gid=0) for the Doomsday cabal,
+and I’m really excited to contribute my match results to this, as well as tracking my own
+individual results to get a clearer idea of how I’m doing relative to the rest of our community.
 - Reflect
 A big part of what I want to do with this series is reflect on patterns I notice in playing the deck. 
 DDFT has so many subtleties to it (cantripping, fetching, mulligans, to name a few), and I want to 
@@ -127,8 +127,6 @@ you draw them before the combo (Laboratory Maniac especially).
 Finally, the deck pretty regularly feels about a turn too slow in a lot of matchups. I want to examine this point further, because it seems possible/likely that this is something about the way I’m playing (probably cantrip or mulligan decisions)
 
 The League:
-
-
 
 ### Round 1:  LED Dredge (2-1)  
 [Youtube Link](https://www.youtube.com/watch?v=n1rhbKF0gWI&list=PLPsGulnfHUXndjdzkvIZH6ChbyUlEwkdX)  
