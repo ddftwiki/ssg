@@ -119,7 +119,7 @@ at least at face value. As you can see we have some interesting points in regard
 is lower than our match win % and this will become more apparent as we go on. Long story short is that
 we are favoured to win the less games we play. Most of our wins are 2-0's and most of our losses are 1-2's.
 
-![DDStatsTable1](/img/DDStatsTable1.gif)
+![Ratio of wins table](/img/DDStatsTable1.gif)
 
 This is further justified when we look at our Match win % when we go to a game 3 compared to when we do not.
 
@@ -161,9 +161,9 @@ Backtracking a tad, the overall Match Win % is not static however. We have been 
 and, although we have only recently started gathering data, we can already see some trends for the better.
 Below shows the Match Win % over time; I have also presented the number of matches played over time to allow you to get a feel for how significant each month's result is in terms of consistency.
 
-![DDStatsGraph1](/img/DDStatsGraph1.gif)
+![Match win % over time](/img/DDStatsGraph1.gif)
 
-![DDStatsGraph2](/img/DDStatsGraph2.gif)
+![Number of matches over time](/img/DDStatsGraph2.gif)
 
 As you can see with have limited early data
 but a lot more recent data. We can also see an upward trend in terms of Match Win %. If we look at Match Win %
@@ -226,7 +226,7 @@ There are definately limitations to this assigning method and I would be very op
 
 Looking at the performance breakdown against our categories we get this results display:
 
-![DDStatsGraph3](/img/DDStatsGraph3.gif)
+![Win % against hate types](/img/DDStatsGraph3.gif)
 
 We seem to have a pretty good set of matchups despite the differing hate types however one result
 is really key in showing how the deck's performance is in this current meta. 'CounterspellsDiscard'
@@ -246,10 +246,10 @@ our overall performance rating should increase. The trick is figuring out how to
 In my previous article I already showed how the deck mulligans well but let's look into it a bit closer.
 Again I will present below the graph of percentage of times we keep starting hands and how often we win with said starting hand numbers.
 
-![DDStatsGraph4](/img/DDStatsGraph4.gif)
+![% Mulligans across games](/img/DDStatsGraph4.gif)
 
 
-![DDStatsGraph5](/img/DDStatsGraph5.gif)
+![% Wins based on mulliganes across games](/img/DDStatsGraph5.gif)
 
 As you can see we keep seven card hands pretty consistently. Interestingly enough, the rate at which we mulligan
 seems to definitely follow a trend as games go on through a match. This could be because of awareness of opposing
@@ -272,7 +272,7 @@ number of goblins via EtW.
 
 The scale was tracked from turn 1 (T1) to turn 5+ (T5+) and is recorded as a percentage of across all games.
 
-![DDStatsGraph6](/img/DDStatsGraph6.gif)
+![Combo turn across games](/img/DDStatsGraph6.gif)
 
 Those are some nice curves no?  
 Already we can see some interesting observations. Game 1 seems to have the most consistent setup with high
@@ -314,7 +314,7 @@ One thing to consider about the Doomsday only wins number and the others before 
 Doomsday lines can also skew the data to seem faster than it is. Let's take this as an oppotunity to look
 at roughly what amount of our total Doomsday lines are pass-the-turn ones.
 
-![DDStatsGraph7](/img/DDStatsGraph7.gif)
+![% of PTT piles vs same turn piles](/img/DDStatsGraph7.gif)
 
 Game 1 only 20% of play lines are pass-the-turn. Games 2 and 3 this increases to 30% which is
 interesting. This could be an increase of usage of Shelldock Isle or of Jamming T1 Dark Ritual into 
@@ -332,7 +332,7 @@ but for easy viewing we have broken it down into a set of four.
 - N-Storm: Any line that wins via just naturally storming our with Tendrils of Agony (without casting Doomsday)
 - Other: Any other win method such as sideboarded "Man Plans" or Burning Wish for Telemin Performance
 
-![DDStatsGraph8](/img/DDStatsGraph8.gif)
+![% of win types across games](/img/DDStatsGraph8.gif)
 
 Doomsday lines are a clear majority in terms of winning engine accounting for three quarters on average of
 our total lines. Next is Empty the Warrens lines resulting in roughly eighteen percent of lines. Natural
@@ -346,7 +346,7 @@ Delving into the Doomsday lines themselves we have another split between the mai
 - LM: Doomsday stacks resulting in winning from a Laboratory Maniac
 - SI: Doomsday stacks winning by casting Emrakul, the Aeons Torn off of Shelldock Isle
 
-![DDStatsGraph9](/img/DDStatsGraph9.gif)
+![% of doomsday pilea across games](/img/DDStatsGraph9.gif)
 
 Lethal storm is again a clear majority, especially in Game 1. Laboratory maniac is steady across
 all games accounting for around thirty percent. I know some people debate on whether the inclusion
