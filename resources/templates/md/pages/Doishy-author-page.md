@@ -18,4 +18,5 @@ I'm a cat person.
 
 ###Articles by Doishy  
 [Doomsday in 2017](https://ddft.wiki/posts-output/DD_2017/)  
+[DDFT Statistics](https://ddft.wiki/posts-output/DDStatistics/)
  ***

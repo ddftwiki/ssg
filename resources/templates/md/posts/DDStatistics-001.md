@@ -1,3 +1,9 @@
+{:title "DDFT Statistics"
+ :author "Doishy"
+ :date "2018-02-03"
+ :layout :post
+}
+
 All data compiled 3rd February 2018
 
 ```
@@ -35,7 +41,7 @@ Quick glossary:
 ANT - Ad-Nauseum Tendrils, a Legacy Storm deck based around Past in Flames engine
 DDFT - Doomsday Fetchland Tendrils, a Legacy Storm deck based around the card Doomsday
 TES - The Epic Storm, a Legacy Storm deck based around Ad Nauseum and Burning Wish
-Tendrils/ToA - Shorthand for Tendril's of Agony
+Tendrils/ToA - Shorthand for Tendrils of Agony
 Empty/EtW - Shorthand for Empty the Warrens
 ```
 
@@ -68,10 +74,10 @@ Making 14 Goblins on T2 might not win you the game until T4 or even later but it
 be recorded as T2. The TES data has this same issue in regards to EtW lines but with Doomsday and
 pass-the-turn piles it's possibly a bit more prevalent here.
 
-Another major difference in the data collection compared to the TES data is that the TES data 
+Another major difference in the data collection compared to Cook's TES data is that the TES data 
 only draws from a single individual and only records MTGO Leagues or Comp REL paper events. We
 decided to be a bit more open with our data collection compiling it from a large number of 
-individuals at various skill levels and experience levels with the deck. This also includes practice
+individuals at various experience levels with the deck, and from various types of events. This also includes practice
 games, testing, local Paper events, Xmage and Cockatrice games. Despite some of the stigma associated
 with some of these mediums they are all valid matches played in a competitive fashion so should be counted.
 It also allows us to generate the most amount of data points to try and avoid individual or medium biases
@@ -113,7 +119,7 @@ at least at face value. As you can see we have some interesting points in regard
 is lower than our match win % and this will become more apparent as we go on. Long story short is that
 we are favoured to win the less games we play. Most of our wins are 2-0's and most of our losses are 1-2's.
 
-![DDStatsTable1]()
+![DDStatsTable1](/img/DDStatsTable1.gif)
 
 This is further justified when we look at our Match win % when we go to a game 3 compared to when we do not.
 
@@ -128,16 +134,16 @@ Game 3 wins (%): 50.74%
 
 So why is this?
 
-It might be that many of our opponents have relevant sideboard choices against us?
-This could also represent them incorrectly sideboarding and realising their choice was wrong for 
-game 3. A great example of this would be bringing in Grafdigger's Cages or similar. It could also
-be related to the fact that the archetype has quite a few unknown cards which our opponent's might
-not know how to interact with but, as the match goes on, will get used to. It might also be our own 
-constraints in sideboard options. Being a combo deck, and a combo deck that uses a wishboard at that, 
-we do have limited slots and options for trying to face a large variety of hate in different forms
-and it may be often we just have the wrong answers at the wrong times. It could also be the fact
-that our main win condition allows our opponent to see the entierity of our deck that is not included
-in the Doomsday pile and thus know exactly what to play around.
+It might be that many of our opponents have relevant sideboard choices against us.
+It could also represent them incorrectly sideboarding and realising their choice was wrong for 
+game 3. A great example of this would be bringing in Grafdigger's Cages or similar, then realizing 
+that grave hate is generally ineffective. It could also be related to the fact that the archetype 
+has quite a few unknown cards which our opponent's might not know how to interact with but, as the 
+match goes on, will get used to. It might also be our own constraints in sideboard options. Being a 
+combo deck, and a combo deck that uses a wishboard at that, we do have limited slots and options for 
+trying to face a large variety of hate in different forms and it may be often we just have the wrong
+answers at the wrong times. It could also be the fact that our main win condition allows our opponent
+to see the entierity of our deck that is not included in the Doomsday pile and thus know exactly what to play around.
 
 *Pre-release edit:   
 I had in fact pre-written a lot of this article before copying in the numbers as the trends were already seemingly
@@ -153,14 +159,13 @@ I thought it was an interesting enough point to mention.*
 
 Backtracking a tad, the overall Match Win % is not static however. We have been trending it over time
 and, although we have only recently started gathering data, we can already see some trends for the better.
-Below shows the Match Win % over time:
+Below shows the Match Win % over time; I have also presented the number of matches played over time to allow you to get a feel for how significant each month's result is in terms of consistency.
 
-![DDStatsGraph1]()
+![DDStatsGraph1](/img/DDStatsGraph1.gif)
 
-![DDStatsGraph2]()
+![DDStatsGraph2](/img/DDStatsGraph2.gif)
 
-As a comparison I have also presented the number of matches played over time to allow you to get a feel for
-how significant each month's result is in terms of consistency. As you can see with have limited early data
+As you can see with have limited early data
 but a lot more recent data. We can also see an upward trend in terms of Match Win %. If we look at Match Win %
 but only taken from the past two months we get:
 
@@ -170,10 +175,7 @@ Definately looking better.
 
 So why is this improving? I personally thing it's to do with consistency. Previously between April (Top ban) and 
 around late October there was little agreement between pilots who talked things through about what to run. Many
-lists were tried un order to work out where the deck was going and whether it was still viable. As touched on in my last 
-article a lot of experienced people also put down the deck and though it still attracted newer pilots, a lot
-of the experience was lost and a lot of the experienced pilots had to re-learn a lot of things and get used
-to playing the deck without Sensei's Top. 
+lists were tried in order to work out where the deck was going and whether it was still viable, and though there was some early success, those lists tended to vary wildly. As touched on in my last article a lot of experienced people also put down the deck and though it still attracted newer pilots, a lot of the experience was lost and those who remained had to re-learn a lot of things and get used to playing the deck without Sensei's Top. 
 
 Part of this also might be the widespread accepted use of Conjurer's Bauble as a card. The innocuous little 
 artifact has a lot of potential and some key niche uses for the deck. Some people had started to use it but
@@ -197,7 +199,7 @@ I'm sorry if by doing this I offend any archetypes however sometimes key subtle 
 represented deck across all our results only had a net share of 9.04% of the meta we have faced so far which is nice.
 
 Now if we were to split our dicussion for each deck we would have a hard time and this would be a much longer article (though
-it is pretty long anyways so thankyou if you have made it this far). Often when talking about archetypes people will split
+it is pretty long anyways so thank you if you have made it this far). Often when talking about archetypes people will split
 them into 'Blue' and 'Not Blue'. Sometimes this binary system gets broadened by the addition of 'Chalice' however this then 
 asks the question of where does Popeye stompy circa 2017 fit in being both 'Blue' and a 'Chalice' deck?  
 Poor taste jokes aside we decided we wanted to try and define what we were facing by more than just whether they had a 
@@ -217,14 +219,14 @@ heading of 'DiscardSpeed'. We did not go for combinations of three because it di
 run a mixture of three of these items (Esper Stoneblade/Deathblade) and of those two are normally more prevalent than
 the last. Assigning these labels this way grouped interesting things together. 
 
-Despite one being a great matchup and the other being terrible. Both Eldrazi and Lands come under the heading 'Chalice'.
+Despite one being a great matchup and the other being unfavorable, both Eldrazi and Lands come under the heading 'Chalice'.
 Eldrazi because they run Chalice of the Void in the maindeck and Lands because their main method of hate is bringing
 in Sphere effects from the sideboard. Pretty much all storm variants come under 'DiscardSpeed' but so does BR Reanimator.
 There are definately limitations to this assigning method and I would be very open to a different way of doing it.
 
 Looking at the performance breakdown against our categories we get this results display:
 
-![DDStatsGraph3]()
+![DDStatsGraph3](/img/DDStatsGraph3.gif)
 
 We seem to have a pretty good set of matchups despite the differing hate types however one result
 is really key in showing how the deck's performance is in this current meta. 'CounterspellsDiscard'
@@ -232,7 +234,8 @@ is representative of two of the biggest decks in the format right now. Grixis De
 We obviously need to try and up our game against these decks however facing a mix of proactive
 disruption to your hand and reactive countermagic for the combo whilst under pressure is tricky.
 These are also the category the two highest opposing decks fall into accounting for 16.82% of the meta between
-them. The 'ChaliceCounterspells' result can be largely discounted due to how few decks run the two together.
+them. The 'ChaliceCounterspells' result can be largely discounted due to small sample size, since few decks (mainly Tezzeret lists) 
+run this combination of interaction.
 
 Just going by the numbers it looks like if we can improve these two matchups specifically then
 our overall performance rating should increase. The trick is figuring out how to achieve that improvement...
@@ -241,13 +244,12 @@ our overall performance rating should increase. The trick is figuring out how to
 ### Mulling over things.
 
 In my previous article I already showed how the deck mulligans well but let's look into it a bit closer.
-Again I will present below the graph of percentage of times we keep starting hands and the weighting 
-of how often we win with said starting hand numbers.
+Again I will present below the graph of percentage of times we keep starting hands and how often we win with said starting hand numbers.
 
-![DDStatsGraph4]()
+![DDStatsGraph4](/img/DDStatsGraph4.gif)
 
 
-![DDStatsGraph5]()
+![DDStatsGraph5](/img/DDStatsGraph5.gif)
 
 As you can see we keep seven card hands pretty consistently. Interestingly enough, the rate at which we mulligan
 seems to definitely follow a trend as games go on through a match. This could be because of awareness of opposing
@@ -270,7 +272,7 @@ number of goblins via EtW.
 
 The scale was tracked from turn 1 (T1) to turn 5+ (T5+) and is recorded as a percentage of across all games.
 
-![DDStatsGraph6]()
+![DDStatsGraph6](/img/DDStatsGraph6.gif)
 
 Those are some nice curves no?  
 Already we can see some interesting observations. Game 1 seems to have the most consistent setup with high
@@ -282,7 +284,11 @@ Average Combo Turn (ACT).
 
 ACT: 2.94
 
-COMPARISON TABLE  
+| Deck | Average Combo Turn |
+| :---: | :---: |
+| ANT | 3.01 |
+| DDFT | 2.94 |
+| TES | 2.61 | 
 
 Comparing this to the other data we can see we are slower than TES on average but marginally faster than ANT. One thing to
 note however is that we do record combo turns for games even when we do not win them. This represents us 'going off' and maybe being blown out by an unknown piece of hate or miscounting storm or messing up the pile. To fix this we can generate the ACT filtered only by when we win the game we go off.  
@@ -308,16 +314,16 @@ One thing to consider about the Doomsday only wins number and the others before 
 Doomsday lines can also skew the data to seem faster than it is. Let's take this as an oppotunity to look
 at roughly what amount of our total Doomsday lines are pass-the-turn ones.
 
-![DDStatsGraph7]()
+![DDStatsGraph7](/img/DDStatsGraph7.gif)
 
 Game 1 only 20% of play lines are pass-the-turn. Games 2 and 3 this increases to 30% which is
 interesting. This could be an increase of usage of Shelldock Isle or of Jamming T1 Dark Ritual into 
-a T2 Laboratory Maniac kill. It could also represent the need to go off the the face of more constrained
-resources preventing a same-turn win. 
+a T2 Laboratory Maniac kill against decks that can't effectively interact with that plan early on. It could also
+represent the need to go off in the face of more constrained resources preventing a same-turn win. 
 
 ### How we do things
 
-Following on from our glance at how often we pass-the-turn we can also see what method we use to win.
+Following on from our glance at how often we pass-the-turn we can also see what methods we use to win.
 We asked people to fill in their winning line from a pretty comprehensive list of different methods
 but for easy viewing we have broken it down into a set of four.
 
@@ -326,7 +332,7 @@ but for easy viewing we have broken it down into a set of four.
 - N-Storm: Any line that wins via just naturally storming our with Tendrils of Agony (without casting Doomsday)
 - Other: Any other win method such as sideboarded "Man Plans" or Burning Wish for Telemin Performance
 
-![DDStatsGraph8]()
+![DDStatsGraph8](/img/DDStatsGraph8.gif)
 
 Doomsday lines are a clear majority in terms of winning engine accounting for three quarters on average of
 our total lines. Next is Empty the Warrens lines resulting in roughly eighteen percent of lines. Natural
@@ -340,7 +346,7 @@ Delving into the Doomsday lines themselves we have another split between the mai
 - LM: Doomsday stacks resulting in winning from a Laboratory Maniac
 - SI: Doomsday stacks winning by casting Emrakul, the Aeons Torn off of Shelldock Isle
 
-![DDStatsGraph9]()
+![DDStatsGraph9](/img/DDStatsGraph9.gif)
 
 Lethal storm is again a clear majority, especially in Game 1. Laboratory maniac is steady across
 all games accounting for around thirty percent. I know some people debate on whether the inclusion
@@ -349,23 +355,11 @@ therefore should probably be included. What is interesting is that the reduction
 from Games 2 and 3 seems to go directly to the added presence of Shelldock Isle wins.
 
 
-### Comparisons and stuff
-
-So how does all the above data stack up to our storm cousins? Well actually you will have to wait
-(unless you look it up yourself). This is because this is already a large piece of text, despite
-the pretty graphs and I think the comparison,
-
-- A, deserves its own article and...
-- B, requires more results to get a better judgement of performance over time and equivalent data sets for comparison.
-
-So, sorry....I guess.
-
-
 ## Closing thoughts
 
 I didn't think I would get so into this whole stats thing but I did. I'm normally a 
 Han Solo, "don't tell me the odds" kind of guy so following numbers was a refreshing change.
-I'm happy that the above helps solidify our position as an "established deck" despite a lack
+I'm hopeful that the above helps solidify our position as an "established deck" despite a lack
 of metagame penetration and / or number of top 8 performances (give us time!). It seems we are doing
 pretty well and now just need to start polishing up our gameplay and bringing out our 
 anti-'CounterspellsDiscard' tech (IMO it's two Empty the Warrens in our board). 
