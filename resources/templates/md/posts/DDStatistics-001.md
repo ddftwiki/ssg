@@ -56,8 +56,7 @@ spread across the use of Doomsday, Burning Wish and the various win conditions
 that can be utilised. We also tracked whether a combo turn involved a
 [pass-the-turn pile](http://ddft.wiki/pages-output/ch1/pass-the-turn/), 
 a [double cantrip pile](http://ddft.wiki/pages-output/ch1/basics/),
-and various other techniques with cards like [Laboratory
-Maniac](http://ddft.wiki/pages-output/ch1/laboratory-maniac/)
+and various other techniques with cards like [Laboratory Maniac](http://ddft.wiki/pages-output/ch1/laboratory-maniac/)
 or [Conjurer's Bauble](http://ddft.wiki/pages-output/ch2/cb-piles/). 
 
 Going into this level of detail allowed us to identify trends in how often the
@@ -344,15 +343,9 @@ graph.
 Totalling all combo turns across all games together and applying the TES T1-T4+
 scale we can work out our overall Average Combo Turn (ACT).
 
-ACT: 2.94
+ACT: 2.94  
 
-| Deck | Average Combo Turn |
-|:----:|:------------------:|
-| ANT  | 3.01               |
-| DDFT | 2.94               |
-| TES  | 2.61               |
-
-Comparing this to the other data we can see we are slower than TES on average
+Comparing this to the other data from the last article we can see we are slower than TES on average
 but marginally faster than ANT. One thing to note however is that we do record
 combo turns for games even when we do not win them. This represents us 'going
 off' and maybe being blown out by an unknown piece of hate or miscounting storm
