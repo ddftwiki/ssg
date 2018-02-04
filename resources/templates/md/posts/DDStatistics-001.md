@@ -54,37 +54,30 @@ so many different ways to draw into it, time it, win with it that you have a lot
 of different options. In total we have 35 different generic winning engines used
 spread across the use of Doomsday, Burning Wish and the various win conditions
 that can be utilised. We also tracked whether a combo turn involved a
-[pass-the-turn pile][page/pass-the-turn], a [double cantrip pile][page/basics],
+[pass-the-turn pile](http://ddft.wiki/pages-output/ch1/pass-the-turn/), 
+a [double cantrip pile](http://ddft.wiki/pages-output/ch1/basics/),
 and various other techniques with cards like [Laboratory
-Maniac][page/laboratory-maniac] or [Conjurer's Bauble][page/cb-piles].
-
-[page/pass-the-turn]: http://ddft.wiki/pages-output/ch1/pass-the-turn/
-[page/basics]: http://ddft.wiki/pages-output/ch1/basics/
-[page/laboratory-maniac]: http://ddft.wiki/pages-output/ch1/laboratory-maniac/
-[page/cb-piles]: http://ddft.wiki/pages-output/ch2/cb-piles/
+Maniac](http://ddft.wiki/pages-output/ch1/laboratory-maniac/)
+or [Conjurer's Bauble](http://ddft.wiki/pages-output/ch2/cb-piles/). 
 
 Going into this level of detail allowed us to identify trends in how often the
 deck uses what to win and how useful certain niche cards are to the deck.
 
-The full public data spreadsheet may be found [HERE][google/data-public]. Please
+The full public data spreadsheet may be found [HERE](https://docs.google.com/spreadsheets/d/14hIVFCCxK6v6PHzj_7opfigFWVGV73kv59OdeN-J95I/edit?usp=sharing). Please
 feel free to contribute any and all matches played, just make sure to include
 all information requested in the sheet.
-
-[google/data-public]: https://docs.google.com/spreadsheets/d/14hIVFCCxK6v6PHzj_7opfigFWVGV73kv59OdeN-J95I/edit?usp=sharing
 
 ## Bias Within the Data
 
 There are some limitations with how our data is compiled and assessed. One major
 one is in regards to combo turn. Combo turn refers to the turn we "go off" but
 this may not be the same turn we win. Casting Doomsday on T1 to build a
-[Shelldock Isle/Emrakul Pile][page/shelldock-emrakul] would still be recorded as
-a T1 combo turn despite not winning until T3/4. The same with early EtW plays.
-Making 14 Goblins on T2 might not win you the game until T4 or even later but it
-would still be recorded as T2. The TES data has this same issue in regards to
-EtW lines but with Doomsday and pass-the-turn piles it's possibly a bit more
-prevalent here.
-
-[page/shelldock-emrakul]: http://ddft.wiki/pages-output/ch2/shelldock-emrakul/
+[Shelldock Isle/Emrakul Pile](http://ddft.wiki/pages-output/ch2/shelldock-emrakul/)
+would still be recorded as a T1 combo turn despite not winning until T3/4. 
+The same with early EtW plays. Making 14 Goblins on T2 might not win you the 
+game until T4 or even later but it would still be recorded as T2. The TES data
+has this same issue in regards to EtW lines but with Doomsday and pass-the-turn
+piles it's possibly a bit more prevalent here.
 
 Another major difference in the data collection compared to Cook's TES data is
 that the TES data only draws from a single individual and only records MTGO
