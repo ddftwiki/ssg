@@ -1,4 +1,4 @@
-{:title "DDFT Statistics"
+{:title "Doomsday by Numbers"
  :author "Doishy"
  :date "2018-02-03"
  :layout :post
