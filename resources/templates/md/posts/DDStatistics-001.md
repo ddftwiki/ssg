@@ -72,7 +72,7 @@ all information requested in the sheet.
 
 [google/data-public]: https://docs.google.com/spreadsheets/d/14hIVFCCxK6v6PHzj_7opfigFWVGV73kv59OdeN-J95I/edit?usp=sharing
 
-## Bias within the data
+## Bias Within the Data
 
 There are some limitations with how our data is compiled and assessed. One major
 one is in regards to combo turn. Combo turn refers to the turn we "go off" but
@@ -109,7 +109,7 @@ and string them together just as we could try and get people to list all cards
 in their piles however people don't want to have to keep that level of detail in
 their notes so in the interests of pragmatism this level of data is ommitted.
 
-## Business business business. Numbers, numbers, numbers.
+## Business Business Business. Numbers, Numbers, Numbers
 
 Right then, let's start looking at some data shall we?
 
@@ -183,7 +183,7 @@ person across the table and not just inwards in trying to get the deck to work.
 This change over time is about to be discussed next anyways but I thought it was
 an interesting enough point to mention.*
 
-### About Time.
+### About Time
 
 Backtracking a tad, the overall Match Win % is not static however. We have been
 trending it over time and, although we have only recently started gathering
@@ -222,7 +222,7 @@ lot more. It might be unrelated to this addition but that is one of the few
 decklist additions we can track with relative certainty mainly through
 discussions between pilots.
 
-### The other side of things
+### The Other Side of Things
 
 Obviously one thing we can consider in how a deck is performing and it performs
 over a given period of time is the opposition that the deck will face. Despite
@@ -302,7 +302,7 @@ Just going by the numbers it looks like if we can improve these two matchups
 specifically then our overall performance rating should increase. The trick is
 figuring out how to achieve that improvement...
 
-### Mulling over things.
+### Mulling Over Things
 
 In my previous article I already showed how the deck mulligans well but let's
 look into it a bit closer. Again I will present below the graph of percentage of
@@ -325,7 +325,7 @@ than a contributing factor.
 
 Either way it looks like the deck mulligans pretty well.
 
-### Gotta go fast
+### Gotta Go Fast
 
 The next thing to look at that I touched upon previously is the speed that we go
 off. This is an interesting one as discussed because it's hard to get an
@@ -401,7 +401,7 @@ can't effectively interact with that plan early on. It could also represent the
 need to go off in the face of more constrained resources preventing a same-turn
 win.
 
-### How we do things
+### How We Do Things
 
 Following on from our glance at how often we pass-the-turn we can also see what
 methods we use to win. We asked people to fill in their winning line from a
@@ -443,7 +443,7 @@ probably be included. What is interesting is that the reduction in storm wins
 from Games 2 and 3 seems to go directly to the added presence of Shelldock Isle
 wins.
 
-## Closing thoughts
+## Closing Thoughts
 
 I didn't think I would get so into this whole stats thing but I did. I'm
 normally a Han Solo, "don't tell me the odds" kind of guy so following numbers
