@@ -43,8 +43,8 @@ Quick glossary:
 ANT - Ad-Nauseum Tendrils, a Legacy Storm deck based around Past in Flames engine
 DDFT - Doomsday Fetchland Tendrils, a Legacy Storm deck based around the card Doomsday
 TES - The Epic Storm, a Legacy Storm deck based around Ad Nauseum and Burning Wish
-Tendrils/ToA - Shorthand for Tendrils of Agony
-Empty/EtW - Shorthand for Empty the Warrens
+Tendrils/ToA - Shorthands for Tendrils of Agony
+Empty/EtW - Shorthands for Empty the Warrens
 ```
 
 Winning game engines was another difference. We could have just tracked Doomsday
@@ -202,7 +202,7 @@ only taken from the past two months we get:
 
 Match Win rate win past two months (%): 58.67%
 
-Definately looking better.
+Definitely looking better.
 
 So why is this improving? I personally thing it's to do with consistency.
 Previously between April (Top ban) and around late October there was little
