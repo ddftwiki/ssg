@@ -71,7 +71,7 @@ I don't get a next turn. They Brainstorm end of turn, untap, and play Aluren and
 Recruiter and I scoop.
 
 -1 Preordain, -1 Conjurer's Bauble, -1 Island  
-+1 Thoughtseize, +1 Abrupt Decay, + 1 Tropical Island
++1 Thoughtseize, +1 Abrupt Decay, +1 Tropical Island
 
 G2: I get stuck on 1 land for approximately a year. In the top 9 cards of my
 deck I manage to draw both Lab Maniac and Act on Impulse but not another land. I
@@ -103,7 +103,7 @@ pass-the-turn pile on t4 that lets me Duress first for some protection. I take a
 Counterspell but they brainstorm into a Force and shut me down.
 
 -2 Lotus Petal, -2 Preordain, -1 Island  
-+1 Thoughtseize, +2 Abrupt Decay, +1 Tropical Island, + 1 Sylvan Library
++1 Thoughtseize, +2 Abrupt Decay, +1 Tropical Island, +1 Sylvan Library
 
 G2: Early on I Duress a Force and land Library, which their Flusterstorms can't
 counter. I aggressively draw cards with Library and around turn 5 I Discard one
@@ -213,7 +213,7 @@ spell to make sure the coast is still clear, and then win with a very basic
 storm kill.
 
 -2 Lotus Petal, -2 Preordain, -1 Island  
-+1 Thoughtseize, +2 Abrupt Decay, +1 Tropical Island, + 1 Sylvan Library
++1 Thoughtseize, +2 Abrupt Decay, +1 Tropical Island, +1 Sylvan Library
 
 G2: Sideboarding doesn't change despite the B2Bs, it just means you need to be
 more careful with how you fetch, and you may need to take B2B over countermagic
@@ -282,7 +282,7 @@ believe him. That's how Storm works though; make a little slip-up and an
 experienced Storm player will punish you for it.
 
 -2 Lotus Petal, -2 Preordain, -1 Island  
-+1 Thoughtseize, +2 Abrupt Decay, +1 Tropical Island, + 1 Sylvan Library
++1 Thoughtseize, +2 Abrupt Decay, +1 Tropical Island, +1 Sylvan Library
 
 G2: My opening 7 is Probe, Probe, Ritual, Doomsday, Brainstorm, Underground Sea,
 Fetch. He starts with land and a cantrip. I listen to the voices of the cosmos
