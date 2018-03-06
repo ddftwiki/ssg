@@ -62,7 +62,7 @@ so bear with it.
 **R1 vs Aluren** (0-2)
 
 G1: I lose the roll and keep a hand with a Doomsday, a Cabal Therapy, and a
-couple cantrips. They lead on Tropical Island into DRS. I cantrip and pass. They
+couple of cantrips. They lead on Tropical Island into DRS. I cantrip and pass. They
 play a land and maybe a cantrip or something and pass. I Probe them and see
 Aluren, Harpy, a Brainstorm, and they have a blue source available. I cantrip
 and set up a kill for next turn, electing not to Therapy because they'll just
@@ -201,7 +201,7 @@ hand.
 
 4-2. The Dream lives on.
 
-**R7 vs Miracles feat. Back to Basics and Nahiri**(2-0)
+**R7 vs Miracles feat. Back to Basics and Nahiri** (2-0)
 
 G1: I win the roll and start with a cantrip. They play Strand and pass, so I put
 them on Miracles, which is correct. I Duress them and see they have maindeck
@@ -276,8 +276,7 @@ mentions that he made a mistake and got too cute with the Brainstorm/Azcanta
 thing and would have had another counterspell if he hadn't. I didn't really
 follow what he was saying because I was more focused on my sideboarding, but I
 believe him. That's how Storm works though; make a little slip-up and an
-experienced Storm player will punish you for it, even if they're playing a bad
-Storm deck.
+experienced Storm player will punish you for it.
 
 -2 Lotus Petal, -2 Preordain, -1 Island, +1 Thoughtseize, +2 Abrupt Decay, +1
 Tropical Island, + 1 Sylvan Library
