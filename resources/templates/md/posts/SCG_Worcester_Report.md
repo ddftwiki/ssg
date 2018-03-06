@@ -14,7 +14,6 @@ Humperdinck and arrive at the venue feeling refreshed and ready for 9 grueling
 rounds of magic. I scribble out this decklist:
 
 ```
-MAIN
 3 Doomsday
 4 Burning Wish
 1 Act on Impulse
@@ -38,7 +37,7 @@ MAIN
 2 Island
 1 Swamp
 
-BOARD
+SIDEBOARD
 1 Doomsday
 1 Tendrils of Agony
 1 Act on Impulse
@@ -334,7 +333,6 @@ scribble out my decklist for the legacy Classic. I decided to drop the green
 splash this time, to compare the two versions.
 
 ```
-MAIN
 3 Doomsday
 4 Burning Wish
 1 Act on Impulse
@@ -358,7 +356,7 @@ MAIN
 2 Island
 1 Swamp
 
-BOARD
+SIDEBOARD
 1 Doomsday
 1 Tendrils of Agony
 1 Act on Impulse
@@ -469,7 +467,7 @@ I changed my decklist one more time, leaving the maindeck untouched from last
 time but swapping the 2 extra ETW in the board for 2 Defense Grids.
 
 ```
-BOARD
+SIDEBOARD
 1 Doomsday
 1 Tendrils of Agony
 1 Act on Impulse
