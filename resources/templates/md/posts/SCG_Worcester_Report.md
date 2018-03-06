@@ -62,8 +62,8 @@ so bear with it.
 ### R1 vs Aluren (0-2)
 
 G1: I lose the roll and keep a hand with a Doomsday, a Cabal Therapy, and a
-couple of cantrips. They lead on Tropical Island into DRS. I cantrip and pass. They
-play a land and maybe a cantrip or something and pass. I Probe them and see
+couple of cantrips. They lead on Tropical Island into DRS. I cantrip and pass.
+They play a land and maybe a cantrip or something and pass. I Probe them and see
 Aluren, Harpy, a Brainstorm, and they have a blue source available. I cantrip
 and set up a kill for next turn, electing not to Therapy because they'll just
 hide things with Brainstorm and I want to protect my combo next turn. Naturally,
@@ -121,18 +121,18 @@ go off.
 
 ### R4 vs Death and Taxes (1-2)
 
-G1: I lose the roll and mull to 6. My hand can make 10 goblins on turn 1
-or cantrip and try to set up a deterministic turn 2 kill. They lead on Plains
-and Mom and I agonize over what to do. If they have Stoneforge, 10 gobs won't
-win, but if they have Thalia I'll have to spend the Wish in my hand getting
-Massacre instead of business. I decide not to make goblins and cantrip instead,
-and they drop Thalia. I wish for Massacre and they drop Recruiter and get
-Prelate. I Massacre, they Prelate on 4 which I can mostly ignore. I have a turn
-or 2 where if I find a Doomsday I probably win, but my cantrips come up blank
-and they get Spirit of the Labyrinth and Revoker on LED and we go to game 2.
+G1: I lose the roll and mull to 6. My hand can make 10 goblins on turn 1 or
+cantrip and try to set up a deterministic turn 2 kill. They lead on Plains and
+Mom and I agonize over what to do. If they have Stoneforge, 10 gobs won't win,
+but if they have Thalia I'll have to spend the Wish in my hand getting Massacre
+instead of business. I decide not to make goblins and cantrip instead, and they
+drop Thalia. I wish for Massacre and they drop Recruiter and get Prelate. I
+Massacre, they Prelate on 4 which I can mostly ignore. I have a turn or 2 where
+if I find a Doomsday I probably win, but my cantrips come up blank and they get
+Spirit of the Labyrinth and Revoker on LED and we go to game 2.
 
 -1 Island, -4 Duress, -1 Preordain  
-+ 1 Thoughtseize, +1 Tropical Island, +2 Abrupt Decay, +1 Chain of Vapor, +1 Echoing Truth
++1 Thoughtseize, +1 Tropical Island, +2 Abrupt Decay, +1 Chain of Vapor, +1 Echoing Truth
 
 G2: I make 12 Goblins turn 2 on the play and Flashback a Therapy. It gets there
 a couple turns later.
@@ -186,7 +186,7 @@ game 2.
 -3 Cabal Therapy, -1 Preordain  
 +1 Thoughtseize, +2 Hurkyl's Recall, +1 Echoing Truth
 
-G2: I Duress an LED from their hand and they play Salvagers without any payoff.
+G2: I Duress a LED from their hand and they play Salvagers without any payoff.
 We draw go for a while and I get beat with Salvagers. I have the most of the
 combo in hand but am tight on mana and need a Ritual. They find another LED and
 go infinite with a Mishra's Bauble to draw most of their deck in my upkeep.
@@ -237,7 +237,8 @@ peel another on their turn and take my Burning Wish. They have a Smasher to
 follow it up and I die before I can get anything together.
 
 -3 Cabal Therapy, -2 Preordain, -1 Bauble, -1 Island  
-+1 Tropical Island, +2 Abrupt Decay, +2 Hurkyl's Recall, +1 Echoing Truth, +1 Thoughtseize
++1 Tropical Island, +2 Abrupt Decay, +2 Hurkyl's Recall, +1 Echoing Truth,
++1 Thoughtseize
 
 G2: I cantrip on my turn and set up for t2 Empty the Warrens. They start with a
 land that only makes one mana, and pass. I probe them in the process of making
@@ -395,7 +396,7 @@ G2: My hand is much better this time. I Duress and take some countermagic. On
 their second turn, they tap out to cast a Phyrexian Dreadnought and stifle it's
 sacrifice trigger. On my third turn I make 12 goblins, thinking I can just chump
 the Dreadnought and win with gobs. I then learn Dreadnought has trample. I
-conside throwing all my goblins in front of it when it attacks, but I'm empty
+consider throwing all my goblins in front of it when it attacks, but I'm empty
 handed and I know they have a Standstill in hand so I just scoop since I played
 like a donkey.
 
@@ -417,8 +418,8 @@ into what I need for a clean storm kill and finish them off around turn 6 or 7.
 -2 Preordain, -1 Burning Wish  
 +1 Thoughtseize, +2 Empty the Warrens
 
-G2: It takes me a while to work through their countermagic. I one point I try to
-bait a Force with an extra LED, but it resolves and gets stolen by Dack. I
+G2: It takes me a while to work through their countermagic. At one point I try
+to bait a Force with an extra LED, but it resolves and gets stolen by Dack. I
 didn't expect this to matter. It's late in the game but I make 12 goblins since
 they only have a Dack and a Strix on board and 1 card in hand. However, that one
 card is Snapcaster Mage. With 3 lands untapped, on my end step they Snap
@@ -435,7 +436,7 @@ try to hit a counterspell if they draw one. However, they draw and play Dack,
 and Dack me. I draw Therapy and AoI, and discard Therapy and the extra Doomsday.
 I untap, draw Lab Man, play AoI exiling LED and Probe, and crack LED for UUU
 discarding Lab Man. Bauble puts Lab Man on the bottom of my emty library so I
-draw it, cast it, and use Probbe from exile to draw for the win. Miss me with
+draw it, cast it, and use Probe from exile to draw for the win. Miss me with
 that Dack shit.
 
 1-1. Maybe I can get my head back in the game.
@@ -458,7 +459,7 @@ last 6. So I played like an ass and got punished for it again.
 
 1-2. I'm a Saltfield Recluse.
 
-Here i do quick maths and it looks like even if I win out, X-2 may not even make
+Here I do quick maths and it looks like even if I win out, X-2 may not even make
 top 16, and I can't stop fucking up so there's no way I'll win out. I decide to
 drop, eat a real lunch instead of a bag of beef jerky like the day before,
 cruise the vendor tables for an hour or so and join a 4-round Legacy Challenge
@@ -517,7 +518,7 @@ business, and they do their dredge thing and shred my hand and I lose.
 +1 Thoughtseize
 
 G2: I remember to put myself on the draw and Duress on my first turn. Their hand
-is all creatures, so I don't get to timewalk them.On my 2nd turn I make a
+is all creatures, so I don't get to timewalk them. On my 2nd turn I make a
 pass-the-turn Maniac pile, which is safe from everything but the nuttiest of
 dredges. The dredging was far from nutty, and my Lab Man won me the game on my
 turn.
@@ -584,9 +585,8 @@ hate you, I just hate that you took my day 2 from me. Asshole.
 encouraging in terms of the deck's viability. With the exception of my R2 match
 against Aluren, my 2 other losses on day 1 felt winnable, with a bit better
 luck. Luck and tight play are both needed to succeed in large tournaments, and I
-feel like I played tight, at least on day 1. The deck can be quite fatiguiging
-to play even for an experienced pilot, so proper sleep and nutrition is
-important.
+feel like I played tight, at least on day 1. The deck can be quite fatiguing to
+play even for an experienced pilot, so proper sleep and nutrition is important.
 
 Regarding the decklist itself, I was pleased with my list for the main event. I
 wish the green splash wasn't needed because I hate having a land in my
@@ -600,17 +600,17 @@ sure the maindeck is exactly what I want, except the 8th fetchland should
 probably be a Tarn instead of a Misty or a Mire. But I only own 3 Tarns.
 
 The lists, particularly the sideboards, I played in the Classic and the
-Challenge I didn't like quite as much. Multiple ETW is an OK plan vs Delver type
+Challenge I didn't like quite as much. Multiple ETW is an OK plan vs Delver-type
 decks, but it can make some clunky draws and Doomsday doesn't utilize them as
 well as TES does. I don't think I like it enough anymore. Similarly, Defense
 Grid and Xantid Swarm look pretty good on paper but they have their own issues.
-Grid comes down too late, espcially if you need to play it through Daze, and
+Grid comes down too late, especially if you need to play it through Daze, and
 then opponents start being able to pay for it. Swarm dies to bolt which Delver
 should be keeping in against us, and requires the green land vs a Wasteland
 deck. I think what I really need is more practice against Delver decks so I can
 just tighten up play and gain a few percentage points rather than some magical
 sideboard card. My matchup against UR and RUG Delver feel fine, it's really just
-Grixis Delver with the discard where i feel unfavored.
+Grixis Delver with the discard where I feel unfavored.
 
 Hopefully this gives anyone on the fence about sleeving the deck up a reason to
 take it for a spin. Practice and experience can help you go a long way, and if
