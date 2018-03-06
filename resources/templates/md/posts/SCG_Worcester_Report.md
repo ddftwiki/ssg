@@ -57,9 +57,9 @@ BOARD
 And the hellride begins in earnest. This is all from sketchy notes and memory,
 so bear with it.
 
-### SCG Worcester Legacy Open
+## SCG Worcester Legacy Open
 
-**R1 vs Aluren** (0-2)
+### R1 vs Aluren (0-2)
 
 G1: I lose the roll and keep a hand with a Doomsday, a Cabal Therapy, and a
 couple of cantrips. They lead on Tropical Island into DRS. I cantrip and pass. They
@@ -78,7 +78,7 @@ am never really in this game and I get combo'd out around turn 5.
 
 0-1. Great Start.
 
-**R2 vs UW Stoneblade** (2-0)
+### R2 vs UW Stoneblade (2-0)
 
 G1: I lose the roll again. We both cantrip a bit and around turn 3 I cast a
 discard spell. They're left without interaction and I Brainstorm into a natural
@@ -94,7 +94,7 @@ don't draw countermagic and I get there.
 
 1-1. Hopefully the start of something truly beautiful.
 
-**R3 vs Miracles** (2-1)
+### R3 vs Miracles (2-1)
 
 G1: I win the roll. They get Search for Azcanta down on turn 2. I feel pressured
 to make a move or get buried in card advantage once it flips. I make a
@@ -118,7 +118,7 @@ go off.
 
 2-1. Things are looking up.
 
-**R4 vs Death and Taxes** (1-2)
+### R4 vs Death and Taxes (1-2)
 
 G1: I lose the roll and mull to 6. My hand can make 10 goblins on turn 1
 or cantrip and try to set up a deterministic turn 2 kill. They lead on Plains
@@ -144,7 +144,7 @@ Stoneforge. I make my gobs, and they drop Stoneforge and stabilize.
 2-2. It's crazy how much worse 2-2 feels compared to 2-1. I now have to win 5 in
 a row to make Day 2.
 
-**R5 vs UR Delver** (2-1)
+### R5 vs UR Delver (2-1)
 
 G1: I win the roll but can't find discard to get through their Force of Will and
 they Delver me out of the game.
@@ -174,7 +174,7 @@ fact the full ten drills.
 
 3-2. Time to ride the lightning.
 
-**R6 vs Bomberman** (2-1)
+### R6 vs Bomberman (2-1)
 
 G1: I lose the roll and am looking at a Mentor and 3 monk tokens by the time
 it's my turn. I play Island and Ponder. On their turn they drop some 0-cost
@@ -201,7 +201,7 @@ hand.
 
 4-2. The Dream lives on.
 
-**R7 vs Miracles feat. Back to Basics and Nahiri** (2-0)
+### R7 vs Miracles feat. Back to Basics and Nahiri (2-0)
 
 G1: I win the roll and start with a cantrip. They play Strand and pass, so I put
 them on Miracles, which is correct. I Duress them and see they have maindeck
@@ -226,7 +226,7 @@ it out.
 5-2. Two more and I get to keep playing tomorrow. Just need to keep hitting good
 matchups.
 
-**R8 vs Eldrazi Aggro** (2-1)
+### R8 vs Eldrazi Aggro (2-1)
 
 G1: I lose the roll vs a bad matchup. My hand is decent, probably a turn 3 sort
 of hand. They lead on Tomb into Mimic. I have a Therapy, which I cast naming
@@ -256,7 +256,7 @@ ground.
 
 6-2. I have reached the win-and-in.
 
-**R9 vs Jim Davis on Miracles feat. B2B** (1-2)
+### R9 vs Jim Davis on Miracles feat. B2B (1-2)
 
 I look at my pairings for the final round and see I am against Jim Davis, which
 is a name I recognize. Looks like I'm not going to get to play some chump. As
@@ -373,9 +373,9 @@ BOARD
 I almost fall asleep at my table for the players meeting. I drink half an energy
 drink, and sit down for the first round of the Classic.
 
-### SCG Worcester Legacy Classic
+## SCG Worcester Legacy Classic
 
-**R1 vs Grixis Dreadstill** (0-2)
+### R1 vs Grixis Dreadstill (0-2)
 
 G1: I win the roll, keep 6, and then look at it a little closer and realize it
 has no lands. Oops. It does have a petal and a Ponder, so I Ponder and miss a
@@ -398,7 +398,7 @@ like a donkey.
 
 0-1. gReAt StArT.
 
-**R2 vs Punishing Dack** (2-1)
+### R2 vs Punishing Dack (2-1)
 
 I go to my seat for the match and find 2 people already shuffling up in it. I
 ask them what the deal is, and it turns out one is my opponent and the other is
@@ -436,7 +436,7 @@ that Dack shit.
 
 1-1. Maybe I can get my head back in the game.
 
-**R3 vs Mono Red Stompy** (0-2)
+### R3 vs Mono Red Stompy (0-2)
 
 G1: I lose the roll, they lead on Chalice@1, and I can't cast any of my spell in
 hand. Turn 2 Rabblemaster into turn 3 Chandra ends the game in short order. I
@@ -480,9 +480,9 @@ BOARD
 1 Telemin Performance
 ```
 
-### Side Event: 4-Round Challenge
+## Side Event: 4-Round Challenge
 
-**R1 vs Spanish Inquisition** (2-0)
+### R1 vs Spanish Inquisition (2-0)
 
 G1: I'm playing against one of my teammates who also is a scrub and I know he's
 on SI. I win the roll and blind-Therapy Dark Ritual. I miss, he shoots off a
@@ -501,7 +501,7 @@ later.
 1-0. Easy to beat a bad storm deck when you're playing a slightly less bad storm
 deck.
 
-**R2 vs Manaless Dredge** (2-1)
+### R2 vs Manaless Dredge (2-1)
 
 G1: I lose the roll but my opponent puts me on the play so I know what to look
 for in my opener. My 7 is strong, with a few cantrips, a ritual, and an LED so I
@@ -522,7 +522,7 @@ draw into what I need to storm out on turn 4.
 
 2-0. Glad I dropped from that stupid Classic.
 
-**R3 vs Burn (2-0)**
+### R3 vs Burn (2-0)
 
 G1: I win the Roll and I cantrip. They start off with a suspended Rift Bolt. I
 cantrip again. They don't have turn2 Eidolon and just hold up 2 mana. On my turn
@@ -539,7 +539,7 @@ goblin tokens.
 
 3-0. Still not regretting dropping from the Classic.
 
-**R4 vs BUG Control** (0-2)
+### R4 vs BUG Control (0-2)
 
 My opponent declines to draw and would rather play for glory. Fine by me.
 
@@ -570,7 +570,7 @@ hate you, I just hate that you took my day 2 from me. Asshole.
 **Total Match Record:** 10-6 (62.5% winrate)  
 **Total Game Record:** 22-18 (55% winrate)
 
-### Thoughts on the Deck Going Forward
+## Thoughts on the Deck Going Forward
 
 62.5% winrate is respectable, and the fact that I had a win-and-in is
 encouraging in terms of the deck's viability. With the exception of my R2 match
