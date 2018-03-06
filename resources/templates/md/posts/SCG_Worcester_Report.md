@@ -70,7 +70,8 @@ hide things with Brainstorm and I want to protect my combo next turn. Naturally,
 I don't get a next turn. They Brainstorm end of turn, untap, and play Aluren and
 Recruiter and I scoop.
 
--1 Preordain, -1 Conjurer's Bauble, -1 Island, +1 Thoughtseize, +1 Abrupt Decay, + 1 Tropical Island
+-1 Preordain, -1 Conjurer's Bauble, -1 Island  
++1 Thoughtseize, +1 Abrupt Decay, + 1 Tropical Island
 
 G2: I get stuck on 1 land for approximately a year. In the top 9 cards of my
 deck I manage to draw both Lab Maniac and Act on Impulse but not another land. I
@@ -84,8 +85,8 @@ G1: I lose the roll again. We both cantrip a bit and around turn 3 I cast a
 discard spell. They're left without interaction and I Brainstorm into a natural
 Tendrils kill on turn 4.
 
--1 Preordain, -2 Lotus Petal, -1 Island, +1 Thoughtseize, +1 Abrupt Decay, +1
-Sylvan Library, +1 Tropical Island
+-1 Preordain, -2 Lotus Petal, -1 Island  
++1 Thoughtseize, +1 Abrupt Decay, +1 Sylvan Library, +1 Tropical Island
 
 G2: I mull to 5. My notes are sketchy but it looks like they got out Stoneforge
 into Batterskull and took me to pound town for a couple turns, but I manage to
@@ -101,8 +102,8 @@ to make a move or get buried in card advantage once it flips. I make a
 pass-the-turn pile on t4 that lets me Duress first for some protection. I take a
 Counterspell but they brainstorm into a Force and shut me down.
 
--2 Lotus Petal, -2 Preordain, -1 Island, +1 Thoughtseize, +2 Abrupt Decay, +1
-Tropical Island, + 1 Sylvan Library
+-2 Lotus Petal, -2 Preordain, -1 Island  
++1 Thoughtseize, +2 Abrupt Decay, +1 Tropical Island, + 1 Sylvan Library
 
 G2: Early on I Duress a Force and land Library, which their Flusterstorms can't
 counter. I aggressively draw cards with Library and around turn 5 I Discard one
@@ -130,8 +131,8 @@ Prelate. I Massacre, they Prelate on 4 which I can mostly ignore. I have a turn
 or 2 where if I find a Doomsday I probably win, but my cantrips come up blank
 and they get Spirit of the Labyrinth and Revoker on LED and we go to game 2.
 
--1 Island, -4 Duress, + 1 Thoughtseize, -1 Preordain, +1 Tropical Island, +2
-Abrupt Decay, +1 Chain of Vapor, +1 Echoing Truth
+-1 Island, -4 Duress, -1 Preordain  
++ 1 Thoughtseize, +1 Tropical Island, +2 Abrupt Decay, +1 Chain of Vapor, +1 Echoing Truth
 
 G2: I make 12 Goblins turn 2 on the play and Flashback a Therapy. It gets there
 a couple turns later.
@@ -149,7 +150,8 @@ a row to make Day 2.
 G1: I win the roll but can't find discard to get through their Force of Will and
 they Delver me out of the game.
 
--1 Preordain, +1 Thoughtseize
+-1 Preordain  
++1 Thoughtseize
 
 G2: They have no threats but a stacked hand of Fluster, 3x Daze, 2x Force.
 However, without a clock I have plenty of time and am able to make my land
@@ -181,8 +183,8 @@ it's my turn. I play Island and Ponder. On their turn they drop some 0-cost
 artifact and hit me for 9. I untap, cantrip, don't find anything, and we go to
 game 2.
 
--3 Cabal Therapy, -1 Preordain, +1 Thoughtseize, +2 Hurkyl's Recall, +1 Echoing
-Truth
+-3 Cabal Therapy, -1 Preordain  
++1 Thoughtseize, +2 Hurkyl's Recall, +1 Echoing Truth
 
 G2: I Duress an LED from their hand and they play Salvagers without any payoff.
 We draw go for a while and I get beat with Salvagers. I have the most of the
@@ -210,8 +212,8 @@ They don't have any countermagic however, and on turn 4 I have a 2nd discard
 spell to make sure the coast is still clear, and then win with a very basic
 storm kill.
 
--2 Lotus Petal, -2 Preordain, -1 Island, +1 Thoughtseize, +2 Abrupt Decay, +1
-Tropical Island, + 1 Sylvan Library
+-2 Lotus Petal, -2 Preordain, -1 Island  
++1 Thoughtseize, +2 Abrupt Decay, +1 Tropical Island, + 1 Sylvan Library
 
 G2: Sideboarding doesn't change despite the B2Bs, it just means you need to be
 more careful with how you fetch, and you may need to take B2B over countermagic
@@ -234,8 +236,8 @@ TKS, thinking if they had Chalice they would have played it. I hit one, but they
 peel another on their turn and take my Burning Wish. They have a Smasher to
 follow it up and I die before I can get anything together.
 
--3 Cabal Therapy, -2 Preordain, -1 Bauble, -1 Island, +1 Tropical Island, +2
-Abrupt Decay, +2 Hurkyl's Recall, +1 Echoing Truth, +1 Thoughtseize
+-3 Cabal Therapy, -2 Preordain, -1 Bauble, -1 Island  
++1 Tropical Island, +2 Abrupt Decay, +2 Hurkyl's Recall, +1 Echoing Truth, +1 Thoughtseize
 
 G2: I cantrip on my turn and set up for t2 Empty the Warrens. They start with a
 land that only makes one mana, and pass. I probe them in the process of making
@@ -278,8 +280,8 @@ follow what he was saying because I was more focused on my sideboarding, but I
 believe him. That's how Storm works though; make a little slip-up and an
 experienced Storm player will punish you for it.
 
--2 Lotus Petal, -2 Preordain, -1 Island, +1 Thoughtseize, +2 Abrupt Decay, +1
-Tropical Island, + 1 Sylvan Library
+-2 Lotus Petal, -2 Preordain, -1 Island  
++1 Thoughtseize, +2 Abrupt Decay, +1 Tropical Island, + 1 Sylvan Library
 
 G2: My opening 7 is Probe, Probe, Ritual, Doomsday, Brainstorm, Underground Sea,
 Fetch. He starts with land and a cantrip. I listen to the voices of the cosmos
@@ -386,7 +388,8 @@ Standstill, effectively ending the game. I finally find a second land but it's a
 fetch and will just eat a Stifle. I scoop before I give away that I'm not just
 on ANT.
 
--2 Preordain -1 Burning Wish, +1 Thoughtseize, +2 Empty the Warrens
+-2 Preordain -1 Burning Wish  
++1 Thoughtseize, +2 Empty the Warrens
 
 G2: My hand is much better this time. I Duress and take some countermagic. On
 their second turn, they tap out to cast a Phyrexian Dreadnought and stifle it's
@@ -411,7 +414,8 @@ G1: My opener has 3 discard spells, 3 lands, and a Doomsday. I Just make land
 drops, point a discard spell at my opponent every so often, and eventually draw
 into what I need for a clean storm kill and finish them off around turn 6 or 7.
 
--2 Preordain, -1 Burning Wish, +1 Thoughtseize, +2 Empty the Warrens
+-2 Preordain, -1 Burning Wish  
++1 Thoughtseize, +2 Empty the Warrens
 
 G2: It takes me a while to work through their countermagic. I one point I try to
 bait a Force with an extra LED, but it resolves and gets stolen by Dack. I
@@ -443,8 +447,8 @@ hand. Turn 2 Rabblemaster into turn 3 Chandra ends the game in short order. I
 only play lands, and only a Volc and some Grixis fetches, so my identity remains
 a mystery.
 
--4 Cabal Therapy, -1 Conjurer's Bauble, +2 Hurkyl's Recall, +1 Echoing Truth, +1
-Chain of Vapor, +1 Thoughtseize
+-4 Cabal Therapy, -1 Conjurer's Bauble  
++2 Hurkyl's Recall, +1 Echoing Truth, +1 Chain of Vapor, +1 Thoughtseize
 
 G2: I fetch and Thouhgtseize away a chalice, leaving them with a Sudden Shock, a
 Chandra, and a Fiery Confluence. They just play lands and I cantrip. On turn 3 I
@@ -489,7 +493,8 @@ on SI. I win the roll and blind-Therapy Dark Ritual. I miss, he shoots off a
 draw 4 but draws trash and I untap and get to hit with my next Therapy. This
 buys me another turn and I win by Wishing up a Doomsday and storming out.
 
--1 Conjurer's Bauble, +1 Thoughtseize
+-1 Conjurer's Bauble  
++1 Thoughtseize
 
 G2: He has a Draw4 on turn 1 but draws garbage again. We rip eachother's hands
 apart with discard and start a topdeck war. I eventually find a Wish, go to grab
@@ -508,7 +513,8 @@ for in my opener. My 7 is strong, with a few cantrips, a ritual, and an LED so I
 just need a business spell. Unfortunately I cantrip and cantrip and never find
 business, and they do their dredge thing and shred my hand and I lose.
 
--1 Preordain, +1 Thoughtseize
+-1 Preordain  
++1 Thoughtseize
 
 G2: I remember to put myself on the draw and Duress on my first turn. Their hand
 is all creatures, so I don't get to timewalk them.On my 2nd turn I make a
@@ -529,7 +535,8 @@ cantrip again. They don't have turn2 Eidolon and just hold up 2 mana. On my turn
 3 I go off with a double cantrip pile. I probe and see 3 Price of Progress and a
 Fireblast but it isn't enough to kill me.
 
--1 Lab Maniac, - 2 Duress, +1 Thoughtseize, +1 Chain of Vapor, +1 Echoing Truth
+-1 Lab Maniac, - 2 Duress  
++1 Thoughtseize, +1 Chain of Vapor, +1 Echoing Truth
 
 G2: They lead on fetch, pass. I blind-Therapy Eidolon and miss. They don't have
 a second land. I Ponder and they hit it with a Pyroblast, but still don't draw a
@@ -551,7 +558,8 @@ going, and in response to Wish my opponent Brainstorms and hits Force of Will.
 Oh well. I play it out for a bit but once Jace comes down I just scoop because
 my hand wasn't going anywhere.
 
--3 Preordain, +1 Thoughtseize, +2 Defense Grid
+-3 Preordain  
++1 Thoughtseize, +2 Defense Grid
 
 G2: I resolve a defense grid but my hand is not coming together the way I
 wanted. They have a deathrite shaman and a strix pressuring my life a bit. I
