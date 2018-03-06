@@ -70,7 +70,7 @@ hide things with Brainstorm and I want to protect my combo next turn. Naturally,
 I don't get a next turn. They Brainstorm end of turn, untap, and play Aluren and
 Recruiter and I scoop.
 
--1 Preordain, -1 Conjurer's Bauble, +1 Thoughtseize, +1 Abrupt Decay
+-1 Preordain, -1 Conjurer's Bauble, -1 Island, +1 Thoughtseize, +1 Abrupt Decay, + 1 Tropical Island
 
 G2: I get stuck on 1 land for approximately a year. In the top 9 cards of my
 deck I manage to draw both Lab Maniac and Act on Impulse but not another land. I
