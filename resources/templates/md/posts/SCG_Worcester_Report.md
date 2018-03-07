@@ -580,7 +580,7 @@ hate you, I just hate that you took my day 2 from me. Asshole.
 ## Thoughts on the Deck Going Forward
 
 62.5% winrate is respectable, and the fact that I had a win-and-in is
-encouraging in terms of the deck's viability. With the exception of my R2 match
+encouraging in terms of the deck's viability. With the exception of my R1 match
 against Aluren, my 2 other losses on day 1 felt winnable, with a bit better
 luck. Luck and tight play are both needed to succeed in large tournaments, and I
 feel like I played tight, at least on day 1. The deck can be quite fatiguing to
