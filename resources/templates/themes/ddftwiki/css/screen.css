@@ -2,6 +2,28 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Alegreya';
 }
 
+table {  
+    color: #333; /* Lighten up font color */
+    font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+    width: 640px; 
+    border-collapse: 
+    collapse; border-spacing: 0; 
+}
+
+td, th { border: 1px solid #CCC; height: 10px; padding: 10px; } 
+
+th {  
+    background: #000000; /* black background */
+	color: #FFFFFF;
+    text-align: center;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
 body {
     color: #333;
     background-color: #f2f2f2;
