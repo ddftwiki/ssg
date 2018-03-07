@@ -61,4 +61,6 @@ Under Construction
 Appendices:  
 I. [Pile Document](/pages-output/appendix/pile-doc)  
 II. Puzzle answers (Under Construction)  
-III. [Sample Decklists](/pages-output/appendix/Decklist)
+III. [Sample Decklists](/pages-output/appendix/Decklist)   
+IV. [Interesting Card Interactions](/pages-output/appendix/interesting-interactions)
+
