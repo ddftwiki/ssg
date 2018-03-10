@@ -1,0 +1,93 @@
+{% extends "/html/base.html" %}
+{%block subtitle %}: {{post.title}}{% endblock %}
+{% block content %}
+<div>
+	Showing images linked locally (first one) and the correct production linkage (second), testing with tarn.  <br>
+
+	<img src="../../img/scalding_tarn.jpg"><br>
+	<img src="{{site-url}}/img/scalding_tarn.jpg"><br>
+	Now starting normal content.<br>
+
+	<div id="storm-count">
+	{% if page.stormCount %}
+	Storm count: <b>{{page.stormCount}}</b>
+	{% else %}
+	Storm count: <b>0</b>
+	{% endif %}
+	</div>
+
+	<div id="opp-life">
+	{% if page.oppLife %}
+	Opponent Life: <b>{{ page.oppLife }}</b>
+	{% else %}
+	Opponent Life: <b>20</b>
+	{% endif %}
+	</div>
+	
+	<div id="our-life">
+	{% if page.ourLife %}
+	Our Life: <b>{{ page.ourLife }}</b>
+	{% else %}
+	Our Life: <b>20</b>
+	{% endif %}
+	</div>
+
+
+
+	{% if page.oppCards|not-empty %}
+	Showing Opponent's Hand<br>
+	<div class="container">
+		<div class="row">
+			<div id="opponent-hand" class="span6">
+			{% for card in page.oppCards %}
+				<img src="../../img/{{ card }}.jpg">
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endif %}
+
+	{% if page.oppBattlefieldLands|not-empty %}
+	Showing Opponent's Battlefield (lands)<br>
+	<div class="container">
+		<div class="row">
+			<div id="opponent-battlefield-lands" class="span6">
+			{% for card in page.oppBattlefieldLands %}
+				<img src="../../img/{{ card }}.jpg">
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endif %}
+	{% if page.oppBattlefieldOther|not-empty %}
+	Showing Opponent's Battlefield (other, such as creatures or artifacts)<br>
+	<div class="container">
+		<div class="row">
+			<div id="opponent-battlefield-other" class="span6">
+			{% for card in page.oppBattlefieldOther %}
+				<img src="../../img/{{ card }}.jpg">
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endif %}
+
+
+	{% if page.ourCards|not-empty %}
+	Showing Our Hand<br>
+	<div class="container">
+		<div id="our-hand" class="col-md-12" style="padding-left: 0px;  padding-right: 0px;">
+		{% for card in page.ourCards %}
+			<img src="../../img/{{ card }}.jpg" class="img-fluid">
+		{% endfor %}
+		</div>
+	</div>
+	{% endif %}
+
+	<br>
+	Done showing hands here.<br>
+	<br>
+
+</div>
+
+{% endblock %}
