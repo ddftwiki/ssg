@@ -8,6 +8,7 @@
  :page-root-uri        "pages-output"
  :tag-root-uri         "tags-output"
  :author-root-uri      "authors-output"
+ :puzzle-root-uri      "puzzles-output"
  :blog-prefix          ""
  :rss-name             "feed.xml"
  :rss-filters          ["cryogen"]
