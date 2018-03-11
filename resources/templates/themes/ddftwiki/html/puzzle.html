@@ -1,11 +1,22 @@
-{% extends "/html/base.html" %}
-{%block subtitle %}: {{post.title}}{% endblock %}
+{% extends "/html/base-large.html" %}
+{%block subtitle %}: {{page.title}}{% endblock %}
 {% block content %}
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
 <div>
+	<div id="page-header">
+		<h2>{{page.title}}</h2>
+	</div>
+
+	<div id="puzzle-intro">
+		<p>{{ page.introText }}</p>
+	</div>
 
 <!--  HEY! need to either use "../../img/{{ card }}.jpg" in dev or {{site-url}}/img/{{ card }}.jpg" in prod -->
 
-	<div id="imagesDiv" style="visibility: hidden">
+	<!-- pre-loading all our images. This must remain or the canvas drawing breaks. -->
+	<div id="imagesDiv" style="display:none">
 		{% if page.ourCards|not-empty %}
 			{% for card in page.ourCards %}
 				<img id="{{card}}" width="97" height="135" 
@@ -20,7 +31,7 @@
 		{% endif %}
 	</div>
 
-	<canvas id="myCanvas" width="800" height="600"
+	<canvas id="myCanvas" width="900" height="600"
 	style="border:1px solid #d3d3d3;">
 	Your browser does not support the HTML5 canvas tag... RIP
 	</canvas>
@@ -28,15 +39,20 @@
 
 	<script>
 		window.onload = function() {
+
+		// maintenance on the page
+		$("#solution").hide();
+
+		// Moving on to setting up the puzzle canvas
+
 		var canvas = document.getElementById("myCanvas");
 		var ctx = canvas.getContext("2d");
-	//	var img = document.getElementById("tarn");
 
 		var card_width = 97;
 		var card_height = 135;
 
 		var screen_y = 600;
-		var screen_x = 800;
+		var screen_x = 900;
 
 		var edge_buffer = 10;
 		var hand_separation_width = card_width / 2; 
@@ -114,12 +130,10 @@
 	*/	
 		
 
-
-
 		// draw center line of page
 		ctx.beginPath();
-		ctx.moveTo(20, 300);
-		ctx.lineTo(780, 300);
+		ctx.moveTo(20, screen_y / 2);
+		ctx.lineTo(screen_x - 20, screen_y / 2);
 		ctx.lineWidth = 1;
 		ctx.strokeStyle = 'black';
 		ctx.stroke();
@@ -150,7 +164,34 @@
 	{% endif %}
 	</div>
 
+<div class="widget">
+  <button id="show-solution-button">Show Solution</button>
+</div>
 
+	<div id="solution"> 
+		<h3>Solution</h3>
+		Blah blah blah<br>
+		Blah blah blah<br>
+		Blah blah blah<br>
+		Blah blah blah<br>
+		Blah blah blah<br>
+		Blah blah blah<br>
+		Blah blah blah<br>
+	</div>
+
+<script>
+ //style="visibility: hidden">
+console.log($('#show-solution-button').text());
+$( "#show-solution-button").click(function() {
+	if($('#show-solution-button').text() == "Show Solution") {
+		$("#solution").show();
+		$('#show-solution-button').text("Hide Solution");
+	} else {
+		$("#solution").hide();
+		$('#show-solution-button').text("Show Solution");
+	}
+});
+</script>
 
 	{% if page.oppCards|not-empty %}
 	Showing Opponent's Hand<br>
