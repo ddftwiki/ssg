@@ -1,0 +1,138 @@
+
+
+
+
+
+Technical Scratchpad:
+
+Images are obtained via gatherer.
+
+These image are jpgs that come as 223 x 311 pixel images.  Ratio is 0.7170418.  
+
+Div 2 is roughly 111 x 155. 
+	This looks the best. Can easily tell the cards and should be enough room for everything.
+
+Div 3 is roughly 74 x 104. 
+	This may be ok.
+
+Div 4 is roughly 56 x 78.
+    Seems too small to really see cards.
+
+
+Overall screen layout:
+
+Height is 600px, longer is too much
+Width is 800px, although we need to adjust the overall page
+
+Opponent on the top half, we're on the bottom half.  Each half gets 300 px height. With a 10px buffer from the edges, we can get 2 rows of cards if they fit in 300 - 3*10 = 270 / 2 = 135px each.  With the sizes of our cards, 223 x 311, we can get to be 135px if we can use the size 97 x 135. Trying that size out: yes, it works, hard to read text but reasonable to recognize cards.
+
+Drawing the hands:
+We could draw each of the cards separated by some blank space, but this wastes quite a bit of space and we can do better.  The first step towards this is to draw the cards with some overlap but overall being centered. The next step of this would be to also rotate each of the cards to make it look more attractive.
+
+For rotating the cards:
+We'd have to use code like the following to accomplish the rotation.
+var x = canvas.width / 2;
+var y = canvas.height / 2;
+var width = image.width;
+var height = image.height;
+
+context.translate(x, y);
+context.rotate(angleInRadians);
+context.drawImage(image, -width / 2, -height / 2, width, height);
+context.rotate(-angleInRadians);
+context.translate(-x, -y);
+
+When drawing the hand, each card we draw is in front of the previous ones so we have to be careful about the order. 
+For odd #:
+-20 -15 -10 -5 0 5 10 15 20
+
+For even #:
+-22.5 -17.5 -12.5 -7.5 -2.5 +2.5 +7.5 12.5 17.5 22.5
+
+More notes about how we came up with the algorithm for drawing the hands:
+// the algorithm is:
+// center_x = screen_x / 2  (NOTE: this has to be some to the left since we don't start drawing in center of card)
+// if 1 card, start x is center_x,
+// 400
+// if 2 cards, start x is center_x - (card_separation_width / 2) * 1, + card_sep_width for each card
+// 400 - 18.5 = , 381.5, 418.5
+// if 3 cards, start x is center_x - (card_separation_width / 2) * 2, + card_sep_width for each card
+// 400 - 18.5*2, 400 - 37, 363, 400, 437
+// if 4 cards, start x is center_x - (card_separation_width / 2) * 3, + card_sep_width for each card
+// 344.5, 381.5, 418.5, 455.5
+// if 5 cards, start x is center_x - (card_sep_width / 2) * 4, + card_sep_width for each card
+// 326, 363, 400, 437, 474
+
+
+
+
+NOTES ABOUT HOW WE PRELOAD THE IMAGES, *and*, I DON'T REALLY UNDERSTAND THE TEMPLATING SYSTEM
+
+In puzzles.html, we need to first load the images before using them in the html canvas. The best way I found to do this is to, in the .html, reference the image with an <img ..> tag. The canvas drawImage command references this loaded image via it's "id" attribute, i.e. <img id="greatcard" ..> can be used in the canvas as drawImage(greatcard..).  
+
+Creating img references in the HTML can be easily done, as shown below, but it wasn't at all clear how to dynamically set an id tag which I thought we'd want to be doing. Specifically, I wanted to name the img "ourCard0", "ourCard1", and so on. Then, in the drawing code, we could iterate through those as the strings. 
+
+NOTE - THIS DOES NOT WORK CORRECTLY..
+
+   {% if page.ourCards|not-empty %}
+    {{ var-set x 0 }}
+    Showing Our Hand<br>
+        {% for card in page.ourCards %}
+            <img id="ourCard{{ x }}" width="97" height="135"
+            src="../../img/{{ card }}.jpg" alt="A Card">
+            Showing card number {{ x }}.<br>
+            {{ varset x x + 1 }}
+        {% endfor %}
+    {% endif %}
+
+
+The problem is that I couldn't get this to work. To briefly summarize, I'll post the freenode IRC #leiningen chat log:
+
+[22:29] <rcl_xx> Hello, I'm working on a site using leiningen + cryogen web, someone set it up and a few of us are working with it, we've figured most things out but I've reached something that's got me scratching my head
+[22:30] <rcl_xx>  In our site's templates there are things mixed with html such as {% for thing in page.bunchaThings %} and then we use {{ thing }} in the html and so on.  Within this for loop section I want to have a running counter x that starts at 0 and increments, so that I can do something like <div id="someDiv{{x}}">.  But, I can't set x and have it hold state via {% var-set x 0 %} or {{ var-set x 0 }}, and furthermore we realize the stuff in {% isn't clojure?
+[22:31] <rcl_xx> This may be more of a cryogenweb.org question but there isn't really a point of contact, thought I may get lucky in here
+[22:35] <rcl_xx> Hm actually it does seem like this is a leiningen thing, I'll try to read through the docs about templates, maybe I missed these
+[22:41] <rcl_xx> Close, but it looks like a bunch of this stuff I'm seeing isn't actually mustache, so I'm still confused
+
+A workaround here is to just set the id to be {{ card }}. We'll get duplicate ids, which is 'not legal' HTML, but this shouldn't really matter as browsers are used to lots of junk HTML. It may be inefficient, but I'm guessing all browsers are caching their image grabs. So really, it just doesn't matter at all.
+
+The work-around code, validated to work correctly, looks like:
+
+(html portion)
+
+  {% if page.ourCards|not-empty %}
+    Showing Our Hand. This will go in to a hidden div eventually.<br>
+        {% for card in page.ourCards %}
+            <img id="{{card}}" width="97" height="135"
+            src="../../img/{{ card }}.jpg" alt="{{ card }}">
+        {% endfor %}
+    {% endif %}
+
+(script portion)
+
+   testing_x = 10;
+    {% if page.ourCards|not-empty %}
+        {% for card in page.ourCards %}
+            var img = document.getElementById("{{ card }}");
+            ctx.drawImage(img, testing_x, 165, card_width, card_height);
+            testing_x = testing_x + 37;
+        {% endfor %}
+    {% endif %}
+
+This doesn't change the fact that I'm now very confused about our site's templating system
+
+
+
+
+HOW TO GET A COUNT OF ELEMENTS IN A LIST
+
+Ran in to this when trying to get the number of cards in the ourCards array:
+  {% if page.ourCards|not-empty %}
+        // we start at the center of the screen, but our x,y that we draw at is the upper left
+        // corner of the card. So when we draw in the center it isn't screen_x/2 it's screen_x/2 - (card_width /2)
+        CARD_NUM = {{page.ourCards}};
+
+
+This fails. It isn't anywhere in our codebase so far. Maybe it's |count ?
+
+Yes:         CARD_NUM = {{page.ourCards|count}};  works.

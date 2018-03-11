@@ -2,11 +2,129 @@
 {%block subtitle %}: {{post.title}}{% endblock %}
 {% block content %}
 <div>
-	Showing images linked locally (first one) and the correct production linkage (second), testing with tarn.  <br>
 
-	<img src="../../img/scalding_tarn.jpg"><br>
-	<img src="{{site-url}}/img/scalding_tarn.jpg"><br>
-	Now starting normal content.<br>
+<!--  HEY! need to either use "../../img/{{ card }}.jpg" in dev or {{site-url}}/img/{{ card }}.jpg" in prod -->
+
+	<div id="imagesDiv" style="visibility: hidden">
+		{% if page.ourCards|not-empty %}
+			{% for card in page.ourCards %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppCards|not-empty %}
+			{% for card in page.oppCards %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+	</div>
+
+	<canvas id="myCanvas" width="800" height="600"
+	style="border:1px solid #d3d3d3;">
+	Your browser does not support the HTML5 canvas tag... RIP
+	</canvas>
+
+
+	<script>
+		window.onload = function() {
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+	//	var img = document.getElementById("tarn");
+
+		var card_width = 97;
+		var card_height = 135;
+
+		var screen_y = 600;
+		var screen_x = 800;
+
+		var edge_buffer = 10;
+		var hand_separation_width = card_width / 2; 
+
+		// Separated by 1/2 height of card (55) - not doing this any more
+		/*
+		ctx.drawImage(img, 10, 10, card_width, card_height);
+		ctx.drawImage(img, 65, 10, card_width, card_height);
+		ctx.drawImage(img, 120, 10, card_width, card_height);
+		ctx.drawImage(img, 175, 10, card_width, card_height);
+		ctx.drawImage(img, 230, 10, card_width, card_height);
+		ctx.drawImage(img, 285, 10, card_width, card_height);
+		ctx.drawImage(img, 340, 10, card_width, card_height);
+		ctx.drawImage(img, 395, 10, card_width, card_height);
+		ctx.drawImage(img, 450, 10, card_width, card_height);
+		*/
+		
+		// Separated by 1/3 height of card (37)
+		/*
+		ctx.drawImage(img, 10, 165, card_width, card_height);
+		ctx.drawImage(img, 47, 165, card_width, card_height);
+		ctx.drawImage(img, 84, 165, card_width, card_height);
+		ctx.drawImage(img, 121, 165, card_width, card_height);
+		ctx.drawImage(img, 158, 165, card_width, card_height);
+		ctx.drawImage(img, 195, 165, card_width, card_height);
+		ctx.drawImage(img, 232, 165, card_width, card_height);
+		ctx.drawImage(img, 269, 165, card_width, card_height);
+		ctx.drawImage(img, 306, 165, card_width, card_height); */
+
+	// Draw our hand //
+
+	{% if page.ourCards|not-empty %}
+		num_cards = {{page.ourCards|count}}; // cache it
+		// we start at the center of the screen, but our x,y that we draw at is the upper left
+		// corner of the card. So when we draw in the center it isn't screen_x/2 it's screen_x/2 - (card_width /2)
+		cur_x = ((screen_x / 2) - (card_width / 2)) - ((hand_separation_width / 2) * (num_cards - 1));
+		hand_y = screen_y - edge_buffer - card_height;
+		{% for card in page.ourCards %}
+			var img = document.getElementById("{{ card }}");
+			ctx.drawImage(img, cur_x, hand_y, card_width, card_height);
+			cur_x += hand_separation_width;
+		{% endfor %}
+	{% endif %}
+	
+	{% if page.oppCards|not-empty %}
+		num_cards = {{page.oppCards|count}}; // cache it
+		// we start at the center of the screen, but our x,y that we draw at is the upper left
+		// corner of the card. So when we draw in the center it isn't screen_x/2 it's screen_x/2 - (card_width /2)
+		cur_x = ((screen_x / 2) - (card_width / 2)) - ((hand_separation_width / 2) * (num_cards - 1));
+		hand_y = 0 + edge_buffer; // screen_y - edge_buffer - card_height;
+		{% for card in page.oppCards %}
+			var img = document.getElementById("{{ card }}");
+			ctx.drawImage(img, cur_x, hand_y, card_width, card_height);
+			cur_x += hand_separation_width;
+		{% endfor %}
+	{% endif %}
+
+	
+	/* this is all working correctly, refactored in to code above */
+	/*
+		num_cards = 9;
+		hand_y = screen_y - edge_buffer - card_height;
+
+		card_separation_width = card_width / 2; 
+	
+		// we start at the center of the screen, but our x,y that we draw at is the upper left
+		// corner of the card. So when we draw in the center it isn't screen_x/2 it's screen_x/2 - (card_width /2)
+		var cur_x = ((screen_x / 2) - (card_width / 2)) - ((card_separation_width / 2) * (num_cards - 1));
+		var i;
+		for (i = 0; i < num_cards; i++) {
+			ctx.drawImage(img, cur_x, hand_y, card_width, card_height);
+//			ctx.drawImage(img, cur_x, hand_y - edge_buffer - card_height, card_width, card_height);
+			cur_x += card_separation_width;
+		}
+	*/	
+		
+
+
+
+		// draw center line of page
+		ctx.beginPath();
+		ctx.moveTo(20, 300);
+		ctx.lineTo(780, 300);
+		ctx.lineWidth = 1;
+		ctx.strokeStyle = 'black';
+		ctx.stroke();
+		};
+	</script>
 
 	<div id="storm-count">
 	{% if page.stormCount %}
