@@ -3,11 +3,26 @@
 
 
 
-Technical Scratchpad:
+Technical Scratchpad - some of this is dev notes and some is about how to put in new images etc. I'll eventually split these out in to what regular people care about and what people messing around with changing the puzzle layout system care about.
 
+
+GETTING NEW IMAGES
 Images are obtained via gatherer.
 
-These image are jpgs that come as 223 x 311 pixel images.  Ratio is 0.7170418.  
+    http://gatherer.wizards.com/Pages/Default.aspx and search for the card
+
+When the card comes up, note that you can often select from a variety of artworks. Try to stay consistent with what's already there (i.e. expeditions used for fetches, alpha/beta duals) and ideally prefer artworks that are most iconic or identifiable.  After selecting the right image, right click it and save it as "card_name.jpg" with spaces as underscores (_) and all lowercase, with the .jpg extension. These files go in:
+	ssg/resources/templates/img/ 
+
+They will get copied over to ssg/resources/public/img/ which are referenceable on the site under ddft.wiki/img/. This copying happens automatically.
+
+
+The images that come from gatherer are jpgs that come as 223 x 311 pixel images.  Ratio is 0.7170418.  
+
+You don't need to do anything for the images to get them to appear tapped when appropriate. But, you do need to modify an image to put a die on it, if that's necessary.  I haven't figured this out yet but it'll be something like "chalice_1.jpg" "chalice_0.jpg" etc, and we'll perhaps have an identified process or template for how to create these.  Perhaps a mask image for a variety of counters and then we can merge that with an image to result in a final image that's got a consistent look. I thought about programmatically putting the die counters on these but this probably becomes too complex when definining the puzzle templates.
+
+There's a special image called "unknown" - this is a back of a magic card. Can be used for unknown cards in hand or on field.
+
 
 Div 2 is roughly 111 x 155. 
 	This looks the best. Can easily tell the cards and should be enough room for everything.
@@ -29,27 +44,10 @@ Opponent on the top half, we're on the bottom half.  Each half gets 300 px heigh
 Drawing the hands:
 We could draw each of the cards separated by some blank space, but this wastes quite a bit of space and we can do better.  The first step towards this is to draw the cards with some overlap but overall being centered. The next step of this would be to also rotate each of the cards to make it look more attractive.
 
-For rotating the cards:
-We'd have to use code like the following to accomplish the rotation.
-var x = canvas.width / 2;
-var y = canvas.height / 2;
-var width = image.width;
-var height = image.height;
 
-context.translate(x, y);
-context.rotate(angleInRadians);
-context.drawImage(image, -width / 2, -height / 2, width, height);
-context.rotate(-angleInRadians);
-context.translate(-x, -y);
 
 When drawing the hand, each card we draw is in front of the previous ones so we have to be careful about the order. 
-For odd #:
--20 -15 -10 -5 0 5 10 15 20
-
-For even #:
--22.5 -17.5 -12.5 -7.5 -2.5 +2.5 +7.5 12.5 17.5 22.5
-
-More notes about how we came up with the algorithm for drawing the hands:
+More notes about how we came up with the algorithm for drawing the hands, the x location:
 // the algorithm is:
 // center_x = screen_x / 2  (NOTE: this has to be some to the left since we don't start drawing in center of card)
 // if 1 card, start x is center_x,
@@ -63,7 +61,49 @@ More notes about how we came up with the algorithm for drawing the hands:
 // if 5 cards, start x is center_x - (card_sep_width / 2) * 4, + card_sep_width for each card
 // 326, 363, 400, 437, 474
 
+For rotating the cards:
 
+For odd #:
+-20 -15 -10 -5 0 5 10 15 20
+
+For even #:
+-22.5 -17.5 -12.5 -7.5 -2.5 +2.5 +7.5 12.5 17.5 22.5
+
+So, increment will be 5 degrees, but need to identify the starting point. 
+(static) var hand_angle_increment_degrees 5
+
+adjusted_card_num = card_num;
+
+if card_num % 2 == 0 (even) then 
+    startingOffset = -hand_angle_increment_degrees / 2; // start at -2.5
+	2 = 2/2 = 1 * increment, doesn't work.
+	Need: adjusted_card_num -= 2;
+	2 = 2-2=0/2 = 0 * increment, 4 cards = 4-2=2/2=1*increment, etc, works.
+
+else (odd case)
+    (3-1 = 2 / 2 = 1, 5-1, 4/2 = 2*, 7-1 = 6/2 = 3* increment. It works)
+	adjusted_card_num -= 1;
+
+And, following the above, we additionally do:
+startingOffset -= hand_angle_increment_degrees * (adjusted_card_num) / 2;
+
+
+Opp starting is 180, and then we *add* the starting offset and subtract it with each card.
+Our starting is 0 and then we *subtract* the starting offset and add it back each card
+
+This works, but the cards rotated as we move away from the center card appear too 'high' (or low if opp and upside down). There may be a more correct way of performing rotation from a center point but I doubt people really hold cards along a circle and rotating across some kind of ellipse seems way too complicated. Hacking by adjusting the y value by an absolute value of the angle offset and adding a scaling factor (turns out it looks like we need a positive scaling factor, i.e. "1.something" * ..)
+
+This works pretty well but the middle card is too high and as we go out to 7 cards or so they're too high as well. The effect needs to become gradually more as we come away from the center.
+
+Instead of something like y adjusting by:  
+    abs(offset_degrees) * 2.0 (the scaling factor) = 20 10 0 10 20 for -10 -5 0 5 10, maybe:
+	abs(offset_degrees) ** 1.1 = 12.5 5.8 0 ..
+	abs(offset_degrees) ** 1.5 = 31.6 11.18 0 ..
+	abs(offset_degrees) ** 1.25 = 17.7 7.47 0 <--- try this.
+
+Yes, the above works, settled on a factor of 1.3. This factor starts to 'fall apart' when we have 8-9 cards in hand, that is, the ones at the edge don't appear as far 'down' as they should, but actually this turns out to be fine because if they were as 'down' as they 'should' be, we wouldn't be able to see them as easily. The result of our scaling factor is that you can easily identify all 9 cards. It also looks approximately right if you consider how a human would hold cards if they fanned them that far out.
+
+All the above is probably hard to grok if you come in to it cold, in a few weeks I won't remember it, but it shouldn't be something we ever need to touch again and if you follow through this and look at the code it should be reasonably clear how things are working and there are 'static' variables for the scaling and fudge factors which are probably the only thing that would ever need to be tweaked.
 
 
 NOTES ABOUT HOW WE PRELOAD THE IMAGES, *and*, I DON'T REALLY UNDERSTAND THE TEMPLATING SYSTEM
@@ -136,3 +176,22 @@ Ran in to this when trying to get the number of cards in the ourCards array:
 This fails. It isn't anywhere in our codebase so far. Maybe it's |count ?
 
 Yes:         CARD_NUM = {{page.ourCards|count}};  works.
+
+
+
+
+
+
+
+PLACING CARDS IN THE ZONES
+
+I decided not to make a specific zone for lands, enchantments, creatures, and so on. I also decided not to try to get fancy and figure out groupings or anything like that. Instead, I figured that the following design can probably nicely display everything:
+
+Across battlefield, from left to right, are 5 zones. For each of these zones, you first define the untapped cards, and then you define the tapped cards. Each of these lists can be empty.  First the untapped cards are drawn, followed by the tapped cards.  There is no enforced upper number of cards but I anticipate 5 cards is about the max.
+
+To boldly highlight a card that's important, you can put it alone in a list. For example, a chalice on 1 may be the only untapped card in zone 1, and then no tapped cards for zone 1 are listed.  
+
+Spacings between the zones are dynamic. Things should always look about right, so don't really worry about that.
+
+
+
