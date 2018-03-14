@@ -16,6 +16,9 @@ When the card comes up, note that you can often select from a variety of artwork
 
 They will get copied over to ssg/resources/public/img/ which are referenceable on the site under ddft.wiki/img/. This copying happens automatically.
 
+These images have "white" edges in the corners, most of them do anyway, and this will cause issues in cases where cards overlap. It's generally not a big deal, but unfortunately sometimes it does look bad like on the library stack of cards. Unfortunately I tried to pop open the card back image (unknown.jpg) but even if I made the corners to be transparent, the HTML canvas drawing doesn't seem to care about transparency, and it still draws in white. Maybe somebody else will figure something out here, or maybe this will change as time moves on.  For this special case, I created 2 new images and I drew in the corners with black to make it look right.
+
+Note that unfortunately, the newest images up on gatherer (~KTK and beyond?) are .png files. These would be fine except that we hardcode .jpg in our puzzle template code, so you're going to have to convert the file to jpg. An alternative may be if you just pick an older version of the card, which is more likely to be in jpg.
 
 The images that come from gatherer are jpgs that come as 223 x 311 pixel images.  Ratio is 0.7170418.  
 
@@ -33,6 +36,21 @@ Div 3 is roughly 74 x 104.
 Div 4 is roughly 56 x 78.
     Seems too small to really see cards.
 
+
+TROUBLESHOOTING / ISSUES:
+
+If a puzzle is only half-drawing on the screen, open up the web developer console and reload the page to look for console output.  The likely issue is that you are referencing an image that isn't available, i.e. you've either made a typo in the puzzle's MD on a card name, or you have put in a card that isn't in our img/ directory.
+
+The console output error will look like:
+
+NS_ERROR_NOT_AVAILABLE: 
+window.onload
+
+
+
+
+
+DEV NOTES
 
 Overall screen layout:
 

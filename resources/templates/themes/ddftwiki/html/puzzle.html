@@ -4,6 +4,18 @@
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
+<!-- I have no idea how to properly include css files beyond screen.css so I'm hacking this in to get a wider table here  -->
+<style>
+table {
+	color: #333; /* Lighten up font color */
+	font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+	width: 900px;
+	border-collapse:
+	collapse; border-spacing: 0;
+}
+</style>
+
+
 <div>
 	<div id="page-header">
 		<h2>{{page.title}}</h2>
@@ -19,6 +31,8 @@
 	<div id="imagesDiv" style="display:none">
 	<!-- always load this image, no matter what, used by our drawing engine -->
 	<img id="unknown" width="97" height="135" src="../../img/unknown.jpg" alt="unknown">
+	<img id="unknown_lowerright" width="97" height="135" src="../../img/unknown_lowerright.jpg" alt="unknown">
+	<img id="unknown_upperleft" width="97" height="135" src="../../img/unknown_upperleft.jpg" alt="unknown">
 		<!-- continue on to the dynamically necessary ones -->
 		{% if page.ourCards|not-empty %}
 			{% for card in page.ourCards %}
@@ -192,7 +206,7 @@
 	
 
 	<canvas id="myCanvas" width="900" height="600"
-	style="border:1px solid #d3d3d3;">
+	style="border:1px solid #000000;">
 	Your browser does not support the HTML5 canvas tag... RIP
 	</canvas>
 
@@ -233,13 +247,18 @@
 		var library_angle_increment = 17;
 		var library_separation_width = 35;
 
+		// for drawing a 3d looking pile
+		var library_cards_offset = 5;
+
 		// Zones drawing stuff
 		// start a bit to the right of the library. 
-		var zones_x_offset = library_x_offset + (card_width * 1.25);
+		var zones_x_offset = library_x_offset + (card_width * 1.4);
 
 		// How far to move the drawing of each card
 		var zones_y_advance = 20;
 		var zones_x_advance = 20;
+		// This is a huge hack, the way I rotate is screwed up and therefore we get a fudge factor here to work around it
+		var card_orientation_2_offset = (card_width * 1.25);
 	
 
 		// Graveyard & Exile Stuff
@@ -263,9 +282,39 @@
 
 	if(libraryCount > revealedCards) {
 		// Draw the face down card
-		var img = document.getElementById("unknown"); // always available to use
+		var img = document.getElementById("unknown_lowerright");
+		var img_final = document.getElementById("unknown");
+		if(libraryCount - revealedCards >= 3) {
+			ctx.save();
+			ctx.translate(cur_x + card_width/2 + library_cards_offset * 2, cur_y + card_height/2 + library_cards_offset * 2);
+			ctx.translate(-cur_x - card_width/2 - library_cards_offset * 2, -cur_y - card_height/2 - library_cards_offset * 2);
+			ctx.drawImage(img_final, cur_x + library_cards_offset * 2, cur_y + library_cards_offset * 2, card_width, card_height);
+			ctx.restore();
+			}
+		if(libraryCount - revealedCards >= 2) {
+			ctx.save();
+			ctx.translate(cur_x + card_width/2 + library_cards_offset, cur_y + card_height/2 + library_cards_offset);
+			ctx.translate(-cur_x - card_width/2 - library_cards_offset, -cur_y - card_height/2 - library_cards_offset);
+			if(libraryCount - revealedCards == 2) { 
+				ctx.drawImage(img_final, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+				} else {
+				ctx.drawImage(img, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+				}
+			ctx.restore();
+			}
+		if(libraryCount - revealedCards >= 1) {
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			if(libraryCount - revealedCards == 1) { 
+				ctx.drawImage(img_final, cur_x, cur_y, card_width, card_height);
+				} else {
+				ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+				}
+			ctx.restore();
+			}
 
-		ctx.drawImage(img, library_x_offset, screen_y - library_y_offset, card_width, card_height);
+		//ctx.drawImage(img, library_x_offset, screen_y - library_y_offset, card_width, card_height);
 	}
 	if(revealedCards > 0) {
 		{% for card in page.ourLibraryRevealed %}
@@ -301,16 +350,45 @@
 	cur_x = library_x_offset;
 	cur_y = library_y_offset - card_height;
 	cur_angle = 180 - library_angle_increment;
+	 
 
+	// Draw an appropriate number of cards. Either 0 if no library, 1, 2, or 3 if there are 3+ cards. 
 	if(libraryCount > revealedCards) {
 		// Draw the face down card
-		var img = document.getElementById("unknown"); // always available to use
-			ctx.save();
-			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
-			ctx.rotate(180 * (Math.PI / 180));
-			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
-			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
-			ctx.restore();
+		var img = document.getElementById("unknown_upperleft"); 
+		var img_final = document.getElementById("unknown");
+			if(libraryCount - revealedCards >= 3) {
+				ctx.save();
+				ctx.translate(cur_x + card_width/2 + library_cards_offset * 2, cur_y + card_height/2 + library_cards_offset * 2);
+				ctx.rotate(180 * (Math.PI / 180));
+				ctx.translate(-cur_x - card_width/2 - library_cards_offset * 2, -cur_y - card_height/2 - library_cards_offset * 2);
+				ctx.drawImage(img_final, cur_x + library_cards_offset * 2, cur_y + library_cards_offset * 2, card_width, card_height);
+				ctx.restore();
+				}
+			if(libraryCount - revealedCards >= 2) {
+				ctx.save();
+				ctx.translate(cur_x + card_width/2 + library_cards_offset, cur_y + card_height/2 + library_cards_offset);
+				ctx.rotate(180 * (Math.PI / 180));
+				ctx.translate(-cur_x - card_width/2 - library_cards_offset, -cur_y - card_height/2 - library_cards_offset);
+				if(libraryCount - revealedCards == 2) { 
+					ctx.drawImage(img_final, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+					} else {
+					ctx.drawImage(img, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+					}
+				ctx.restore();
+				}
+			if(libraryCount - revealedCards >= 1) {
+				ctx.save();
+				ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+				ctx.rotate(180 * (Math.PI / 180));
+				ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+				if(libraryCount - revealedCards == 1) { 
+					ctx.drawImage(img_final, cur_x, cur_y, card_width, card_height);
+					} else {
+					ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+					}
+				ctx.restore();
+				}
 	}
 	if(revealedCards > 0) {
 		{% for card in page.oppLibraryRevealed %}
@@ -397,6 +475,7 @@
 	cur_x = zones_x_offset;
 	cur_y = zones_y_offset;
 	card_orientations = 0; // track state on how far the x should advance
+		
 
 	// draw untapped zone 1 //
 	{% if page.ourZone1Untapped|not-empty %}
@@ -431,8 +510,7 @@
 	if (card_orientations == 1) {
 		cur_x += card_width;
 	} else if (card_orientations == 2) {
-		cur_x += card_width;
-		//cur_x += card_height;
+		cur_x += card_orientation_2_offset;
 	} // == 0 means do nothing
 
 	card_orientations = 0;
@@ -470,8 +548,7 @@
 	if (card_orientations == 1) {
 		cur_x += card_width;
 	} else if (card_orientations == 2) {
-		cur_x += card_width;
-		//cur_x += card_height;
+		cur_x += card_orientation_2_offset;
 	} // == 0 means do nothing
 
 	card_orientations = 0;
@@ -509,8 +586,7 @@
 	if (card_orientations == 1) {
 		cur_x += card_width;
 	} else if (card_orientations == 2) {
-		cur_x += card_width;
-		//cur_x += card_height;
+		cur_x += card_orientation_2_offset;
 	} // == 0 means do nothing
 
 	card_orientations = 0;
@@ -548,8 +624,7 @@
 	if (card_orientations == 1) {
 		cur_x += card_width;
 	} else if (card_orientations == 2) {
-		cur_x += card_width;
-		//cur_x += card_height;
+		cur_x += card_orientation_2_offset;
 	} // == 0 means do nothing
 
 	card_orientations = 0;
@@ -626,8 +701,7 @@
 	if (card_orientations == 1) {
 		cur_x += card_width;
 	} else if (card_orientations == 2) {
-		cur_x += card_width;
-		//cur_x += card_height;
+		cur_x += card_orientation_2_offset;
 	} // == 0 means do nothing
 
 	card_orientations = 0;
@@ -670,8 +744,7 @@
 	if (card_orientations == 1) {
 		cur_x += card_width;
 	} else if (card_orientations == 2) {
-		cur_x += card_width;
-		//cur_x += card_height;
+		cur_x += card_orientation_2_offset;
 	} // == 0 means do nothing
 
 	card_orientations = 0;
@@ -714,8 +787,7 @@
 	if (card_orientations == 1) {
 		cur_x += card_width;
 	} else if (card_orientations == 2) {
-		cur_x += card_width;
-		//cur_x += card_height;
+		cur_x += card_orientation_2_offset;
 	} // == 0 means do nothing
 
 	card_orientations = 0;
@@ -758,8 +830,7 @@
 	if (card_orientations == 1) {
 		cur_x += card_width;
 	} else if (card_orientations == 2) {
-		cur_x += card_width;
-		//cur_x += card_height;
+		cur_x += card_orientation_2_offset;
 	} // == 0 means do nothing
 
 	card_orientations = 0;
@@ -869,42 +940,33 @@
 
 		{% endfor %}
 	{% endif %}
-		
+	
+	// Draw the life totals. This will eventually extend to also draw storm and mana counts?
+	ctx.font = library_label_font;
+	ctx.textAlign = "left";
+	{% if page.oppLife %}
+		ctx.fillText("{{page.oppLife}} Life", edge_buffer, (screen_y / 2) - edge_buffer);
+	{% else %}
+		ctx.fillText("20 Life", edge_buffer, (screen_y / 2) - edge_buffer);
+	{% endif %}
+
+	{% if page.ourLife %}
+		ctx.fillText("{{page.ourLife}} Life", edge_buffer, (screen_y / 2) + (edge_buffer * 2));
+	{% else %}
+		ctx.fillText("20 Life", edge_buffer, (screen_y / 2) + (edge_buffer * 2));
+	{% endif %}
 
 	// draw center line of page
 	ctx.beginPath();
 	ctx.moveTo(20, screen_y / 2);
 	ctx.lineTo(screen_x - 20, screen_y / 2);
-	ctx.lineWidth = 1;
+	ctx.lineWidth = 2;
 	ctx.strokeStyle = 'black';
 	ctx.stroke();
 	};
 	</script>
 
-	<p>The following pieces of information will be drawn on the lefthand side of the canvas near the center line in a compact inline way.</p><br>
-	<div id="storm-count">
-	{% if page.stormCount|not-empty %}
-	Storm count: <b>{{page.stormCount}}</b>
-	{% else %}
-	Storm count: <b>0</b>
-	{% endif %}
-	</div>
-
-	<div id="opp-life">
-	{% if page.oppLife|not-empty %}
-	Opponent Life: <b>{{ page.oppLife }}</b>
-	{% else %}
-	Opponent Life: <b>20</b>
-	{% endif %}
-	</div>
-	
-	<div id="our-life">
-	{% if page.ourLife|not-empty %}
-	Our Life: <b>{{ page.ourLife }}</b>
-	{% else %}
-	Our Life: <b>20</b>
-	{% endif %}
-	</div>
+<br>
 
 <div class="widget">
   <button id="show-solution-button">Show Solution</button>
@@ -912,14 +974,7 @@
 
 	<div id="solution"> 
 		<h3>Solution</h3>
-		This will come from the puzzle's .md but isn't wired up yet. It should include a table.<br>
-		Blah blah blah<br>
-		Blah blah blah<br>
-		Blah blah blah<br>
-		Blah blah blah<br>
-		Blah blah blah<br>
-		Blah blah blah<br>
-		Blah blah blah<br>
+		{{page.content|safe}}
 	</div>
 
 <script>
