@@ -30,176 +30,176 @@ table {
 	<!-- pre-loading all our images. This must remain or the canvas drawing breaks. -->
 	<div id="imagesDiv" style="display:none">
 	<!-- always load this image, no matter what, used by our drawing engine -->
-	<img id="unknown" width="97" height="135" src="../../img/unknown.jpg" alt="unknown">
-	<img id="unknown_lowerright" width="97" height="135" src="../../img/unknown_lowerright.jpg" alt="unknown">
-	<img id="unknown_upperleft" width="97" height="135" src="../../img/unknown_upperleft.jpg" alt="unknown">
+	<img id="unknown" width="97" height="135" src="{{site-url}}/img/unknown.jpg" alt="unknown">
+	<img id="unknown_lowerright" width="97" height="135" src="{{site-url}}/img/unknown_lowerright.jpg" alt="unknown">
+	<img id="unknown_upperleft" width="97" height="135" src="{{site-url}}/img/unknown_upperleft.jpg" alt="unknown">
 		<!-- continue on to the dynamically necessary ones -->
 		{% if page.ourCards|not-empty %}
 			{% for card in page.ourCards %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppCards|not-empty %}
 			{% for card in page.oppCards %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourLibraryRevealed|not-empty %}
 			{% for card in page.ourLibraryRevealed %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppLibraryRevealed|not-empty %}
 			{% for card in page.oppLibraryRevealed %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppZone1Untapped|not-empty %}
 			{% for card in page.oppZone1Untapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppZone2Untapped|not-empty %}
 			{% for card in page.oppZone2Untapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppZone3Untapped|not-empty %}
 			{% for card in page.oppZone3Untapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppZone4Untapped|not-empty %}
 			{% for card in page.oppZone4Untapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppZone5Untapped|not-empty %}
 			{% for card in page.oppZone5Untapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppZone1Tapped|not-empty %}
 			{% for card in page.oppZone1Tapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppZone2Tapped|not-empty %}
 			{% for card in page.oppZone2Tapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppZone3Tapped|not-empty %}
 			{% for card in page.oppZone3Tapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppZone4Tapped|not-empty %}
 			{% for card in page.oppZone4Tapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppZone5Tapped|not-empty %}
 			{% for card in page.oppZone5Tapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourZone1Untapped|not-empty %}
 			{% for card in page.ourZone1Untapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourZone2Untapped|not-empty %}
 			{% for card in page.ourZone2Untapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourZone3Untapped|not-empty %}
 			{% for card in page.ourZone3Untapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourZone4Untapped|not-empty %}
 			{% for card in page.ourZone4Untapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourZone5Untapped|not-empty %}
 			{% for card in page.ourZone5Untapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourZone1Tapped|not-empty %}
 			{% for card in page.ourZone1Tapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourZone2Tapped|not-empty %}
 			{% for card in page.ourZone2Tapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourZone3Tapped|not-empty %}
 			{% for card in page.ourZone3Tapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourZone4Tapped|not-empty %}
 			{% for card in page.ourZone4Tapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourZone5Tapped|not-empty %}
 			{% for card in page.ourZone5Tapped %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourGraveyard|not-empty %}
 			{% for card in page.ourGraveyard %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppGraveyard|not-empty %}
 			{% for card in page.oppGraveyard %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.ourExile|not-empty %}
 			{% for card in page.ourExile %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 		{% if page.oppExile|not-empty %}
 			{% for card in page.oppExile %}
 				<img id="{{card}}" width="97" height="135" 
-				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+				src="{{site-url}}/img/{{ card }}.jpg" alt="{{ card }}">
 			{% endfor %}
 		{% endif %}
 	</div>
