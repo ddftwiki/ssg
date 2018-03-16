@@ -1,0 +1,75 @@
+PRE-REQUISITES
+
+You'll need a github.com account. Sign up for one there.  
+
+You'll need to install git. This is installed by default on Mac OS X, on Windows you may want to try out https://gitforwindows.org or https://git-scm.com/downloads or any other implementation.
+
+You'll need leiningen, which is available for download at https://leiningen.org - installation instructions are on there.  
+
+
+DDFT SITE'S CONFIGURATION MANAGEMENT PROCESS
+
+The repository for development is https://github.com/ddftwiki/ssg - click the 'fork' button on here to create your own fork of the repository.
+
+Make a local directory on your computer, and check out your fork with a git command such as:
+
+    git clone https://github.com/<YOUR GITHUB USERNAME HERE>/ssg.git
+
+This will populate your local directory with a directory called "ssg/" which holds your checked out copy of the DDFT site.  
+
+Create a new branch for the development you'll be doing, with a git command such as:
+
+    git checkout -b my-great-feature
+
+I won't describe more of how to use git. The basics are that you'll create/modify the files you care about, run `git status` when you're ready to share to make sure you understand all your changes against what you checked out, run `git add -A` to add all of those modified files to become changes that will be committed, run `git commit -a` to commit it all to your local branch, and then `git push` to push it up to your remote branch on github.
+
+After pushing to your branch, you'll want to create a pull request of your finished changes to share with others for them to review and merge in. You can accomplish this using the github.com UI, as described at https://help.github.com/articles/creating-a-pull-request/
+
+
+BUILDING THE DDFT SITE LOCALLY
+
+If you've got lein installed correctly, and in your path, you can run 'lein' or 'lein.bat' (windows) from any directory on your system through the command line window.  If you don't, you can directly reference it's path, i.e. "c:\lein.bat" or "../../lein.bat", but you can save yourself a bunch of typing by just getting it correctly included in your path via the lein instructions.  To run the website, change directory in to the 'ssg/' directory, and run:
+
+    lein ring server
+
+This will run the build process and then serve the website locally. When you want to stop it, press control-c. 
+
+You can test the site by pointing a webbrowser at https://localhost:3000.  Note that you may also want to test your content on a mobile browser such as through your phone or a tablet, see [1] later in this document for info. 
+
+It seems that with every save of a file, the build re-runs. This can be handy when you are rapidly iterating on your changes trying to get something right.  It can also be a little confusing sometimes.
+
+
+DETAILS ABOUT MODIFYING THE WEBSITE
+
+The site is based on http://cryogenweb.org/ and https://leiningen.org/ which together provide a framework for a clojure website. The DDFT wiki is based on this due to historic reasons, probably because emidln just wanted to do something cool with clojure, and it works well enough that we have stuck with it. You probably won't have to understand any of the clojure pieces to do what you want to do, as the content is in markdown and the page templates are in HTML.
+
+The main directory you'll find yourself working in is ssg/resources/templates/md. Under this directory you'll find 'pages/', where you should create new static pages, and 'posts/' if you want to create a post. These are handled a bit differently within the site. Your best bet is to look at what's already there, copy one of those files to a new filename, and begin editing it for your puposes.  Be aware of the initial metadata block, you are responsible for populating your page's title and author in this. You also will apparently need to select a unique ID for the 'page-index' attribute.  Note that the 'layout' attribute determines which of the templates is used to transform the content. 
+
+If you ever want to create a new kind of page, or modify how the pages appear, you'll need to work with their templates. You can find the templates for the pages at ssg/resources/templates/themes/ddftwiki/html. There's some special preprocessing that occurs at site build which interprets anything inside of {{ }} as clojure code. Each of the markdown files has a header of arbitrary variables which are available in this code. An example which heavily uses this feature is the puzzle.html template.
+
+If you ever need to modify the site's CSS, the file to work with is ssg/resources/templates/themes/ddftwiki/css/screen.css. This appears to be included from each of the pages.
+
+If you've got a new page that you want to be referenced by the front page of the site, you'll want to add it to the ssg/resources/templates/md/pages/Doomsday-Codex.md file similar to the other existing linkages.
+
+Beware of the ssg/resources/public/ directory. This is where the output of the build process is placed. Nothing stops you from modifying these files, but (as far as I can tell) every time a build happens these files are overwritten.  You don't want to change this content, instead you want to change the '.md' markdown files in the ssg/resources/templates/ area which are transformed in to these output HTML files.
+
+
+
+[1] Mobile Testing Information
+
+**NOTE: This isn't working for me. Maybe firewall or maybe lein doesn't bind to the right interface or something. I'm moving this out of the main body of the doc because it's distracting, but I'm leaving it here because I've come this far and someone might be able to find the missing step. It's probably very useful for us to know how to do this**
+
+
+This is especially important if you're modifying a template, as we have learned through experience, but it's always a good sanity check.  To accomplish this, you'll need to get the IP of your machine running the local code, and then browsing from your mobile device to https://thatip:3000.  This requires your computer and mobile device to be on the same network. Firewall rules may interfere with the connection. To get the IP of your machine, you can:
+
+(Mac OS X): 
+    ifconfig | grep -E '192\.|10\.'
+	Now, look through the results, and try the IPs after 'inet'. The following is an example of my IP being 192.168.1.138:
+	inet 192.168.1.138 netmask 0xffffff00 broadcast 192.168.1.255
+
+(Windows):
+	?
+
+(Linux):
+	Probably what works on OS X. Verify it and update this line
+

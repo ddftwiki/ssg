@@ -1,0 +1,995 @@
+{% extends "/html/base-large.html" %}
+{%block subtitle %}: {{page.title}}{% endblock %}
+{% block content %}
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<!-- I have no idea how to properly include css files beyond screen.css so I'm hacking this in to get a wider table here  -->
+<style>
+table {
+	color: #333; /* Lighten up font color */
+	font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+	width: 900px;
+	border-collapse:
+	collapse; border-spacing: 0;
+}
+</style>
+
+
+<div>
+	<div id="page-header">
+		<h2>{{page.title}}</h2>
+	</div>
+
+	<div id="puzzle-intro">
+		<p>{{ page.introText }}</p>
+	</div>
+
+<!--  HEY! need to either use "../../img/{{ card }}.jpg" in dev or {{site-url}}/img/{{ card }}.jpg" in prod -->
+
+	<!-- pre-loading all our images. This must remain or the canvas drawing breaks. -->
+	<div id="imagesDiv" style="display:none">
+	<!-- always load this image, no matter what, used by our drawing engine -->
+	<img id="unknown" width="97" height="135" src="../../img/unknown.jpg" alt="unknown">
+	<img id="unknown_lowerright" width="97" height="135" src="../../img/unknown_lowerright.jpg" alt="unknown">
+	<img id="unknown_upperleft" width="97" height="135" src="../../img/unknown_upperleft.jpg" alt="unknown">
+		<!-- continue on to the dynamically necessary ones -->
+		{% if page.ourCards|not-empty %}
+			{% for card in page.ourCards %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppCards|not-empty %}
+			{% for card in page.oppCards %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourLibraryRevealed|not-empty %}
+			{% for card in page.ourLibraryRevealed %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppLibraryRevealed|not-empty %}
+			{% for card in page.oppLibraryRevealed %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppZone1Untapped|not-empty %}
+			{% for card in page.oppZone1Untapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppZone2Untapped|not-empty %}
+			{% for card in page.oppZone2Untapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppZone3Untapped|not-empty %}
+			{% for card in page.oppZone3Untapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppZone4Untapped|not-empty %}
+			{% for card in page.oppZone4Untapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppZone5Untapped|not-empty %}
+			{% for card in page.oppZone5Untapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppZone1Tapped|not-empty %}
+			{% for card in page.oppZone1Tapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppZone2Tapped|not-empty %}
+			{% for card in page.oppZone2Tapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppZone3Tapped|not-empty %}
+			{% for card in page.oppZone3Tapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppZone4Tapped|not-empty %}
+			{% for card in page.oppZone4Tapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppZone5Tapped|not-empty %}
+			{% for card in page.oppZone5Tapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourZone1Untapped|not-empty %}
+			{% for card in page.ourZone1Untapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourZone2Untapped|not-empty %}
+			{% for card in page.ourZone2Untapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourZone3Untapped|not-empty %}
+			{% for card in page.ourZone3Untapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourZone4Untapped|not-empty %}
+			{% for card in page.ourZone4Untapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourZone5Untapped|not-empty %}
+			{% for card in page.ourZone5Untapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourZone1Tapped|not-empty %}
+			{% for card in page.ourZone1Tapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourZone2Tapped|not-empty %}
+			{% for card in page.ourZone2Tapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourZone3Tapped|not-empty %}
+			{% for card in page.ourZone3Tapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourZone4Tapped|not-empty %}
+			{% for card in page.ourZone4Tapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourZone5Tapped|not-empty %}
+			{% for card in page.ourZone5Tapped %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourGraveyard|not-empty %}
+			{% for card in page.ourGraveyard %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppGraveyard|not-empty %}
+			{% for card in page.oppGraveyard %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.ourExile|not-empty %}
+			{% for card in page.ourExile %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+		{% if page.oppExile|not-empty %}
+			{% for card in page.oppExile %}
+				<img id="{{card}}" width="97" height="135" 
+				src="../../img/{{ card }}.jpg" alt="{{ card }}">
+			{% endfor %}
+		{% endif %}
+	</div>
+	
+
+	<canvas id="myCanvas" width="900" height="600"
+	style="border:1px solid #000000;">
+	Your browser does not support the HTML5 canvas tag... RIP
+	</canvas>
+
+
+	<script>
+		window.onload = function() {
+
+		// maintenance on the page
+		$("#solution").hide();
+
+		// Moving on to setting up the puzzle canvas
+
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+
+		var card_width = 97;
+		var card_height = 135;
+
+		var screen_y = 600;
+		var screen_x = 900;
+
+		// used to place objects so that they're not directly aligned with the canvas edge
+		var edge_buffer = 10;
+		// How much spacing between cards in hand.
+		var hand_separation_width = card_width / 1.5; 
+		// Amount of px to move the hand towards 'offscreen'
+		var hand_y_offset = 30;
+
+		// hand card rotation stuff
+		var hand_angle_increment_degrees = 3; // 5
+		var hand_y_adjustment_scaling = 1.4; // 1.3 used in a ** calculation
+
+		// Library drawing stuff
+		var library_x_offset = edge_buffer;
+		var library_y_offset = 200; // from bottom or top edge of screen
+		var library_label_font = "italic lighter 14px courier";
+		var library_label_offset = 15;
+		var library_angle_increment = 17;
+		var library_separation_width = 35;
+
+		// for drawing a 3d looking pile
+		var library_cards_offset = 5;
+
+		// Zones drawing stuff
+		// start a bit to the right of the library. 
+		var zones_x_offset = library_x_offset + (card_width * 1.4);
+
+		// How far to move the drawing of each card
+		var zones_y_advance = 20;
+		var zones_x_advance = 20;
+		// This is a huge hack, the way I rotate is screwed up and therefore we get a fudge factor here to work around it
+		var card_orientation_2_offset = (card_width * 1.25);
+	
+
+		// Graveyard & Exile Stuff
+		graveyard_y_advance = 30;
+
+	// Draw our Library //
+	// First, draw the face down cards. We may or may not draw this one. Do the math.
+	revealedCards = 0;
+	{% if page.ourLibraryRevealed|not-empty %}
+		revealedCards = {{ page.ourLibraryRevealed|count }};
+	{% endif %}
+	libraryCount = 53; // defaulting to enough that a library is active. Prob what people mean.
+	{% if page.ourLibraryCards %}
+		libraryCount = {{ page.ourLibraryCards }};
+	{% endif %}
+
+
+	cur_x = library_x_offset;
+	cur_y = screen_y - library_y_offset;
+	cur_angle = library_angle_increment;
+
+	if(libraryCount > revealedCards) {
+		// Draw the face down card
+		var img = document.getElementById("unknown_lowerright");
+		var img_final = document.getElementById("unknown");
+		if(libraryCount - revealedCards >= 3) {
+			ctx.save();
+			ctx.translate(cur_x + card_width/2 + library_cards_offset * 2, cur_y + card_height/2 + library_cards_offset * 2);
+			ctx.translate(-cur_x - card_width/2 - library_cards_offset * 2, -cur_y - card_height/2 - library_cards_offset * 2);
+			ctx.drawImage(img_final, cur_x + library_cards_offset * 2, cur_y + library_cards_offset * 2, card_width, card_height);
+			ctx.restore();
+			}
+		if(libraryCount - revealedCards >= 2) {
+			ctx.save();
+			ctx.translate(cur_x + card_width/2 + library_cards_offset, cur_y + card_height/2 + library_cards_offset);
+			ctx.translate(-cur_x - card_width/2 - library_cards_offset, -cur_y - card_height/2 - library_cards_offset);
+			if(libraryCount - revealedCards == 2) { 
+				ctx.drawImage(img_final, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+				} else {
+				ctx.drawImage(img, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+				}
+			ctx.restore();
+			}
+		if(libraryCount - revealedCards >= 1) {
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			if(libraryCount - revealedCards == 1) { 
+				ctx.drawImage(img_final, cur_x, cur_y, card_width, card_height);
+				} else {
+				ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+				}
+			ctx.restore();
+			}
+
+		//ctx.drawImage(img, library_x_offset, screen_y - library_y_offset, card_width, card_height);
+	}
+	if(revealedCards > 0) {
+		{% for card in page.ourLibraryRevealed %}
+			var img = document.getElementById("{{ card }}");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(cur_angle * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_y += library_separation_width;
+			cur_angle += library_angle_increment;
+		{% endfor %}
+	}
+
+	ctx.font = library_label_font;
+	ctx.textAlign = "center";
+	ctx.fillText("Library", library_x_offset + (card_width / 2), screen_y - library_y_offset - library_label_offset); 
+
+
+	// Draw opp library //
+	// First, draw the face down cards. We may or may not draw this one. Do the math.
+	revealedCards = 0;
+	{% if page.oppLibraryRevealed|not-empty %}
+		revealedCards = {{ page.oppLibraryRevealed|count }};
+	{% endif %}
+	libraryCount = 53; // defaulting to enough that a library is active. Prob what people mean.
+	{% if page.oppLibraryCards %}
+		libraryCount = {{ page.oppLibraryCards }};
+	{% endif %}
+
+
+	cur_x = library_x_offset;
+	cur_y = library_y_offset - card_height;
+	cur_angle = 180 - library_angle_increment;
+	 
+
+	// Draw an appropriate number of cards. Either 0 if no library, 1, 2, or 3 if there are 3+ cards. 
+	if(libraryCount > revealedCards) {
+		// Draw the face down card
+		var img = document.getElementById("unknown_upperleft"); 
+		var img_final = document.getElementById("unknown");
+			if(libraryCount - revealedCards >= 3) {
+				ctx.save();
+				ctx.translate(cur_x + card_width/2 + library_cards_offset * 2, cur_y + card_height/2 + library_cards_offset * 2);
+				ctx.rotate(180 * (Math.PI / 180));
+				ctx.translate(-cur_x - card_width/2 - library_cards_offset * 2, -cur_y - card_height/2 - library_cards_offset * 2);
+				ctx.drawImage(img_final, cur_x + library_cards_offset * 2, cur_y + library_cards_offset * 2, card_width, card_height);
+				ctx.restore();
+				}
+			if(libraryCount - revealedCards >= 2) {
+				ctx.save();
+				ctx.translate(cur_x + card_width/2 + library_cards_offset, cur_y + card_height/2 + library_cards_offset);
+				ctx.rotate(180 * (Math.PI / 180));
+				ctx.translate(-cur_x - card_width/2 - library_cards_offset, -cur_y - card_height/2 - library_cards_offset);
+				if(libraryCount - revealedCards == 2) { 
+					ctx.drawImage(img_final, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+					} else {
+					ctx.drawImage(img, cur_x + library_cards_offset, cur_y + library_cards_offset, card_width, card_height);
+					}
+				ctx.restore();
+				}
+			if(libraryCount - revealedCards >= 1) {
+				ctx.save();
+				ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+				ctx.rotate(180 * (Math.PI / 180));
+				ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+				if(libraryCount - revealedCards == 1) { 
+					ctx.drawImage(img_final, cur_x, cur_y, card_width, card_height);
+					} else {
+					ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+					}
+				ctx.restore();
+				}
+	}
+	if(revealedCards > 0) {
+		{% for card in page.oppLibraryRevealed %}
+			var img = document.getElementById("{{ card }}");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(cur_angle * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_y -= library_separation_width;
+			cur_angle -= library_angle_increment;
+		{% endfor %}
+	}
+
+	ctx.font = library_label_font;
+	ctx.textAlign = "center";
+	ctx.fillText("Library", library_x_offset + (card_width / 2), library_y_offset + library_label_offset * 1.5); 
+
+	// Draw our Graveyard //
+
+	cur_x = screen_x - (card_width / 2);
+	cur_y = (screen_y / 2) + edge_buffer;
+
+	{% if page.ourGraveyard|not-empty %}
+		{% for card in page.ourGraveyard %}
+			var img = document.getElementById("{{ card }}");
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			cur_y += graveyard_y_advance;
+		{% endfor %}
+		cur_y -= (graveyard_y_advance / 2); // goes a bit too far for tapped visualization
+	{% endif %}
+
+	// Draw our Exile //
+	{% if page.ourExile|not-empty %}
+		{% for card in page.ourExile %}
+			var img = document.getElementById("{{ card }}");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(270 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_y += graveyard_y_advance;
+		{% endfor %}
+	{% endif %}
+
+	// Draw opp Graveyard //
+
+	cur_x = screen_x - (card_width / 2);
+	cur_y = (screen_y / 2) - edge_buffer - card_height;
+
+	{% if page.oppGraveyard|not-empty %}
+		{% for card in page.oppGraveyard %}
+			var img = document.getElementById("{{ card }}");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(180 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_y -= graveyard_y_advance;
+		{% endfor %}
+		cur_y += (graveyard_y_advance / 2); // goes a bit too far for tapped visualization
+	{% endif %}
+
+	// Draw opp Exile //
+	{% if page.oppExile|not-empty %}
+		{% for card in page.oppExile %}
+			var img = document.getElementById("{{ card }}");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(270 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_y -= graveyard_y_advance;
+		{% endfor %}
+	{% endif %}
+
+
+	// Draw Our Zones //
+	zones_y_offset = (screen_y / 2) + edge_buffer;
+	cur_x = zones_x_offset;
+	cur_y = zones_y_offset;
+	card_orientations = 0; // track state on how far the x should advance
+		
+
+	// draw untapped zone 1 //
+	{% if page.ourZone1Untapped|not-empty %}
+		{% for card in page.ourZone1Untapped %}
+			var img = document.getElementById("{{ card }}");
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			card_orientations = 1;
+		{% endfor %}
+	{% endif %}
+	{% if page.ourZone1Tapped|not-empty %}
+		{% for card in page.ourZone1Tapped %}
+			var img = document.getElementById("{{ card }}");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			
+			card_orientations = 2;
+		{% endfor %}
+	{% endif %}
+
+	// Zone 2 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	{% if page.ourZone2Untapped|not-empty %}
+		{% for card in page.ourZone2Untapped %}
+			var img = document.getElementById("{{ card }}");
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			card_orientations = 1;
+		{% endfor %}
+	{% endif %}
+	{% if page.ourZone2Tapped|not-empty %}
+		{% for card in page.ourZone2Tapped %}
+			var img = document.getElementById("{{ card }}");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			
+			card_orientations = 2;
+		{% endfor %}
+	{% endif %}
+
+	// Zone 3 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	{% if page.ourZone3Untapped|not-empty %}
+		{% for card in page.ourZone3Untapped %}
+			var img = document.getElementById("{{ card }}");
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			card_orientations = 1;
+		{% endfor %}
+	{% endif %}
+	{% if page.ourZone3Tapped|not-empty %}
+		{% for card in page.ourZone3Tapped %}
+			var img = document.getElementById("{{ card }}");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			
+			card_orientations = 2;
+		{% endfor %}
+	{% endif %}
+
+	// Zone 4 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	{% if page.ourZone4Untapped|not-empty %}
+		{% for card in page.ourZone4Untapped %}
+			var img = document.getElementById("{{ card }}");
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			card_orientations = 1;
+		{% endfor %}
+	{% endif %}
+	{% if page.ourZone4Tapped|not-empty %}
+		{% for card in page.ourZone4Tapped %}
+			var img = document.getElementById("{{ card }}");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			
+			card_orientations = 2;
+		{% endfor %}
+	{% endif %}
+
+	// Zone 5 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	{% if page.ourZone5Untapped|not-empty %}
+		{% for card in page.ourZone5Untapped %}
+			var img = document.getElementById("{{ card }}");
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			card_orientations = 1;
+		{% endfor %}
+	{% endif %}
+	{% if page.ourZone5Tapped|not-empty %}
+		{% for card in page.ourZone5Tapped %}
+			var img = document.getElementById("{{ card }}");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y += zones_y_advance;
+			
+			card_orientations = 2;
+		{% endfor %}
+	{% endif %}
+
+	// Draw Opp Zones //
+	zones_y_offset = (screen_y / 2) - edge_buffer - card_height;
+	cur_x = zones_x_offset;
+	cur_y = zones_y_offset; 
+	card_orientations = 0; // track state on how far the x should advance
+
+	// draw untapped zone 1 //
+	{% if page.oppZone1Untapped|not-empty %}
+		{% for card in page.oppZone1Untapped %}
+			var img = document.getElementById("{{ card }}");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(180 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			card_orientations = 1;
+		{% endfor %}
+	{% endif %}
+	{% if page.oppZone1Tapped|not-empty %}
+		{% for card in page.oppZone1Tapped %}
+			var img = document.getElementById("{{ card }}");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			
+			card_orientations = 2;
+		{% endfor %}
+	{% endif %}
+
+	// Zone 2 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	{% if page.oppZone2Untapped|not-empty %}
+		{% for card in page.oppZone2Untapped %}
+			var img = document.getElementById("{{ card }}");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(180 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			card_orientations = 1;
+		{% endfor %}
+	{% endif %}
+	{% if page.oppZone2Tapped|not-empty %}
+		{% for card in page.oppZone2Tapped %}
+			var img = document.getElementById("{{ card }}");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			
+			card_orientations = 2;
+		{% endfor %}
+	{% endif %}
+
+	// Zone 3 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	{% if page.oppZone3Untapped|not-empty %}
+		{% for card in page.oppZone3Untapped %}
+			var img = document.getElementById("{{ card }}");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(180 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			card_orientations = 1;
+		{% endfor %}
+	{% endif %}
+	{% if page.oppZone3Tapped|not-empty %}
+		{% for card in page.oppZone3Tapped %}
+			var img = document.getElementById("{{ card }}");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			
+			card_orientations = 2;
+		{% endfor %}
+	{% endif %}
+
+	// Zone 4 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	{% if page.oppZone4Untapped|not-empty %}
+		{% for card in page.oppZone4Untapped %}
+			var img = document.getElementById("{{ card }}");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(180 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			card_orientations = 1;
+		{% endfor %}
+	{% endif %}
+	{% if page.oppZone4Tapped|not-empty %}
+		{% for card in page.oppZone4Tapped %}
+			var img = document.getElementById("{{ card }}");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			
+			card_orientations = 2;
+		{% endfor %}
+	{% endif %}
+
+	// Zone 5 //
+	
+	if (card_orientations == 1) {
+		cur_x += card_width;
+	} else if (card_orientations == 2) {
+		cur_x += card_orientation_2_offset;
+	} // == 0 means do nothing
+
+	card_orientations = 0;
+	cur_y = zones_y_offset; // reset
+
+	{% if page.oppZone5Untapped|not-empty %}
+		{% for card in page.oppZone5Untapped %}
+			var img = document.getElementById("{{ card }}");
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(180 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			card_orientations = 1;
+		{% endfor %}
+	{% endif %}
+	{% if page.oppZone5Tapped|not-empty %}
+		{% for card in page.oppZone5Tapped %}
+			var img = document.getElementById("{{ card }}");
+
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, cur_y + card_height/2);
+			ctx.rotate(90 * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -cur_y - card_height/2);
+			ctx.drawImage(img, cur_x, cur_y, card_width, card_height);
+			ctx.restore();
+			
+			cur_x += zones_x_advance;
+			cur_y -= zones_y_advance;
+			
+			card_orientations = 2;
+		{% endfor %}
+	{% endif %}
+
+
+
+	// Draw our hand //
+
+	{% if page.ourCards|not-empty %}
+		num_cards = {{page.ourCards|count}}; // cache it
+		// we start at the center of the screen, but our x,y that we draw at is the upper left
+		// corner of the card. So when we draw in the center it isn't screen_x/2 it's screen_x/2 - (card_width /2)
+		cur_x = ((screen_x / 2) - (card_width / 2)) - ((hand_separation_width / 2) * (num_cards - 1));
+		hand_y = screen_y - edge_buffer - card_height + hand_y_offset;
+
+		startingOffset = 0; // degrees
+		adjusted_num_cards = num_cards;
+		// calculate the angles to make the hand look more natural
+		if(num_cards % 2 == 0) {
+			startingOffset -= hand_angle_increment_degrees / 2; // symmetric layout of cards in hand, none in center
+			adjusted_num_cards -= 2;
+		} else {
+			adjusted_num_cards -= 1;
+		}
+		startingOffset -= hand_angle_increment_degrees * (adjusted_num_cards / 2);
+		cur_offset = startingOffset;
+			
+		{% for card in page.ourCards %}
+			var img = document.getElementById("{{ card }}");
+			hand_y_adjustment = Math.abs(cur_offset) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 + hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 - hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y + hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset += hand_angle_increment_degrees;
+		{% endfor %}
+	{% endif %}
+
+	// Draw opponent hand // 
+
+	{% if page.oppCards|not-empty %}
+		num_cards = {{page.oppCards|count}}; // cache it
+		// we start at the center of the screen, but our x,y that we draw at is the upper left
+		// corner of the card. So when we draw in the center it isn't screen_x/2 it's screen_x/2 - (card_width /2)
+		cur_x = ((screen_x / 2) - (card_width / 2)) - ((hand_separation_width / 2) * (num_cards - 1));
+		hand_y = 0 + edge_buffer - hand_y_offset; // screen_y - edge_buffer - card_height;
+
+		startingOffset = 180; // degrees
+		adjusted_num_cards = num_cards;
+		// calculate the angles to make the hand look more natural
+		if(num_cards % 2 == 0) {
+			startingOffset += hand_angle_increment_degrees / 2; // symmetric layout of cards in hand, none in center
+			adjusted_num_cards -= 2;
+		} else {
+			adjusted_num_cards -= 1;
+		}
+		startingOffset += hand_angle_increment_degrees * (adjusted_num_cards / 2);
+		cur_offset = startingOffset;
+		{% for card in page.oppCards %}
+			var img = document.getElementById("{{ card }}");
+
+			hand_y_adjustment = Math.abs(cur_offset - 180) ** hand_y_adjustment_scaling;
+			ctx.save();
+			ctx.translate(cur_x + card_width/2, hand_y + card_height/2 - hand_y_adjustment);
+			ctx.rotate(cur_offset * (Math.PI / 180));
+			ctx.translate(-cur_x - card_width/2, -hand_y - card_height/2 + hand_y_adjustment);
+			ctx.drawImage(img, cur_x, hand_y - hand_y_adjustment, card_width, card_height);
+			ctx.restore();
+			cur_x += hand_separation_width;
+			cur_offset -= hand_angle_increment_degrees;
+
+		{% endfor %}
+	{% endif %}
+	
+	// Draw the life totals. This will eventually extend to also draw storm and mana counts?
+	ctx.font = library_label_font;
+	ctx.textAlign = "left";
+	{% if page.oppLife %}
+		ctx.fillText("{{page.oppLife}} Life", edge_buffer, (screen_y / 2) - edge_buffer);
+	{% else %}
+		ctx.fillText("20 Life", edge_buffer, (screen_y / 2) - edge_buffer);
+	{% endif %}
+
+	{% if page.ourLife %}
+		ctx.fillText("{{page.ourLife}} Life", edge_buffer, (screen_y / 2) + (edge_buffer * 2));
+	{% else %}
+		ctx.fillText("20 Life", edge_buffer, (screen_y / 2) + (edge_buffer * 2));
+	{% endif %}
+
+	// draw center line of page
+	ctx.beginPath();
+	ctx.moveTo(20, screen_y / 2);
+	ctx.lineTo(screen_x - 20, screen_y / 2);
+	ctx.lineWidth = 2;
+	ctx.strokeStyle = 'black';
+	ctx.stroke();
+	};
+	</script>
+
+<br>
+
+<div class="widget">
+  <button id="show-solution-button">Show Solution</button>
+</div>
+
+	<div id="solution"> 
+		<h3>Solution</h3>
+		{{page.content|safe}}
+	</div>
+
+<script>
+$( "#show-solution-button").click(function() {
+	if($('#show-solution-button').text() == "Show Solution") {
+		$("#solution").show();
+		$('#show-solution-button').text("Hide Solution");
+	} else {
+		$("#solution").hide();
+		$('#show-solution-button').text("Show Solution");
+	}
+});
+</script>
+
+
+</div>
+
+{% endblock %}

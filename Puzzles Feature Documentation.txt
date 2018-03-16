@@ -1,0 +1,215 @@
+
+
+
+
+
+Technical Scratchpad - some of this is dev notes and some is about how to put in new images etc. I'll eventually split these out in to what regular people care about and what people messing around with changing the puzzle layout system care about.
+
+
+GETTING NEW IMAGES
+Images are obtained via gatherer.
+
+    http://gatherer.wizards.com/Pages/Default.aspx and search for the card
+
+When the card comes up, note that you can often select from a variety of artworks. Try to stay consistent with what's already there (i.e. expeditions used for fetches, alpha/beta duals) and ideally prefer artworks that are most iconic or identifiable.  After selecting the right image, right click it and save it as "card_name.jpg" with spaces as underscores (_) and all lowercase, with the .jpg extension. These files go in:
+	ssg/resources/templates/img/ 
+
+They will get copied over to ssg/resources/public/img/ which are referenceable on the site under ddft.wiki/img/. This copying happens automatically.
+
+These images have "white" edges in the corners, most of them do anyway, and this will cause issues in cases where cards overlap. It's generally not a big deal, but unfortunately sometimes it does look bad like on the library stack of cards. Unfortunately I tried to pop open the card back image (unknown.jpg) but even if I made the corners to be transparent, the HTML canvas drawing doesn't seem to care about transparency, and it still draws in white. Maybe somebody else will figure something out here, or maybe this will change as time moves on.  For this special case, I created 2 new images and I drew in the corners with black to make it look right.
+
+Note that unfortunately, the newest images up on gatherer (~KTK and beyond?) are .png files. These would be fine except that we hardcode .jpg in our puzzle template code, so you're going to have to convert the file to jpg. An alternative may be if you just pick an older version of the card, which is more likely to be in jpg.
+
+The images that come from gatherer are jpgs that come as 223 x 311 pixel images.  Ratio is 0.7170418.  
+
+You don't need to do anything for the images to get them to appear tapped when appropriate. But, you do need to modify an image to put a die on it, if that's necessary.  I haven't figured this out yet but it'll be something like "chalice_1.jpg" "chalice_0.jpg" etc, and we'll perhaps have an identified process or template for how to create these.  Perhaps a mask image for a variety of counters and then we can merge that with an image to result in a final image that's got a consistent look. I thought about programmatically putting the die counters on these but this probably becomes too complex when definining the puzzle templates.
+
+There's a special image called "unknown" - this is a back of a magic card. Can be used for unknown cards in hand or on field.
+
+
+Div 2 is roughly 111 x 155. 
+	This looks the best. Can easily tell the cards and should be enough room for everything.
+
+Div 3 is roughly 74 x 104. 
+	This may be ok.
+
+Div 4 is roughly 56 x 78.
+    Seems too small to really see cards.
+
+
+TROUBLESHOOTING / ISSUES:
+
+If a puzzle is only half-drawing on the screen, open up the web developer console and reload the page to look for console output.  The likely issue is that you are referencing an image that isn't available, i.e. you've either made a typo in the puzzle's MD on a card name, or you have put in a card that isn't in our img/ directory.
+
+The console output error will look like:
+
+NS_ERROR_NOT_AVAILABLE: 
+window.onload
+
+
+
+
+
+DEV NOTES
+
+Overall screen layout:
+
+Height is 600px, longer is too much
+Width is 800px, although we need to adjust the overall page
+
+Opponent on the top half, we're on the bottom half.  Each half gets 300 px height. With a 10px buffer from the edges, we can get 2 rows of cards if they fit in 300 - 3*10 = 270 / 2 = 135px each.  With the sizes of our cards, 223 x 311, we can get to be 135px if we can use the size 97 x 135. Trying that size out: yes, it works, hard to read text but reasonable to recognize cards.
+
+Drawing the hands:
+We could draw each of the cards separated by some blank space, but this wastes quite a bit of space and we can do better.  The first step towards this is to draw the cards with some overlap but overall being centered. The next step of this would be to also rotate each of the cards to make it look more attractive.
+
+
+
+When drawing the hand, each card we draw is in front of the previous ones so we have to be careful about the order. 
+More notes about how we came up with the algorithm for drawing the hands, the x location:
+// the algorithm is:
+// center_x = screen_x / 2  (NOTE: this has to be some to the left since we don't start drawing in center of card)
+// if 1 card, start x is center_x,
+// 400
+// if 2 cards, start x is center_x - (card_separation_width / 2) * 1, + card_sep_width for each card
+// 400 - 18.5 = , 381.5, 418.5
+// if 3 cards, start x is center_x - (card_separation_width / 2) * 2, + card_sep_width for each card
+// 400 - 18.5*2, 400 - 37, 363, 400, 437
+// if 4 cards, start x is center_x - (card_separation_width / 2) * 3, + card_sep_width for each card
+// 344.5, 381.5, 418.5, 455.5
+// if 5 cards, start x is center_x - (card_sep_width / 2) * 4, + card_sep_width for each card
+// 326, 363, 400, 437, 474
+
+For rotating the cards:
+
+For odd #:
+-20 -15 -10 -5 0 5 10 15 20
+
+For even #:
+-22.5 -17.5 -12.5 -7.5 -2.5 +2.5 +7.5 12.5 17.5 22.5
+
+So, increment will be 5 degrees, but need to identify the starting point. 
+(static) var hand_angle_increment_degrees 5
+
+adjusted_card_num = card_num;
+
+if card_num % 2 == 0 (even) then 
+    startingOffset = -hand_angle_increment_degrees / 2; // start at -2.5
+	2 = 2/2 = 1 * increment, doesn't work.
+	Need: adjusted_card_num -= 2;
+	2 = 2-2=0/2 = 0 * increment, 4 cards = 4-2=2/2=1*increment, etc, works.
+
+else (odd case)
+    (3-1 = 2 / 2 = 1, 5-1, 4/2 = 2*, 7-1 = 6/2 = 3* increment. It works)
+	adjusted_card_num -= 1;
+
+And, following the above, we additionally do:
+startingOffset -= hand_angle_increment_degrees * (adjusted_card_num) / 2;
+
+
+Opp starting is 180, and then we *add* the starting offset and subtract it with each card.
+Our starting is 0 and then we *subtract* the starting offset and add it back each card
+
+This works, but the cards rotated as we move away from the center card appear too 'high' (or low if opp and upside down). There may be a more correct way of performing rotation from a center point but I doubt people really hold cards along a circle and rotating across some kind of ellipse seems way too complicated. Hacking by adjusting the y value by an absolute value of the angle offset and adding a scaling factor (turns out it looks like we need a positive scaling factor, i.e. "1.something" * ..)
+
+This works pretty well but the middle card is too high and as we go out to 7 cards or so they're too high as well. The effect needs to become gradually more as we come away from the center.
+
+Instead of something like y adjusting by:  
+    abs(offset_degrees) * 2.0 (the scaling factor) = 20 10 0 10 20 for -10 -5 0 5 10, maybe:
+	abs(offset_degrees) ** 1.1 = 12.5 5.8 0 ..
+	abs(offset_degrees) ** 1.5 = 31.6 11.18 0 ..
+	abs(offset_degrees) ** 1.25 = 17.7 7.47 0 <--- try this.
+
+Yes, the above works, settled on a factor of 1.3. This factor starts to 'fall apart' when we have 8-9 cards in hand, that is, the ones at the edge don't appear as far 'down' as they should, but actually this turns out to be fine because if they were as 'down' as they 'should' be, we wouldn't be able to see them as easily. The result of our scaling factor is that you can easily identify all 9 cards. It also looks approximately right if you consider how a human would hold cards if they fanned them that far out.
+
+All the above is probably hard to grok if you come in to it cold, in a few weeks I won't remember it, but it shouldn't be something we ever need to touch again and if you follow through this and look at the code it should be reasonably clear how things are working and there are 'static' variables for the scaling and fudge factors which are probably the only thing that would ever need to be tweaked.
+
+
+NOTES ABOUT HOW WE PRELOAD THE IMAGES, *and*, I DON'T REALLY UNDERSTAND THE TEMPLATING SYSTEM
+
+In puzzles.html, we need to first load the images before using them in the html canvas. The best way I found to do this is to, in the .html, reference the image with an <img ..> tag. The canvas drawImage command references this loaded image via it's "id" attribute, i.e. <img id="greatcard" ..> can be used in the canvas as drawImage(greatcard..).  
+
+Creating img references in the HTML can be easily done, as shown below, but it wasn't at all clear how to dynamically set an id tag which I thought we'd want to be doing. Specifically, I wanted to name the img "ourCard0", "ourCard1", and so on. Then, in the drawing code, we could iterate through those as the strings. 
+
+NOTE - THIS DOES NOT WORK CORRECTLY..
+
+   {% if page.ourCards|not-empty %}
+    {{ var-set x 0 }}
+    Showing Our Hand<br>
+        {% for card in page.ourCards %}
+            <img id="ourCard{{ x }}" width="97" height="135"
+            src="../../img/{{ card }}.jpg" alt="A Card">
+            Showing card number {{ x }}.<br>
+            {{ varset x x + 1 }}
+        {% endfor %}
+    {% endif %}
+
+
+The problem is that I couldn't get this to work. To briefly summarize, I'll post the freenode IRC #leiningen chat log:
+
+[22:29] <rcl_xx> Hello, I'm working on a site using leiningen + cryogen web, someone set it up and a few of us are working with it, we've figured most things out but I've reached something that's got me scratching my head
+[22:30] <rcl_xx>  In our site's templates there are things mixed with html such as {% for thing in page.bunchaThings %} and then we use {{ thing }} in the html and so on.  Within this for loop section I want to have a running counter x that starts at 0 and increments, so that I can do something like <div id="someDiv{{x}}">.  But, I can't set x and have it hold state via {% var-set x 0 %} or {{ var-set x 0 }}, and furthermore we realize the stuff in {% isn't clojure?
+[22:31] <rcl_xx> This may be more of a cryogenweb.org question but there isn't really a point of contact, thought I may get lucky in here
+[22:35] <rcl_xx> Hm actually it does seem like this is a leiningen thing, I'll try to read through the docs about templates, maybe I missed these
+[22:41] <rcl_xx> Close, but it looks like a bunch of this stuff I'm seeing isn't actually mustache, so I'm still confused
+
+A workaround here is to just set the id to be {{ card }}. We'll get duplicate ids, which is 'not legal' HTML, but this shouldn't really matter as browsers are used to lots of junk HTML. It may be inefficient, but I'm guessing all browsers are caching their image grabs. So really, it just doesn't matter at all.
+
+The work-around code, validated to work correctly, looks like:
+
+(html portion)
+
+  {% if page.ourCards|not-empty %}
+    Showing Our Hand. This will go in to a hidden div eventually.<br>
+        {% for card in page.ourCards %}
+            <img id="{{card}}" width="97" height="135"
+            src="../../img/{{ card }}.jpg" alt="{{ card }}">
+        {% endfor %}
+    {% endif %}
+
+(script portion)
+
+   testing_x = 10;
+    {% if page.ourCards|not-empty %}
+        {% for card in page.ourCards %}
+            var img = document.getElementById("{{ card }}");
+            ctx.drawImage(img, testing_x, 165, card_width, card_height);
+            testing_x = testing_x + 37;
+        {% endfor %}
+    {% endif %}
+
+This doesn't change the fact that I'm now very confused about our site's templating system
+
+
+
+
+HOW TO GET A COUNT OF ELEMENTS IN A LIST
+
+Ran in to this when trying to get the number of cards in the ourCards array:
+  {% if page.ourCards|not-empty %}
+        // we start at the center of the screen, but our x,y that we draw at is the upper left
+        // corner of the card. So when we draw in the center it isn't screen_x/2 it's screen_x/2 - (card_width /2)
+        CARD_NUM = {{page.ourCards}};
+
+
+This fails. It isn't anywhere in our codebase so far. Maybe it's |count ?
+
+Yes:         CARD_NUM = {{page.ourCards|count}};  works.
+
+
+
+
+
+
+
+PLACING CARDS IN THE ZONES
+
+I decided not to make a specific zone for lands, enchantments, creatures, and so on. I also decided not to try to get fancy and figure out groupings or anything like that. Instead, I figured that the following design can probably nicely display everything:
+
+Across battlefield, from left to right, are 5 zones. For each of these zones, you first define the untapped cards, and then you define the tapped cards. Each of these lists can be empty.  First the untapped cards are drawn, followed by the tapped cards.  There is no enforced upper number of cards but I anticipate 5 cards is about the max.
+
+To boldly highlight a card that's important, you can put it alone in a list. For example, a chalice on 1 may be the only untapped card in zone 1, and then no tapped cards for zone 1 are listed.  
+
+Spacings between the zones are dynamic. Things should always look about right, so don't really worry about that.
+
+
+
