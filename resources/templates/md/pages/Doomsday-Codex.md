@@ -45,6 +45,7 @@ Chapter 2, Supplementary Techniques:
 
 Chapter 3, Limitations:  
 [Playing Around Surgical](/pages-output/ch3/surgical)  
+[CMC Limitations](/pages-output/ch3/cmc_limits) 
 
 Chapter 4, Deck Construction:  
 Under Construction  
@@ -63,4 +64,4 @@ I. [Pile Document](/pages-output/appendix/pile-doc)
 II. Puzzle answers (Under Construction)  
 III. [Sample Decklists](/pages-output/appendix/Decklist)   
 IV. [Interesting Card Interactions](/pages-output/appendix/interesting-interactions)
-
+V. [Removal Tables](/pages-output/appendix/rem_table)   
