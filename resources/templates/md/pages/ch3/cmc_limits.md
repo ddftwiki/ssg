@@ -237,7 +237,7 @@ piece/(s) listed.
 
 *A more complete version of this table may be found in [Appendix V]/pages-output/appendix/rem_table).
 
-|                                     | By Force | Consign | Meltdown | Pulverize | Shattering Spree |
+|                                       | By Force   | Consign   | Meltdown   | Pulverize   | Shattering Spree   |
 | ------------------------------------- | :--------: | :-------: | :--------: | :---------: | :----------------: |
 | **Chalice @ 0**                       | 1R         | 1U        | R          | 0           | R                  |
 | **Chalice @ 1**                       | 1R         | 1U        | 1R         | 0           | RR                 |
@@ -254,6 +254,7 @@ piece/(s) listed.
 | **Thorn of Amethyst + Chalice @ 0**   | 3R         | X         | 3R         | 1           | 1RR                |
 | **Thorn of Amethyst + Chalice @ 1**   | 3R         | X         | 3R         | 1           | 1RRR               |
 | **Thorn of Amethyst + Chalice @ 2**   | 3R         | X         | 3R         | 1           | 1RR                |
+
 
 ## Summary
 
