@@ -17,36 +17,35 @@ List of current tables present:
 This is a list of the most commonly used spells that can be
 'tutored' via Burning Wish.
 
-|        |By Force|Consign|Meltdown|Pulverize|Shattering Spree|Void Snare|
-|--------|:------:|:------:|:------:|:------:|:------:|:------:|
-|**Chalice @0**|1R|1U|R|0|R|U|
-|**Chalice @1**|1R|1U|1R|0|RR|X|
-|**Chalice @2**|X|X|R|0|R|U|
-|**Chalice @3**|1R|1U|R|0|R|U|
-|**Chalice @4**|1R|1U|R|0|R|U|
-|**Chalices @0+1**|2R|X|1R|0|RRR|X|
-|**Chalices @0+2**|2R|X|R|0|RR|X|
-|**Chalices @0+3**|X|X|R|0|RR|X|
-|**Chalices @0+4**|2R|X|R|0|RR|X|
-|**Chalices @1+2**|2R|X|2R|0|RRR|X|
-|**Chalices @1+3**|X|X|1R|0|RRR|X|
-|**Chalices @1+4**|2R|X|1R|0|RRR|X|
-|**Chalices @2+3**|X|X|R|0|RR|X|
-|**Chalices @2+4**|2R|X|2R|0|RR|X|
-|**Trinisphere**|2R|2U|3R|3|2R|2U|
-|**Trinisphere + Chalice @0**|2R|X|3R|4|1RR|X|
-|**Trinisphere + Chalice @1**|2R|X|3R|3|RRR|X|
-|**Trinisphere + Chalice @2**|2R|X|3R|3|1RR|X|
-|**Trinisphere + Chalice @3**|X|X|3R|3|1RR|X|
-|**Trinisphere + Chalice @4**|2R|X|4R|3|1RR|X|
-|**Thorn of Amethyst**|2R|2U|3R|1|1R|1U|
-|**2 Thorns of Amethyst**|4R|3U|4R|2|1RR|2U|
-|**Thorn of Amethyst + Chalice @0**|3R|3U|3R|1|1RR|X|
-|**Thorn of Amethyst + Chalice @1**|3R|X|3R|1|1RRR|X|
-|**Thorn of Amethyst + Chalice @2**|3R|X|3R|1|1RR|X|
-|**Thorn of Amethyst + Chalice @3**|X|X|ER|1|1RR|X|
-|**Thorn of Amethyst + Chalice @4**|3R|X|4R|1|1RR|X|
-
+|          | By Force | Consign  | Meltdown | Pulverize | Shattering Spree | Void Snare |
+| -------- | :------: | :------: | :------: | :-------: | :--------------: | :--------: |
+| **Chalice @0** | 1R | 1U | R | 0 | R | U |
+| **Chalice @1** | 1R | 1U | 1R | 0 | RR | X |
+| **Chalice @2** | X | X | R | 0 | R | U |
+| **Chalice @3** | 1R | 1U | R | 0 | R | U |
+| **Chalice @4** | 1R | 1U | R | 0 | R | U |
+| **Chalices @0+1** | 2R | X | 1R | 0 | RRR | X |
+| **Chalices @0+2** | 2R | X | R | 0 | RR | X |
+| **Chalices @0+3** | X | X | R | 0 | RR | X |
+| **Chalices @0+4** | 2R | X | R | 0 | RR | X |
+| **Chalices @1+2** | 2R | X | 2R | 0 | RRR | X |
+| **Chalices @1+3** | X | X | 1R | 0 | RRR | X |
+| **Chalices @1+4** | 2R | X | 1R | 0 | RRR | X |
+| **Chalices @2+3** | X | X | R | 0 | RR | X |
+| **Chalices @2+4** | 2R | X | 2R | 0 | RR | X |
+| **Trinisphere** | 2R | 2U | 3R | 3 | 2R | 2U |
+| **Trinisphere + Chalice @0** | 2R | X | 3R | 4 | 1RR | X |
+| **Trinisphere + Chalice @1** | 2R | X | 3R | 3 | RRR | X |
+| **Trinisphere + Chalice @2** | 2R | X | 3R | 3 | 1RR | X |
+| **Trinisphere + Chalice @3** | X | X | 3R | 3 | 1RR | X |
+| **Trinisphere + Chalice @4** | 2R | X | 4R | 3 | 1RR | X |
+| **Thorn of Amethyst** | 2R | 2U | 3R | 1 | 1R | 1U |
+| **2 Thorns of Amethyst** | 4R | 3U | 4R | 2 | 1RR | 2U |
+| **Thorn of Amethyst + Chalice @0** | 3R | 3U | 3R | 1 | 1RR | X |
+| **Thorn of Amethyst + Chalice @1** | 3R | X | 3R | 1 | 1RRR | X |
+| **Thorn of Amethyst + Chalice @2** | 3R | X | 3R | 1 | 1RR | X |
+| **Thorn of Amethyst + Chalice @3** | X | X | 3R | 1 | 1RR | X |
+| **Thorn of Amethyst + Chalice @4** | 3R| X | 4R | 1 | 1RR | X |
 
 
 #### 2. Table of Alternative Wishable Artifact Removal Costs

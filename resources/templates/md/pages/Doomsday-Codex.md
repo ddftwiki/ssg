@@ -63,5 +63,5 @@ Appendices:
 I. [Pile Document](/pages-output/appendix/pile-doc)  
 II. Puzzle answers (Under Construction)  
 III. [Sample Decklists](/pages-output/appendix/Decklist)   
-IV. [Interesting Card Interactions](/pages-output/appendix/interesting-interactions)
+IV. [Interesting Card Interactions](/pages-output/appendix/interesting-interactions)   
 V. [Removal Tables](/pages-output/appendix/rem_table)   
