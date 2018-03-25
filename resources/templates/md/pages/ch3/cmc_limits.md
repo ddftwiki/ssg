@@ -235,7 +235,7 @@ removal spells, that can be fetched with BW, in terms of removing certain
 limitation pieces. X denotes it cannot achieve the function of removing the lock
 piece/(s) listed.
 
-*A more complete version of this table may be found in [Appendix V]/pages-output/appendix/rem_table).
+*A more complete version of this table may be found in [Appendix V](/pages-output/appendix/rem_table).
 
 |                                       | By Force   | Consign   | Meltdown   | Pulverize   | Shattering Spree   |
 | ------------------------------------- | :--------: | :-------: | :--------: | :---------: | :----------------: |
