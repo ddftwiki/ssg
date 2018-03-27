@@ -10,8 +10,7 @@
  
  ## Podcasts:
  
- - [So many Insane Plays Episode 77]
- (http://www.eternalcentral.com/so-many-insane-plays-podcast-episode-77-masters-25-preview-and-arabian-nights-review/)
+ - [So many Insane Plays Episode 77](http://www.eternalcentral.com/so-many-insane-plays-podcast-episode-77-masters-25-preview-and-arabian-nights-review/)
  
  ## Twitch Streamers:
  
