@@ -30,7 +30,9 @@
  :hide-future-posts?   true
  :klipse               {}
  ;; links for the sidebar
- :extra-links [["Storm Boards" "https://teamstormboards.proboards.com/"]
+ :extra-links [      ["Doomsday Discord" " https://discord.gg/vajvFXt"]
+		      ["DDFT Facebook Group" "https://www.facebook.com/groups/128925840926904/?ref=bookmarks"]
+		      ["Storm Boards" "https://teamstormboards.proboards.com/"]
                ["/r/MTGLegacy" "https://reddit.com/r/mtglegacy/"]
                ["The Source"   "http://mtgthesource.com"]
 			   ["g0ld_rook's Youtube channel" "https://www.youtube.com/channel/UC5uCLmqksd7KrHdKa6Gxmaw"]
@@ -44,5 +46,6 @@
 						"d8dk32" {:name "Lee C."},
 						"Doishy" {:name "Doishy"},
 						"bennotsi" {:name "B. van Werkhoven"}}
+ 						"Robert" {:name "Robert"}}
 								  
  :debug?               true}
