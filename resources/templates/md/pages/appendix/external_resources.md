@@ -1,6 +1,5 @@
 {:title "Other Doomsday Resources"
  :layout :page
- :author "Doishy"
  :page-index 906
  :navbar? false
  :home? false}
