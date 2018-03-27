@@ -24,3 +24,8 @@
  - [Erik Bjerknes' (Hulahula) Youtube channel](https://www.youtube.com/user/hulahula5000)
  - [d8dk32's Youtube channel](https://www.youtube.com/channel/UCD0Os6qvXicEZl6gJ_xPXGw)
  
+ ## Videos
+ 
+ - [d8dk32 Top 8 (Legacy Titanium Series 1K Challenge - August 2017](https://www.youtube.com/watch?v=VmmR_3pG0Rs&feature=youtu.be&t=38m3s)
+ 
+ 
