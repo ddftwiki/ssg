@@ -34,10 +34,7 @@
 		      ["DDFT Facebook Group" "https://www.facebook.com/groups/128925840926904/?ref=bookmarks"]
 		      ["Storm Boards" "https://teamstormboards.proboards.com/"]
                ["/r/MTGLegacy" "https://reddit.com/r/mtglegacy/"]
-               ["The Source"   "http://mtgthesource.com"]
-			   ["g0ld_rook's Youtube channel" "https://www.youtube.com/channel/UC5uCLmqksd7KrHdKa6Gxmaw"]
-			   ["Erik Bjerknes' (Hulahula) Youtube channel" "https://www.youtube.com/user/hulahula5000"]
-			   ["d8dk32's Youtube channel" "https://www.youtube.com/channel/UCD0Os6qvXicEZl6gJ_xPXGw"]]
+               ["The Source"   "http://mtgthesource.com"]]
  ;; add yourself in if you'd like
  :authors              {"emidln" {:name "Brandon Adams"
                                   :twitter "emidln"
