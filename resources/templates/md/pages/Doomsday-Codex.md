@@ -60,8 +60,9 @@ Chapter 7, Miscellaneous:
 Under Construction  
 
 Appendices:  
-I. [Pile Document](/pages-output/appendix/pile-doc)  
-II. Puzzle answers (Under Construction)  
+I.   [Pile Document](/pages-output/appendix/pile-doc)  
+II.  Puzzle answers (Under Construction)  
 III. [Sample Decklists](/pages-output/appendix/Decklist)   
-IV. [Interesting Card Interactions](/pages-output/appendix/interesting-interactions)   
-V. [Removal Tables](/pages-output/appendix/rem_table)   
+IV.  [Interesting Card Interactions](/pages-output/appendix/interesting-interactions)   
+V.   [Removal Tables](/pages-output/appendix/rem_table)   
+VI.  [Doomsday Resources](/pages-output/appendix/external_resources)   
