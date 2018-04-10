@@ -45,7 +45,7 @@ This is a list of the most commonly used spells that can be
 | **Thorn of Amethyst + Chalice @1** | 3R | X | 3R | 1 | 1RRR | X |
 | **Thorn of Amethyst + Chalice @2** | 3R | X | 3R | 1 | 1RR | X |
 | **Thorn of Amethyst + Chalice @3** | X | X | 3R | 1 | 1RR | X |
-| **Thorn of Amethyst + Chalice @4** | 3R| X | 4R | 1 | 1RR | X |
+| **Thorn of Amethyst + Chalice @4** | 3R| X | 3R | 1 | 1RR | X |
 
 
 #### 2. Table of Alternative Wishable Artifact Removal Costs
