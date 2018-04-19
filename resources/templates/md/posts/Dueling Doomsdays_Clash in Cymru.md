@@ -338,7 +338,7 @@ to Doomsday first but it's a bluff and he sets up an easy PTT pile. I school him
 excellent at casting brainstorms and combo him out with a Storm pile and LM beats (did I
 mention I had a LM beating down during this game?).   
 Game 2 he once again tries to imply foul things about my heritage by throwing 10 Goblins and a 
-flashbacked Cabal Therapy my way. I take a hit and, after checking what was up state my inability
+flashbacked Cabal Therapy my way. I take a hit and, after checking what was up, state my inability
 to combat maths to then proceed to then Throw 14 Goblins down in response. (I think I managed 
 to CT two Doomsdays this game at some point). I am on 6 life at this point but find a Doomsday 
 so ignore the board because urgh, creatures and cast it setting up a CB ToA loop stack. He draws
@@ -350,6 +350,7 @@ Doomsday in the Top 8 over personal glory but alas it was for naught because the
 on six points and who even knows how that shit works anyways?. 
 
 ![Dat Gamestate](/img/MirrorMatchBoardState.png)
+- 9 Goblins stare down 14 ~~Business Cards~~ Goblins as a Doomsday resolves.
 
 ## Ending Thoughts
 
