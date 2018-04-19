@@ -31,7 +31,7 @@ Maverick
 No Chalice decks (yay) and only one Ctrl+C, Ctrl+V out. As you can see Doomsday made
 up a significant portion of the metagame (10.5%!) with myself and ApeofJustice representing.
 
-** Our lists:**
+**Our lists:**
 
 ApeofJustice:
 
@@ -148,7 +148,7 @@ Let's get into it. Reports written by their respective pilots:
 **Player: ApeofJustice  
 Opponent: Ben (the eventual tournament winner)  
 Opposing Deck: ANT  
-Result: 1-2  **
+Result: 1-2**
 
 Playing against Ben (the eventual tournament winner), who I knew was playing
 ANT even before going into the match. On the draw.  
@@ -168,7 +168,7 @@ playing against those odds. Ben hits a Ponder, shuffles, and hits the Tutor. GG
 **Player: Doishy  
 Opponent: Sammie  
 Opposing Deck: Miracles  
-Result: 0-2  
+Result: 0-2**  
 
 Round 1 vs Sammie on Miracles. I have played him before and he was on a UW Delver brew so I suspected 
 counterspells et al. I have an early combo but he has maindeck fluster! I rebuild and try to find things
@@ -192,7 +192,7 @@ feel pretty angry.
 **Player: ApeofJustice  
 Opponent: Morgan  
 Opposing Deck: Sneak and Show  
-Result: 2-0  
+Result: 2-0**  
 
 Playing against Morgan, who seemed to be somewhat new to the format. We all start somewhere. On the play.  
 G1) Morgan mulligans to 6 cards and scrys to the top. I keep a pretty solid hand with cantrips, 
@@ -215,7 +215,7 @@ BW I put back ontop (With him on 19 and my storm currently 6), to go for an Empt
 **Player: Doishy  
 Opponent: Justin  
 Opposing Deck: BUG Delver  
-Result: 2-1  
+Result: 2-1**  
 
 Round 2 I face Justin on BUG Delver. I get the play and probe seeing a classic BUG hand. I 
 Duress away a Force of Will and T2 therapy away a Daze. He drops a Goyf T2 and I respond with
@@ -233,7 +233,7 @@ This round I also enjoyed watching the lands mirror occurring to my left XD
 **Player: ApeofJustice  
 Opponent: Josh  
 Opposing Deck: Turbo Depths  
-Result: 0-2    
+Result: 0-2**    
 
 Playing against Josh, running Turbo Depths. On the Draw.  
 G1) In the blind, I keep a fair 7, with a BW, DR, LP, Island, Fetch, Ponder, Brainstorm. 
@@ -254,7 +254,7 @@ lages on T3 with a petal he drew.
 **Player: Doishy  
 Opponent: Mark  
 Opposing Deck: Copy Paste  
-Result: 0-2  
+Result: 0-2**  
 
 Round 3 was against Mark on Ctrl+C, Ctrl+V. He is a Bristol local so both of us know the score. 
 G1 we manage to strip each other of hand resources but I have a good stable manabase and CB 
@@ -275,7 +275,7 @@ that I could ignore and 2 unknowns and hey, the unknowns were of course FoW and 
 **Player: ApeofJustice  
 Opponent: Mark  
 Opposing Deck: Infect
-Result: 2-1  
+Result: 2-1**  
 
 Playing against Mark who I knew is on Infect. I feel it’s a bad match up, and know that losing this would 
 put me out of top 8 contention. Unfortunately for Mark, he shows up a tad late to the match and received a
@@ -292,7 +292,7 @@ I take, then proceed to standard pile ToA kill him.
 **Player: Doishy  
 Opponent: Rosie  
 Opposing Deck: Lands  
-Result: 2-0  
+Result: 2-0**  
 
 Round 4 I get the bye aka Lands.  
 Game 1 she plays lands, I cantrip. As she ends her second turn she says "I know you're on Doomsday,
@@ -316,14 +316,14 @@ win so Chain and Kill her.
 **Player: ApeofJustice/Doishy
 Opponent: Doishy/ApeofJustic   
 Opposing Deck: THE MIRROR!  
-Result: Madness      
+Result: Madness**      
 
-**ApeofJustice:  
+**ApeofJustice:**  
 
 I played against Doishy.  
 It was a wonderfully fun game and I couldn’t do this game justice with regards to the report. 
 
-**Doishy:  
+**Doishy:**  
 
 Round 5 is something truly special. Round 5 vs ApeofJustice on Doomsday.  
 The 100% mirror.  
@@ -354,7 +354,7 @@ on six points and who even knows how that shit works anyways?.
 
 ## Ending Thoughts
 
-**ApeofJustice:
+**ApeofJustice:**
 
 I went 2-3 in actual matches. I feel that my opponents had a couple of particularly fortunate draws,
 but I was somewhat pleased with my overall play. I certainly still have some space for improvement,
@@ -362,7 +362,7 @@ especially seeing the play from Doishy with his CB piles (something I very rarel
 Either way, I had a tremendously fun event in Cardiff, and am glad to meet some of the people
 of this community.
 
-**Doishy:
+**Doishy:**
 
 3-2 overall but a fun day nonethless.
 Nice gloating point to note: My Standstill deck piloted by my friend Alex came second. His Semi 
