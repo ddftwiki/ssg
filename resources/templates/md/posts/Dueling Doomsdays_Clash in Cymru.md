@@ -5,9 +5,10 @@
 
 One week prior to the event our local Legacy Judgette suddenly fired out 
 info of a GPT, one of those hasn't been seen in ages, but it's Legacy and
-it's local. 19 players converged into Firestorm games despite the short
+it's local.  
+Saturday the 7th of April: 19 players converged into Firestorm games despite the short
 notice and terrible weather (like wow it was bad). Five rounds of Swiss with
-cut to Top 8. Thanks to the lovely judges we have the full metagame breakdown:
+cut to Top 8. Thanks to the lovely judges we gave the full metagame breakdown:
 
 ```
 Standstill
