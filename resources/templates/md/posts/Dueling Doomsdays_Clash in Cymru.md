@@ -331,6 +331,7 @@ James on James, Doomsday on Doomsday action.
 It was everything everyone dreams of.  
 
 ![Game Faces](/img/MirrorMatch.png)
+- Ape (Front) feeling the pressure as Doishy (Back) gets super srs.
 
 Game 1 he displays superior die skills and both of us wreck the hands of the other. He manages
 to Doomsday first but it's a bluff and he sets up an easy PTT pile. I school him by being 
