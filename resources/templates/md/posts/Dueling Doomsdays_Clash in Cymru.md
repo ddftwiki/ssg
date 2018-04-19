@@ -31,12 +31,109 @@ No Chalice decks (yay) and only one Ctrl+C, Ctrl+V out. As you can see Doomsday 
 up a significant portion of the metagame (10.5%!) with myself and ApeofJustice representing.
 
 ** Our lists:**
+````
+ApeofJustice:
+Maindeck:
 
-| ApeofJustice | Doishy |
-| :----: | :----: |
-|        |        |
+Sorceries (25)
+3x Doomsday
+4x Burning Wish
+4x Ponder
+4x Gitaxian Probe
+2x Preordain
+3x Duress
+3x Cabal Therapy
+1x Thoughtseize
+1x Act on Impulse
 
+Instant (9)
+1x Rain of Filth
+4x Brainstorm
+4x Dark Ritual
 
+Artifact (10)
+4x Lion’s Eye Diamond
+4x Lotus Petal
+2x Conjurer’s Bauble
+
+Creature (1)
+1x Laboratory Maniac
+
+Lands (15)
+4x Polluted Delta
+3x Scalding Tarn
+1x Bloodstained Mire
+2x Underground Sea
+1x Volcanic Island
+1x Badlands
+2x Island
+1x Swamp
+
+Sideboard:
+1x Doomsday
+1x Massacre
+1x By Force
+1x Act on Impulse
+1x Cabal Therapy
+1x Void Snare
+2x Empty the Warrens
+1x Tendrils of Agony
+1x Shelldock Isle
+1x Emrakul, the Aeon’s Torn
+1x Hurkyl’s Recall
+1x Engineered Explosives
+1x Echoing Truth
+1x Surgical Extraction
+
+Doishy:
+Maindeck:
+
+Sorceries (25)
+3x Doomsday
+4x Burning Wish
+4x Ponder
+4x Gitaxian Probe
+2x Preordain
+1x Duress
+3x Cabal Therapy
+2x Thoughtseize
+1x Act on Impulse
+1x Tendrils of Agony
+
+Instant (9)
+4x Brainstorm
+4x Dark Ritual
+
+Artifact (10)
+4x Lion’s Eye Diamond
+4x Lotus Petal
+3x Conjurer’s Bauble
+
+Creature (1)
+1x Laboratory Maniac
+
+Lands (15)
+4x Polluted Delta
+4x Scalding Tarn
+2x Underground Sea
+1x Volcanic Island
+1x Badlands
+2x Island
+1x Swamp
+
+Sideboard:
+1x Doomsday
+1x Massacre
+1x Ideas Unbound
+1x Duress
+1x Tropical Island
+1x Empty the Warrens
+1x Tendrils of Agony
+2x Hurkyl’s Recall
+2x Chain of Vapor
+2x Xantid Swarm
+2x Carpet of Flowers
+```
 Let's get into it. Reports written by their respective pilots:
 
 ### Round 1
@@ -226,7 +323,7 @@ The 100% mirror.
 James on James, Doomsday on Doomsday action.  
 It was everything everyone dreams of.  
 
-[!Pre-match faces]()
+![Game Faces](/img/MirrorMatch.png)
 
 Game 1 he displays superior die skills and both of us wreck the hands of the other. He manages
 to Doomsday first but it's a bluff and he sets up an easy PTT pile. I school him by being 
@@ -244,7 +341,7 @@ SUPERIOR CREATURES for the rest. I then write down my 2-0 as an 0-2 because brea
 Doomsday in the Top 8 over personal glory but alas it was for naught because there was a big tie of people
 on six points and who even knows how that shit works anyways?. 
 
-[!Dat gamestate though...]()
+![Dat Gamestate](/img/MirrorMatchBoardState.png)
 
 ## Ending Thoughts
 
