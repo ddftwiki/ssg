@@ -31,8 +31,10 @@ No Chalice decks (yay) and only one Ctrl+C, Ctrl+V out. As you can see Doomsday 
 up a significant portion of the metagame (10.5%!) with myself and ApeofJustice representing.
 
 ** Our lists:**
-````
+
 ApeofJustice:
+
+```
 Maindeck:
 
 Sorceries (25)
@@ -84,8 +86,10 @@ Sideboard:
 1x Engineered Explosives
 1x Echoing Truth
 1x Surgical Extraction
+```
 
 Doishy:
+```
 Maindeck:
 
 Sorceries (25)
@@ -133,7 +137,9 @@ Sideboard:
 2x Chain of Vapor
 2x Xantid Swarm
 2x Carpet of Flowers
+
 ```
+
 Let's get into it. Reports written by their respective pilots:
 
 ### Round 1
