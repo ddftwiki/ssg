@@ -279,13 +279,13 @@ Result: 2-1
 Playing against Mark who I knew is on Infect. I feel it’s a bad match up, and know that losing this would 
 put me out of top 8 contention. Unfortunately for Mark, he shows up a tad late to the match and received a
 game loss, so the match started 1-0 in my favour. On the draw.  
-G1) I keep a slow grindy hand. Mark sticks a T1 Glistner Elf, and I die on T4 due to not hitting the action
+G1) I keep a slow grindy hand. Mark sticks a T1 Glistener Elf, and I die on T4 due to not hitting the action
 in my disruption and cantrip heavy hand.  
-G2) Mark mulligans to 6 and scrys to the top, I keep a T2 kill if I draw a cantrip or LED. I have a thoughtseize
+G2) Mark mulligans to 6 and scrys to the top, I keep a T2 kill if I draw a cantrip or LED. I have a Thoughtseize
 but decide to play a land and hold the thoughtseize, since I have the mana to cast it and combo next turn if 
 I can draw the cantrip. Mark plays a T1 Pithing Needle on LED and I inform him that it is infact a mana ability
 – feels bad man. (Editor's note: Mark knows better than this and I did slap him after because he's a pillock)
-I get the cantrip, thoughtseize him, and see his only interaction was a flusterstorm, which
+I get the cantrip, Thoughtseize him, and see his only interaction was a Flusterstorm, which
 I take, then proceed to standard pile ToA kill him. 
 
 **Player: Doishy  
