@@ -179,7 +179,7 @@ second DD off the top to then win (or maybe it was BW into ToA or something?) ba
 DD and he lets it resolve....oh dear! I have to go for it but he has the Fluster and hits something and 
 Mentor tokens kill me because I don't have enough resources to make a pile involving a CT first or anything
 ( not that it would help). Game 2 I have a really nice opener with a Trop and Xantid. He starts T0 with
-Leyline of Sanct. Huh, well should be fine if BUG hits. I T1 bug and we stick it. He T1 goes land and 
+Leyline of Sanct. Huh, well should be fine if Swarm hits. I T1 Swarm and we stick it. He T1 goes land and 
 Brainstorm. I cantrip and set up a T3 kill. He flips a Terminus (SALT ALERT SEGWAY: WHY THE FUCK DOES HE
 STILL HAVE THIS CARD IN HIS DECK? LIKE COME ON, REALLY....FFS [Sidenote: Turns out he thought he did not
 have enough good cards to board in so had to keep some bad ones.....he had one left in the deck.]) So anyways 
