@@ -162,7 +162,7 @@ Ponders on his turn, shuffles, then passes. I feel somewhat confident with the s
 another Doomsday for turn. I Duress him on my T1, and take a Brainstorm seeing a hand of Flooded
 Strand, Lotus Petal, LED, and 2 Cabal Rituals. Then with no cantrips, I don’t feel confident letting
 this game going long, so I set up a pass the turn pile with Laboratory Maniac, going straight to
-10. If he draws a tutor, or the Tendrils I die, but that is only a 5 outer, so Im quite happy
+10 life. If he draws a tutor, or the Tendrils I die, but that is only a 5 outer, so Im quite happy
 playing against those odds. Ben hits a Ponder, shuffles, and hits the Tutor. GG
 
 **Player: Doishy  
@@ -181,8 +181,8 @@ Mentor tokens kill me because I don't have enough resources to make a pile invol
 ( not that it would help). Game 2 I have a really nice opener with a Trop and Xantid. He starts T0 with
 Leyline of Sanct. Huh, well should be fine if Swarm hits. I T1 Swarm and we stick it. He T1 goes land and 
 Brainstorm. I cantrip and set up a T3 kill. He flips a Terminus (SALT ALERT SEGWAY: WHY THE FUCK DOES HE
-STILL HAVE THIS CARD IN HIS DECK? LIKE COME ON, REALLY....FFS [Sidenote: Turns out he thought he did not
-have enough good cards to board in so had to keep some bad ones.....he had one left in the deck.]) So anyways 
+STILL HAVE THIS CARD IN HIS DECK? LIKE COME ON, REALLY....FFS (Sidenote: Turns out he thought he did not
+have enough good cards to board in so had to keep some bad ones.....he had one left in the deck.)) So anyways 
 I go for it anyway and meet and Flusterstorm for my troubles. Again I try to rebuild but cannot interact
 meaningfully thanks to Leyline and not having boarded in any Bounce spells. I die to Mentor tokens and
 feel pretty angry.
@@ -349,7 +349,7 @@ SUPERIOR CREATURES for the rest. I then write down my 2-0 as an 0-2 because brea
 Doomsday in the Top 8 over personal glory but alas it was for naught because there was a big tie of people
 on six points and who even knows how that shit works anyways?. 
 
-![Dat Gamestate](/img/MirrorMatchBoardState.png)
+![Dat Gamestate](/img/MIrrorMatchBoardState.png)
 - 9 Goblins stare down 14 ~~Business Cards~~ Goblins as a Doomsday resolves.
 
 ## Ending Thoughts
