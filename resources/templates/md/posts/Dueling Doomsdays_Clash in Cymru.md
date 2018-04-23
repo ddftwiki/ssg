@@ -1,5 +1,5 @@
 {:title "Dueling Doomsday: Clash in Cymru" 
-:author "ApeofJustice, Doishy" :date "2018-04-11" :tags ["DDFT, Report"] :layout :post :draft? false}
+:author "ApeofJustice, Doishy" :date "2018-04-23" :tags ["DDFT, Report"] :layout :post :draft? false}
 
 ## Setting the scene:
 
