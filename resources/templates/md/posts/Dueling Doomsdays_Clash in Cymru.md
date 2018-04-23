@@ -29,7 +29,7 @@ Maverick
 ```
 
 No Chalice decks (yay) and only one Ctrl+C, Ctrl+V out. As you can see Doomsday made
-up a significant portion of the metagame (10.5%!) with myself and ApeofJustice representing.
+up a significant portion of the metagame (10.5%!) with myself (Doishy) and ApeofJustice representing.
 
 **Our lists:**
 
@@ -105,11 +105,11 @@ Sorceries (25)
 1x Act on Impulse
 1x Tendrils of Agony
 
-Instant (9)
+Instant (8)
 4x Brainstorm
 4x Dark Ritual
 
-Artifact (10)
+Artifact (11)
 4x Lion’s Eye Diamond
 4x Lotus Petal
 3x Conjurer’s Bauble
@@ -154,12 +154,12 @@ Playing against Ben (the eventual tournament winner), who I knew was playing
 ANT even before going into the match. On the draw.  
 G1) I get killed on T1, oh well, what you gunna do. Can’t help that’s just how it sometimes goes.   
 G2) This game was quite grindy, with lots of hand disruption thrown between each player, Ben
-does a mini tendrils against me quite early on. I soon draw a Surgical Extraction, and target
-his Tendrils of Agony; Ben concedes in response. Obviously didn’t side in or maindeck any empty the warrens.   
+does a mini Tendrils against me quite early on. I soon draw a Surgical Extraction, and target
+his Tendrils of Agony; Ben concedes in response. Obviously didn’t side in or maindeck any Empty the Warrens.   
 G3) On the draw I keep a hand that is solid with some disruption, mana and DD, but no cantrips.
 Ben kept a 7 so I didn’t feel I could justify going below with this serviceable hand. Ben just
 Ponders on his turn, shuffles, then passes. I feel somewhat confident with the shuffle, and draw
-another Doomsday for turn. I duress him on my T1, and take a Brainstorm seeing a hand of Flooded
+another Doomsday for turn. I Duress him on my T1, and take a Brainstorm seeing a hand of Flooded
 Strand, Lotus Petal, LED, and 2 Cabal Rituals. Then with no cantrips, I don’t feel confident letting
 this game going long, so I set up a pass the turn pile with Laboratory Maniac, going straight to
 10. If he draws a tutor, or the Tendrils I die, but that is only a 5 outer, so Im quite happy
@@ -239,17 +239,17 @@ Playing against Josh, running Turbo Depths. On the Draw.
 G1) In the blind, I keep a fair 7, with a BW, DR, LP, Island, Fetch, Ponder, Brainstorm. 
 Josh leads with Urborg, then Needles Wasteland primitively. I draw another land, and feel 
 obliged to Wish for a Therapy to name Vampire Hexmage as a response to the threatening 
-T2 Marit Lage. Therapy reveals 3 lotus petals, 1 Elvish Spiritguide, and a crop rotation.
+T2 Marit Lage. Therapy reveals 3 Lotus Petals, 1 Elvish Spirit Guide, and a Crop Rotation.
 Josh topdecks an Expedition Map, tutors a Dark Depths and plays it, leaving a LP in play and
-ESG and a Rotation in hand. I know I’m dead next turn. Hope he misses it. I brainstorm into
+ESG and a Rotation in hand. I know I’m dead next turn. Hope he misses it. I Brainstorm into
 cards to set up a PTT pile, attempt to set it up, but Josh makes a 20/20 in response to the
 Doomsday, and I concede.  
 G2) Josh mulligans to 6 and scrys to the top. That scry feels a little threatening, I keep a
-solid hand with a T1 Thoughtseize, T2 Kill. I thoughtseize him, seeing Dark Depths, Stage, 
+solid hand with a T1 Thoughtseize, T2 Kill. I Thoughtseize him, seeing Dark Depths, Stage, 
 Karakas, Snow-covered Forest, Catacombs, and my only option of a Duress. Feel quietly hopeful. 
 Turns out his scry was a Thoughtseize as well, and he takes my doomsday, and I proceed to cast 
 my only cantrip (ponder) find 3 lands, shuffle draw a land, then continue flooding out. He Marit 
-lages on T3 with a petal he drew.
+Lages on T3 with a petal he drew.
 
 **Player: Doishy  
 Opponent: Mark  
