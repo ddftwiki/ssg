@@ -66,6 +66,7 @@ the increased skillset of cards used.*
 
 Below is a quick synopsis of each puzzle.  
 Click on the puzzle title to go to a more detailed display.  
+
 -------------
 
 ### CH1.A
