@@ -157,4 +157,4 @@ You have no land drop for turn. Laboratory Maniac is exiled.
 - Your life: 11
 - Opponent has an Aether Vial set to 3 (Tapped), Recruiter of the Guard , Leonin Arbiter, Spirit of the Labirynth, Stone Forge Mystic, Sword of Fire and Ice (unequipped).
 -Opponent Lands: Karakas, Cavern of Souls 
-- Win this turn
+- Win before your opponent kills you
