@@ -69,7 +69,7 @@ Below is a quick synopsis of each puzzle.
 Click on the puzzle title to go to a more detailed display. 
 
 -------------
-### CH3.A  
+### [CH3.A]()
 
 - In play:  Badlands, Volcanic Island
 - In hand:  Act on Impulse, Dark Ritual, Doomsday, Laboratory Maniac, Lion's Eye Diamond, Lotus Petal, Rain of Filth
@@ -78,7 +78,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has a Leyline of Sanctity in play, no other relevant interaction. You have no land drop available.
 - Win this turn
 
-### CH3.B  
+### [CH3.B]()
 
 - In play:  Badlands, Lotus Petal, Swamp, Underground Sea, Underground Sea, Volcanic Island
 - In hand:  Burning Wish, Cabal Therapy, Dark Ritual, Doomsday, Lion's Eye Diamond, Rain of Filth
@@ -89,7 +89,7 @@ attached to a germ token, Stone Forge Mystic and Vendillion Clique in play, no o
 You have no land drop available.
 - Win this turn
 
-### CH3.B Tier 2 
+### [CH3.B Tier 2]()
 
 - In play:  Badlands, Lotus Petal, Swamp, Underground Sea, Underground Sea, Volcanic Island
 - In hand:  Burning Wish, Cabal Therapy, Dark Ritual, Doomsday, Lion's Eye Diamond, Rain of Filth
@@ -100,7 +100,7 @@ attached to a germ token, Stoneforge Mystic, Vendillion Clique and Pithing Needl
 in play, no other relevant interaction. You have no land drop available.
 - Win this turn
 
-### CH3.C  
+### [CH3.C]()
 
 - In play:  Conjurer's Bauble, Island
 - In hand:  Burning Wish, Dark Ritual, Doomsday, Gitaxian Probe, Lion's Eye Diamond, Underground Sea
@@ -109,7 +109,7 @@ in play, no other relevant interaction. You have no land drop available.
 - Opponent has a tapped Seat of the Synod, a Grindstone and a Lion's Eye Diamond, no other relevant interaction.
 - Win this turn
 
-### CH3.D  
+### [CH3.D]()
 
 - In play:  Lotus Petal, Swamp, Underground Sea, Volcanic Island
 - In hand:  Burning Wish, Dark Ritual, Gitaxian Probe, Lion's Eye Diamond, Lion's Eye Diamond
@@ -119,7 +119,7 @@ in play, no other relevant interaction. You have no land drop available.
 no other relevant interaction.
 - Win this turn
 
-### CH3.E  
+### [CH3.E]()
 
 - In play:  Island, Polluted Delta
 - In hand:  Burning Wish, Dark Ritual, Gitaxian Probe, Lion's Eye Diamond, Lotus Petal, Lotus Petal
@@ -129,7 +129,7 @@ no other relevant interaction.
 You have no land drop for turn.
 - Win this turn
 
-### CH3.E Tier 2
+### [CH3.E Tier 2]()
 
 - In play:  Island, Polluted Delta
 - In hand:  Burning Wish, Dark Ritual, Gitaxian Probe, Lion's Eye Diamond, Lotus Petal, Lotus Petal
