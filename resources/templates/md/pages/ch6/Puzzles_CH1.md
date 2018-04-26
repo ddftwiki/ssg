@@ -1,4 +1,4 @@
-{:title "Puzzles for Chapter 1" :layout :page :page-index 600 :navbar? false :home? false :author "Robbert, Doishy"}
+{:title "Puzzles for Chapter 1" :layout :page :page-index 600 :navbar? false :home? false :author "Robert, Doishy"}
 
 In the "Puzzles" section of the codex we shall test your learning from 
 the previous chapters and also present some fun mental excercises.  
