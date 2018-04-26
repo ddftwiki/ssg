@@ -69,7 +69,7 @@ Click on the puzzle title to go to a more detailed display.
 
 -------------
 
-### [CH1.A]()
+### [CH1.A](/pages-output/ch6/CH1-A)
 
 - In play:  Volcanic Island, Swamp
 - In hand:  Brainstorm, Burning Wish, Dark Ritual, Doomsday
@@ -78,7 +78,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has no relevant interaction
 - Win this turn
 
-### [CH1.B]()
+### [CH1.B](/pages-output/ch6/CH1-B)
 
 - In play:  Swamp
 - In hand:  Dark Ritual, Doomsday, Gitaxian Probe, Gitaxian Probe
@@ -87,7 +87,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has no relevant interaction
 - Win this turn
 
-### [CH1.C]()
+### [CH1.C](/pages-output/ch6/CH1-C)
 
 - In play:  Underground Sea, Volcanic Island
 - In hand:  Burning Wish, Dark Ritual, Dark Ritual, Doomsday, Gitaxian Probe
@@ -96,7 +96,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has no relevant interaction
 - Win this turn
 
-### [CH1.D]()
+### [CH1.D](/pages-output/ch6/CH1-D)
 
 - In play:  Badlands, Island
 - In hand:  Brainstorm, Brainstorm, Burning Wish, Dark Ritual, Doomsday, Lotus Petal, Lotus Petal
@@ -105,7 +105,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has no relevant interaction, storm count is 1.
 - Win this turn
 
-### [CH1.E]()
+### [CH1.E](/pages-output/ch6/CH1-E)
 
 - In play:  Badlands, Island, Swamp
 - In hand:  Brainstorm, Brainstorm, Burning Wish, Dark Ritual, Doomsday, Lotus Petal, Lotus Petal
@@ -114,7 +114,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has no relevant interaction.
 - Win this turn
 
-### [CH1.F]()
+### [CH1.F](/pages-output/ch6/CH1-F)
 
 - In play:  Underground Sea, Underground Sea, Volcanic Island
 - In hand:  Brainstorm, Burning Wish, Dark Ritual, Dark Ritual, Doomsday, Gitaxian Probe
