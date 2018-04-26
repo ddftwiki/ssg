@@ -1,4 +1,4 @@
-{:title "Puzzles for Chapter 3" :layout :page :page-index 602 :navbar? false :home? false :author "Robert, Doishy"}
+{:title "Puzzles for Chapter 3" :layout :page :page-index 620 :navbar? false :home? false :author "Robert, Doishy"}
 
 All the puzzles documented here should be solvable using the
 information and techniques listed throughout chapter one, two and three: 
