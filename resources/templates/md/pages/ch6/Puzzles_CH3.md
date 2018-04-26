@@ -138,3 +138,23 @@ You have no land drop for turn.
 - Opponent has a Ground Seal and Lotus Petal in play, a Chain of Vapor in hand, no other relevant interaction.
 You have no land drop for turn. Laboratory Maniac is exiled.
 - Win this turn
+
+### [CH3.F]()
+
+- In play:  Island, Island, Swamp, Lotus Petal
+- In hand:  Brainstorm, Burning Wish,  Doomsday, Rain of Filth, Scalding Tarn, Laboratory Maniac
+- Opponent's Life: 20
+- Your life: 11
+- Opponent has an Aether Vial set to 3 (Tapped), Recruiter of the Guard , Leonin Arbiter, Spirit of the Labirynth, Stone Forge Mystic, Sword of Fire and Ice (unequipped).
+-Opponent Lands: Plains, Cavern of Souls 
+- Find the winning line.
+
+### [CH3.F Tier 2]()
+
+- In play:  Island, Island, Swamp, Lotus Petal
+- In hand:  Brainstorm, Burning Wish,  Doomsday, Rain of Filth, Scalding Tarn, Laboratory Maniac
+- Opponent's Life: 20
+- Your life: 11
+- Opponent has an Aether Vial set to 3 (Tapped), Recruiter of the Guard , Leonin Arbiter, Spirit of the Labirynth, Stone Forge Mystic, Sword of Fire and Ice (unequipped).
+-Opponent Lands: Karakas, Cavern of Souls 
+- Find the winning line.
