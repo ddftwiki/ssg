@@ -1,4 +1,4 @@
-{:title "Robbert" :layout :custom-author-page }
+{:title "Robert" :layout :custom-author-page }
 
 Bio:
 
