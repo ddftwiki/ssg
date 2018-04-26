@@ -71,7 +71,7 @@ Click on the puzzle title to go to a more detailed display.
 
 ### [CH1.A]()
 
-- In play:  Island, Swamp, Volcanic Island
+- In play:  Volcanic Island, Swamp
 - In hand:  Brainstorm, Burning Wish, Dark Ritual, Doomsday
 - Opponent's Life: 20
 - Your life: 20
