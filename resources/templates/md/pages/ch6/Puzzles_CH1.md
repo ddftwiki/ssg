@@ -101,7 +101,7 @@ Click on the puzzle title to go to a more detailed display.
 - In play:  Badlands, Island
 - In hand:  Brainstorm, Brainstorm, Burning Wish, Dark Ritual, Doomsday, Lotus Petal, Lotus Petal
 - Opponent's Life: 20
-- Your life: 17
+- Your life: 15
 - Opponent has no relevant interaction, storm count is 1.
 - Win this turn
 
