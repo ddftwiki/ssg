@@ -58,7 +58,8 @@ Sideboard:
 1 Tendrils of Agony  
 1 Void Snare  
 2 Hurkyl's Recall  
-2 Chain of Vapor
+1 Chain of Vapor
+1 Consign // Oblivion
 1 Time Spiral.  
 ```
 *Note: This is a non-standard list for puzzle purposes only*
