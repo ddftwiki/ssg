@@ -4,7 +4,7 @@
  Spike turn 1. You lead the turn with a Gitaxian Probe showing an
  opposing hand of no relevant interaction for this turn but an
  Eidolon on the next if you don't kill them. Better kill them then.
- The Storm count is already at 1."
+ The Storm count is already at 1."  
  :oppCards ["mountain" "mountain" "fireblast" "eidolon_of_the_great_revel" "chain_lightning" "lightning_bolt"]  
  :ourCards ["doomsday" "dark_ritual" "brainstorm" "brainstorm" "burning_wish" "lotus_petal" "lotus_petal"]  
  :oppLife 20  
