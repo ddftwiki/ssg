@@ -146,7 +146,7 @@ You have no land drop for turn. Laboratory Maniac is exiled.
 - Opponent's Life: 20
 - Your life: 11
 - Opponent has an Aether Vial set to 2 (Tapped), Recruiter of the Guard , Leonin Arbiter, Spirit of the Labirynth, Stone Forge Mystic, Sword of Fire and Ice (unequipped), Rest in Peace.
--Opponent Lands: Plains, Cavern of Souls 
+- Opponent Lands: Plains, Cavern of Souls 
 - Win this turn
 
 ### [CH3.F Tier 2]()
@@ -156,5 +156,15 @@ You have no land drop for turn. Laboratory Maniac is exiled.
 - Opponent's Life: 20
 - Your life: 11
 - Opponent has an Aether Vial set to 2 (Tapped), Recruiter of the Guard , Leonin Arbiter, Spirit of the Labirynth, Stone Forge Mystic, Sword of Fire and Ice (unequipped), Rest in Peace.
--Opponent Lands: Karakas, Cavern of Souls 
+- Opponent Lands: Karakas, Cavern of Souls 
 - Win before your opponent kills you
+
+### [CH3.G]()
+
+- In play:  Underground Sea, Underground Sea, Volcanic Island, Swamp, Conjurer's Bauble
+- In hand:  Dark Ritual, Doomsday, Gitaxian Probe, Lotus Petal
+- Opponent's Life: 18
+- Your life: 14
+- Opponent has 2 x Ponder in hand, you have Duressed a Force of Will (Storm =1).
+- Opponent Lands: Island, Plains, Field of Ruin, Tundra 
+- Find the deterministic win this turn
