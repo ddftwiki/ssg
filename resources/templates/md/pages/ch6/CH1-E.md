@@ -2,7 +2,7 @@
  :layout :puzzle
  :introText "Facing against Sneak and Show they have managed to defend against
  your early discard effects and drop an Emrakul into play. You draw for the turn 
- and see a way to show how bad a *Free* 15/15 Flying, Annihilator 6 creature really is."
+ and see a way to show how bad a *Free* 15/15 Flying, Annihilator 6 creature really is."  
  :oppCards ["city_of_traitors" "sneak_attack"]  
  :ourCards ["brainstorm" "lotus_petal" "doomsday" "lotus_petal" "dark_ritual" "brainstorm" "burning_wish"]  
  :oppLife 20  
