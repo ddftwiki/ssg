@@ -3,7 +3,7 @@
  :introText "Facing against Deadguy Ale you get stuck into a long
  game and they manage to drop an early Chain of Mephistopheles down against you.
  With Dark Confidant threatening some significant card advantage in their
- favour you are forced to act."
+ favour you are forced to act."  
  :oppCards ["unknown" "unknown" "unknown" "swords_to_plowshares"]  
  :ourCards ["brainstorm" "gitaxian_probe" "doomsday" "dark_ritual" "dark_ritual" "burning_wish"]  
  :oppLife 20  
