@@ -31,7 +31,7 @@
  :oppZone4Tapped [ "bayou" "bayou" ]
  :oppZone5Untapped [ "badlands" ]
  :oppZone5Tapped [ "volcanic_island" ]
- :page-index 821
+ :page-index 
  :navbar? false
  :home? false
  :author "Robert"}
