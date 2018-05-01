@@ -33,7 +33,7 @@
  :oppZone4Tapped [ ]
  :oppZone5Untapped [ ]
  :oppZone5Tapped [ ]
- :page-index 822
+ :page-index 
  :navbar? false
  :home? false
  :author "Robert"}
