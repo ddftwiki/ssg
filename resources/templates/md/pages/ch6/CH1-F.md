@@ -9,7 +9,7 @@
  :oppLife 20  
  :ourLife 4  
  :oppGraveyard [ "hymn_to_tourach" "inquisition_of_kozilek" ]  
- :ourGraveyard ["gitaxian_probe" "gitaxian_probe" "polluted_delta" "thoughtseize" "ponder"]  
+ :ourGraveyard ["gitaxian_probe" "gitaxian_probe" "polluted_delta" "thoughtseize" "ponder" "conjurers_bauble"]  
  :oppExile [ "swords_to_plowshares" ]  
  :ourExile [ ]  
  :oppLibraryRevealed [ ]  
