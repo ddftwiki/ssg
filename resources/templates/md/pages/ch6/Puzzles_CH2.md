@@ -68,7 +68,7 @@ Below is a quick synopsis of each puzzle.
 Click on the puzzle title to go to a more detailed display. 
 
 -------------
-### [CH1.E Tier 2]()
+### [CH1.E Tier 2](/pages-output/ch6/CH1-E2)
 
 - In play:  Badlands, Island, Swamp
 - In hand:  Brainstorm, Brainstorm, Burning Wish, Dark Ritual, Doomsday, Lotus Petal, Lotus Petal
@@ -77,7 +77,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has Meddling Mage Naming "Act on Impulse".
 - Win this turn
 
-### [CH1.E Tier 3]()
+### [CH1.E Tier 3](/pages-output/ch6/CH1-E3)
 
 - In play:  Badlands, Island, Swamp
 - In hand:  Brainstorm, Brainstorm, Burning Wish, Dark Ritual, Doomsday, Lotus Petal, Lotus Petal
@@ -86,7 +86,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has Meddling Mage Naming "Act on Impulse" and a Silent Gravestone in play.
 - Win this turn
 
-### [CH2.A]()
+### [CH2.A](/pages-output/ch6/CH2-A)
 
 - In play:  Island, Swamp
 - In hand:  Act on Impulse, Dark Ritual, Doomsday, Gitaxian Probe, Laboratory Maniac, Thoughtseize
@@ -95,7 +95,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has Gaddock Teeg in play, no other relevant interaction
 - Win this turn
 
-### [CH2.A Tier 2]()
+### [CH2.A Tier 2](/pages-output/ch6/CH2-A2)
 
 - In play:  Island, Swamp
 - In hand:  Act on Impulse, Dark Ritual, Doomsday, Gitaxian Probe, Laboratory Maniac, Thoughtseize
@@ -104,7 +104,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has Gaddock Teeg in play, no other relevant interaction
 - Win this turn
 
-### [CH2.B]()
+### [CH2.B](/pages-output/ch6/CH2-B)
 
 - In play:  Island, Lotus Petal, Underground Sea
 - In hand:  Brainstorm, Burning Wish, Dark Ritual, Dark Ritual, Ponder
@@ -113,7 +113,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has no relevant interaction
 - Win this turn
 
-### [CH2.C]()
+### [CH2.C](/pages-output/ch6/CH2-C)
 
 - In play:  Underground Sea, Underground Sea, Underground Sea, Volcanic Island
 - In hand:  Doomsday, Gitaxian Probe, Laboratory Maniac, Lotus Petal, Polluted Delta, 
@@ -122,7 +122,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has no relevant interaction, no land drop for turn
 - Win this turn
 
-### [CH2.D]()
+### [CH2.D](/pages-output/ch6/CH2-D)
 
 - In play:  Badlands, Volcanic Island
 - In hand:  Act on Impulse, Dark Ritual, Doomsday, Laboratory Maniac, Lion's Eye Diamond, Lotus Petal, Rain of Filth
@@ -131,7 +131,7 @@ Click on the puzzle title to go to a more detailed display.
 - Opponent has a Leyline of Sanctity, no other interaction
 - Win this turn
 
-### [CH2.E]()
+### [CH2.E](/pages-output/ch6/CH2-E)
 
 - In play:  Polluted Delta, Swamp
 - In hand:  Dark Ritual, Doomsday, Laboratory Maniac, Gitaxian Probe, Polluted Delta, Underground Sea
