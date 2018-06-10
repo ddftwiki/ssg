@@ -42,7 +42,8 @@ For these puzzles the following list will be used:
 2 Preordain  
 3 Duress  
 1 Tendrils of Agony  
-3 Conjurer's Bauble  
+2 Conjurer's Bauble   
+1 Rain of Filth
 
 Sideboard:  
 
