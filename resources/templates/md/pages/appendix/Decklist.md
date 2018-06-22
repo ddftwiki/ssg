@@ -202,8 +202,8 @@ redundancy in terms of removal to bring in.
 
 # Example List:
 
-Below is an example of a conventional list in full which would be a good.
-Beginner starting point. Obviously as you get more familiar with the deck then
+Below is an example of a conventional list in full which would be a good,
+beginner starting point. Obviously as you get more familiar with the deck then
 you can start tweaking to your preference but it is a good place to start or simply
 practice with, especially working through the wiki. There are also other, 
 less conventional choices such as choosing to run extra Tendrils of Agony main or
