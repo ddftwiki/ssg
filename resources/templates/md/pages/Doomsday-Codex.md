@@ -7,7 +7,11 @@
 The Doomsday Codex is intended to be the most complete and up to date work on how to 
 cast the card named Doomsday in the Doomsday storm combo deck (DDFT) in the Legacy format of 
 Magic: the Gathering.
-
+***
+### A Note on the Probe Ban
+At the time of writing this, it has been 3 days since the Gitaxian Probe ban was announced. Probe as a free draw spell was integral to the function of the deck as it existed until now, and as such the deck took quite a hit. We Doomsday players are still trying to pick up the pieces. Many of the piles you'll see listed on this site used Probe and may be impossible, or may require additional mana to use a different cantrip. The sample decklist is no longer accurate either, and may not be updated for quite some time. It remains to be seen whether a Doomsday deck can exist and be competitive in this new era of Legacy, but if it's possible we'll figure it out. Keep the faith.  
+***
+  
 There is actually much more to how to play the deck, but understanding how to cast the namesake 
 card of the deck is a pretty big piece of the puzzle. This document is specifically not a 'primer' as 
 you often see for other decks in Legacy, because primers generally become outdated 
