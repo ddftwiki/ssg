@@ -8,6 +8,10 @@ The Doomsday Codex is intended to be the most complete and up to date work on ho
 cast the card named Doomsday in the Doomsday storm combo deck (DDFT) in the Legacy format of 
 Magic: the Gathering.
 ***
+### Update 11th October 2018
+We are looking to get things updated. The mourning period is over, it's time to try and get this going again!  
+Please be patient :)
+
 ### A Note on the Probe Ban
 At the time of writing this, it has been 3 days since the Gitaxian Probe ban was announced. Probe as a free draw spell was integral to the function of the deck as it existed until now, and as such the deck took quite a hit. We Doomsday players are still trying to pick up the pieces. Many of the piles you'll see listed on this site used Probe and may be impossible, or may require additional mana to use a different cantrip. The sample decklist is no longer accurate either, and may not be updated for quite some time. It remains to be seen whether a Doomsday deck can exist and be competitive in this new era of Legacy, but if it's possible we'll figure it out. Keep the faith.  
 ***
@@ -35,6 +39,16 @@ This repository, and all of its contents, is licensed under [CC-BY-4.0](https://
 
 # Table of Contents
 
+## Post Gitaxian Probe Ban
+Chapter 1, the Fundamentals Revisited: 
+[Back to the Basics](/pages-output/ch01/basics)  
+Brainstorm in Doomsday - Under construction
+Laboratory Maniac? - Under construction
+Pass the Turn - Under construction
+
+
+
+## Post Sensei's Divining Top Ban, Pre Gitaxian Probe Ban
 Chapter 1, the Fundamentals:  
 [Basics](/pages-output/ch1/basics)  
 [Brainstorm in Doomsday](/pages-output/ch1/brainstorm)  
