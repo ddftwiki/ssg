@@ -1,6 +1,6 @@
 {:title "Back to the Basics"
  :layout :page
- :page-index 100
+ :page-index 01
  :navbar? false
  :home? false
  :author "Doishy, d8dk32"}
@@ -62,7 +62,7 @@ This means that IU is the top card and BW is the bottom card. BBB+UUU represents
 the mana cost, (6) is the total converted mana cost required to complete the
 pile. 8 Storm represents the amount of storm that executing this pile will
 generate, this includes the Doomsday you've cast to create this pile as well as
-the Gitaxian Probe and the Tendrils of Agony (including the non-copy original
+the initial cantrip (if applicable) and the Tendrils of Agony (including the non-copy original
 spell) at the end of the pile. The original Tendrils is included for simplicity,
 because we simply count to ten if we want to cause 20 lifeloss. 
 
@@ -70,7 +70,7 @@ because we simply count to ten if we want to cause 20 lifeloss.
 
 The Doomsday piles that we will explain here are all based on using either Ideas
 Unbound, Infernal Contract or Act on Impulse as the big draw spell. 
-We will first consider the single cantrip piles, followed by the double cantrip piles.
+We will first consider the single cantrip piles.
 
 There are some key rules you can use to help remember things like storm count.
 If the intended pile is meant to win without passing the turn then you always
@@ -96,13 +96,13 @@ SW in hand.
 ```
 
 1. Cast Doomsday build: [IU, LED, P, LED, BW]
-2. Cycle SW, draw (IU)
-3. Cast IU, draw (LED, LED, P)
+- Cycle SW, draw (IU)
+2. Cast IU, draw (LED, LED, P)
+3. Cast LED
 4. Cast LED
-5. Cast LED
-6. Cast P, hold priority crack LEDs for BBB+RRR, draw (BW)
-7. Cast BW targeting ToA
-8. Cast ToA
+5. Cast P, hold priority crack LEDs for BBB+RRR, draw (BW)
+6. Cast BW targeting ToA
+7. Cast ToA
 
 This pile has cost you BBB+UUU and 2 life (excluding Doomsday life loss)
 and results in 7 storm, that is 14 lifeloss. Note that UUU is often paid 
@@ -145,27 +145,28 @@ of this when knowing when you can and cannot go off with IC.
 *Act on Impulse*
 
 ```
-GP in hand.
--> AoI, LED, GP, LED, BW(ToA)               BBB+2R (6)    8 Storm
+P in hand.
+-> SW, AoI, LED, LED, BW(ToA)               BBB+2UR (7)    7 Storm
 ```
 
-1. Cast Doomsday build: [AoI, LED, LED, GP, BW]
-2. Cast GP, draw (AoI)
-3. Cast AoI, exile (LED, LED, GP)
+1. Cast Doomsday build: [SW, AoI, LED, LED, BW]
+2. Cast P, draw (SW)
+- Cycle Street Wraith, draw (AoI)
+3. Cast AoI, exile (LED, LED, BW)
 4. Cast LED
 5. Cast LED
-6. Cast GP, hold priority crack LEDs for BBB+RRR, draw (BW)
-7. Cast BW targeting ToA
-8. Cast ToA
+- Crack LEDs for BBB+RRR
+6. Cast BW targeting ToA
+7. Cast ToA
 
-This pile costs BBB+2R and 4 life and results in 8 storm, which is 16 lifeloss.
+This pile costs BBB+2UR and 2 life and results in 7 storm, which is 14 lifeloss.
 Like with Ideas Unbound, the mana cost for the draw spell (2R) can be - and
-often is - paid for by a Lion's Eye Diamond in response to the first GP. The
+often is - paid for by a Lion's Eye Diamond in response to the first P. The
 most important difference is that Act on Impulse not actually draws but exiles the
 cards. This means that Lion's Eye Diamond's activation cost will not affect your
 ability to cast the cards 'drawn' with Act on Impulse. If you are low on life can
-also build [AoI, LED, LED, BW, X] and directly 'draw' Burning Wish with Three
-Wishes, this will produce once less storm however it does let you 'hide' a card
+also build [AoI, LED, LED, BW, X] and directly 'draw' Burning Wish with Act on Impulse,
+this will produce once less storm however it does let you 'hide' a card
 in your Doomsday stack from your opponent.
 
 ### Double cantrip piles
@@ -173,58 +174,53 @@ in your Doomsday stack from your opponent.
 *Ideas Unbound*
 
 ```
-GP, GP in hand.
--> LED, IU, LP, LED, BW(ToA)                BBB+1 (4)   9 Storm
+P, P in hand.
+-> LED, IU, LP, DR, ToA                BBB+UU (5)   8 Storm
 ```
 
-1. Cast Doomsday build: [LED, IU, LP, LED, BW]
-2. Cast GP, draw (LED)
+1. Cast Doomsday build: [LED, IU, LP, DR, ToA]
+2. Cast P, draw (LED)
 3. Cast LED
-4. Cast GP, hold priority crack LED for UUU, draw (IU)
-5. Cast IU, draw (LP, LED, BW)
+4. Cast P, hold priority crack LED for UUU, draw (IU)
+5. Cast IU, draw (LP, DR, ToA)
 6. Cast LP
-7. Cast LED
-   - Crack LP for R
-8. Cast BW targeting ToA, hold priority crack LED for BBB
-9. Cast ToA for 9 storm.
+- Crack LP for B
+7. Cast DR
+8. Cast ToA
 
-This pile has cost only BBB+1 and 4 life to execute and results in 9 storm,
-which is 18 lifeloss. This pile is quite efficient when it comes to mana. We use
+This pile has cost only BBB+UU to execute and results in 8 storm,
+which is 16 lifeloss. This pile is quite efficient when it comes to mana. We use
 the additional cantrip to draw a Lion's Eye Diamond before executing the rest of
 the pile and use that Lion's Eye Diamond to pay for much of the rest of the
-pile. We basically turn our additional Gitaxian Probe into a Lion's Eye Diamond
+pile. We basically turn our additional cantrip into a Lion's Eye Diamond
 with Doomsday.
 
 One difficulty with this pile is that Ideas Unbound actually draws Burning Wish
-before we can sacrifice the second Lion's Eye Diamond in the pile to produce red
-mana. Therefore, one of the Lion's Eye Diamonds in the pile is replaced with a
-Lotus Petal, which together with one blue mana left from the first Lion's Eye
-Diamond pays for the Burning Wish. The second Lion's Eye Diamond is sacrificed
-for three black mana and pays for all but 1 mana of Tendrils of Agony.
+meaning this is limited to using with a maindeck Tendrils.
 
 *Act on Impulse*
 
 ```
-GP, GP in hand.
--> LED, AoI, LED, LED, BW(ToA)               BBB (3)   9 Storm
+P, P in hand.
+-> LED, AoI, LED, LED, BW(ToA)               BBB+UU (5)   9 Storm
 ```
 
 1. Cast Doomsday build: [LED, AoI, LED, LED, BW]
-2. Cast GP, draw (LED)
+2. Cast P, draw (LED)
 3. Cast LED
-4. Cast GP, hold priority crack LED for RRR, draw (AoI)
+4. Cast P, hold priority crack LED for RRR, draw (AoI)
 5. Cast AoI, exile (LED, LED, BW)
 6. Cast LED
 7. Cast LED
    - Crack LEDs for BBB RRR
 8. Cast BW targeting ToA
-9. Cast ToA for 9 storm.
+9. Cast ToA
 
-This pile is very efficient at BBB and 4 life for 9 storm. The key idea is that,
+This pile is relatively efficient at BBB+UU for 9 storm. The key idea is that,
 strictly speaking we only needed AoI, LED, LED, BW in our single cantrip pile.
 Meaning that if we shift this 4 card pile to the bottom, we can put any card on
 top. In this case we put a Lion's Eye Diamond on top, which we draw with
-Gitaxian Probe. The Lion's Eye Diamond then pays for the Act on Impulse, which
+Ponder. The Lion's Eye Diamond then pays for the Act on Impulse, which
 exiles the other two LEDs and the Burning Wish we need to produce mana and wish
 for and cast Tendrils.
 
@@ -232,9 +228,9 @@ for and cast Tendrils.
 
 That's it for the basic and most common piles that end with Tendrils of Agony.
 There are many variations of each pile and it doesn't really make sense to list
-them all. In each of the above piles you may replace Gitaxian Probe with a
-Ponder, or simply use blue mana to pay for it rather than 2 life. Also, since
-Act on Impulse and Three Wishes function very similarly, all piles involving
+them all. In each of the above piles you may replace Ponder with a Preordain or 
+Conjurer's Bauble or a Street Wraith cycle (however note this does not work when exiled with AoI).
+Also, since Act on Impulse and Three Wishes function very similarly, all piles involving
 Act on Impulse can be executed with Three Wishes all the same, except for a
 different mana cost. The use of Conjurer's Bauble to draw into the piles allows
 for lower mana or life costs but does result in less storm being generated
@@ -260,7 +256,7 @@ different mana costs and storm counts.
 
 ## Summary
 
-1. You generally need a card to draw or exile you three cards into your stack.
+1. You generally need a card to draw or exile you three or four cards into your stack.
 2. Lethal storm via Tendrils of Agony is the most common win condition for the
    deck.
 3. Holding priority when cantripping with LED in play is key, make sure to get
@@ -268,10 +264,7 @@ different mana costs and storm counts.
 
 ## Get Started
 
-You now have sufficient information to start practicing! Just take a proven
-decklist and start goldfishing trying to figure out what piles to build and how
-to execute them. There are several documents available that list Doomsday piles
-which you can use to get to know more piles. These are very important tools when
-learning to how play the deck.  
-See the [Pile Document](/pages/appendix/pile-doc) for a more basic list of different piles.  
-For some examples of 'proven decklists' can be found [HERE](http://tcdecks.net/archetype.php?archetype=Doomsday&format=Legacy).  
+You now have sufficient information to start practicing! Since the Gitaxian Prove banning
+there has yet to be defined agreement on how the archetype should look (some say it should 
+just stop but there are some very loycal, stubborn people out there!). As a result I would advise
+chatting to other's via Reddit or the Discord to try and get a starting list to go by.
