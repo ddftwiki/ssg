@@ -23,7 +23,7 @@ rather quickly and are more about card choices, decklists, sideboard plans, and 
 on. The Doomsday Codex is there to help people to really understand how the deck 
 works and can win in various scenarios.
 
-An overview of Doomsday piles is actually collected in a separate document, which is 
+An overview of Doomsday piles (some now outdated) is actually collected in a separate document, which is 
 called [The Doomsday Pile Document](/pages-output/appendix/pile-doc). The pile 
 document only lists a selection of the possible piles, while the Doomsday Codex 
 focuses the theory behind the piles. How to build them, when to build them, why the 
@@ -33,7 +33,8 @@ correctly, and so on.
 Another related collection of articles is the 
 [Doomsday-Library](https://github.com/Bennotsi-MTG/Doomsday-Library). This is a 
 collection of archived articles that have become obsolete, for example due to the 
-format evolving, or because certain cards have been banned.
+format evolving, or because certain cards have been banned. These were mostly collated
+pre-SDT ban.
 
 This repository, and all of its contents, is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 
@@ -42,10 +43,10 @@ This repository, and all of its contents, is licensed under [CC-BY-4.0](https://
 ## Post Gitaxian Probe Ban
 Chapter 1, the Fundamentals Revisited:   
 [Back to the Basics](/pages-output/ch01/basics)  
-[The Draw 4 Primer](/pages-output/ch01/draw4primer)  
-Brainstorm in Doomsday - Under construction
-Laboratory Maniac? - Under construction
-Pass the Turn - Under construction
+[The Draw 4 Primer](/pages-output/ch01/d4primer)  
+Brainstorm in Doomsday - Under construction  
+Laboratory Maniac? - Under construction  
+Pass the Turn - Under construction  
 
 
 
