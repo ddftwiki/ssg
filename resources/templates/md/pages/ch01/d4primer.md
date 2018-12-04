@@ -77,15 +77,11 @@ extraction effects.
 
 One of the things I disliked about previous Doomsday lists is that they had
 "dead" cards in them. Ideas Unbound, Act on Impulse, Laboratory Maniac, all
-these cards feel bad to draw when not "going off". While they are not completely useless, Generally
-drawing them feels about the same as skipping your draw step. So my main
-motivation with this list was to attempt the reduce the number of "dead" cards,
-preferably all the way to 0. A Draw4 is powerful card advantage against decks
-that don't pressure your life total, a way to recover from discard, a decent
-bait spell for countermagic, and a functional storm engine in its own right.
-Simply put, Draw4's don't suck to topdeck as much as a Lab Man. Switching to
-Draw4's had other effects on the design of the deck, but I think it was worth it
-and we'll get to those later.
+these cards feel bad to draw when not "going off". While they are not completely useless, Generally drawing them feels about the same as skipping your draw step. So my main motivation with this list was to attempt the reduce the number of "dead" cards, preferably all the way to 0. A Draw4 is powerful card advantage against decks that don't pressure your life total, a way to recover from discard, a decent bait spell for countermagic, and a functional storm engine in its own right. Simply put, Draw4's don't suck to topdeck as much as a Lab Man. 
+
+#### Why play twice as many rituals as previous lists?  
+
+This is probably easy to figure out but I'll touch on it anyway. We're playing lots of cards that have a mana cost of BBB. You often are casting 2 or more of those cards in a single turn. You need the extra rituals. A nice bonus is that PiF from the board becomes a lot easier to use and it can help play through soft permission like Spell Pierce.
 
 #### Why 3 Cabal Ritual/1 Rain of Filth
 
@@ -138,7 +134,7 @@ kills, and "natural" Tendrils kills.
 
 Doomsday functions as a Storm engine by tutoring up whatever 5 cards you need to
 generate lethal storm. Typically one of these cards is Infernal Contract, and
-one is Tendrils of Agony. the reamining cards usually generate mana.
+one is Tendrils of Agony. The reamining cards usually generate mana.
 
 #### Basic Piles
 
@@ -184,7 +180,7 @@ BW for ToA and use the LEDs to generate the mana for it.
 The vast majority of piles are going to be variations on these. Something I've
 noticed with this list is that piles tend to be simpler than in older lists. I
 think being able to put the whole pile in your hand simplifies things a little
-bit, but it also takes away some flexibility.
+bit, but the changed costs of piles take away some flexibility.
 
 #### Additional Useful Piles
 
@@ -192,7 +188,7 @@ These are some situations you may find youself in and examples of piles you
 might use to win. Make sure you understand how much mana is needed post-Doomsday
 to execute one of these piles. Many of these piles can be quite mana hungry.
 
-**IC in hand**
+**IC in hand used to draw into pile**
 
 ```
 IC in hand.
@@ -202,7 +198,7 @@ IC in hand.
 -> LED, LED, LP, Pre, BW(ToA)          BBB+BBB (6)   8 Storm
 ```
 
-**Think the opponent is being cute and sandbagging an answer to Tendrils**
+**Think the opponent is being cute and sandbagging an answer to Tendrils?**
 
 ```
 Cantrip in hand.
@@ -212,23 +208,26 @@ Cantrip in hand.
 **Need to get rid of something like a Gaddock Teeg or Leyline of Sanctity**
 
 ```
-[IC, DR, DR, CoV, ToA]
+Cantrip in hand.  
+-> IC, DR, DR, CoV, ToA                 BBB+UUBBBB (9)  7 Storm 
 Note that this only works post board since CoV isn't in the maindeck.
 ```
 
 **Brainstorm and IC in hand**
 
 ```
-[DR, LP, DR, DR, ToA]
+BS and IC in hand.  
+-> DR, LP, DR, DR, ToA                  BBB+UB (5)  8 Storm
 ```
 
 **Brainstorm and ToA in hand**
 
 ```
-[IC, DR, DR, LP, DR]
-This concept of using BS to trade cards in hand for cards in library can be
-extended to other pile components, like if you have a spare LP in hand, etc.
+BS and ToA in hand.
+-> IC, DR, DR, LP, DR                   BBB+UB (5)  8 Storm
 ```
+This concept of using BS to trade cards in hand for cards in library can be
+extended to other pile components, like if you have a spare LP in hand, etc.  
 
 #### Can You Do a Pass-the-Turn Pile?
 
@@ -236,11 +235,13 @@ Previous Doomsday lists would often be able to cast a Doomsday and setup a kill
 for next turn with basically 3 lands and nothing else available as resources.
 This deck is nowhere near as mana efficient at doing it, but setting up a
 pass-the-turn pile is possible and comes up occasionally. Knowing what it takes
-to execute one could save your ass. This is what one such pile might look like:
+to execute one could save your ass. This is what one such pile might look like:  
 
-`[IC, RoF, CR, CB, ToA]`
+```
+-> IC, RoF, CR, CB, ToA                BBBB1 (5)  5 Storm + 6 Storm
+```
 
-The idea here is that you cast ToA twice by recycling it with the bauble.
+The idea here is that you cast ToA twice by recycling it with the Bauble.
 ToA->CB->ToA costs 9 mana total. With 5 lands on the field (including all 4
 black producing lands) you can make this pile work with no cards in hand and
 nothing but lands on board. This is the reason RoF and CR are used. RoF helps
@@ -256,14 +257,12 @@ upwards of 20 copies of ToA if your opponent has an unusually high life total.
 
 Here is another potential pass-the-turn pile:
 
-`[IC, DR, DR, BW, ToA]`
+```
+-> IC, DR, DR, BW, ToA                BBBBRR (6)  8 Storm
+```
 
 Here you would wish for Past in Flames to flash back your rituals and end it
-with ToA. This one requires 2 red mana for Wish and PiF. Imagine you had just 2
-Seas and an LED on board, and a ritual in hand after resolving Doomsday. With
-the above pass-the-pile you could draw IC for turn, ritual it out cracking LED
-for RRR, cast the other 2 rituals, wish for and cast PiF, then flashback all
-your rituals and cast Tendrils for 10 copies.
+with ToA. This one requires 2 red mana for Wish and PiF, and only makes 8 Storm on its own. But imagine you had just 2 Seas and an LED on board, and a ritual in hand after resolving Doomsday. With the above pass-the-pile you could draw IC for turn, ritual it out cracking LED for RRR, cast the other 2 rituals, wish for and cast PiF, then flashback all your rituals and cast Tendrils for 10 copies.  
 
 ### Killing Without Doomsday
 
@@ -328,12 +327,9 @@ do those cool things. In this section I'll present some general play tips in a
 stream-of-consciousness manner.
 
 There are 2 conflicting needs at work in this deck. One is the need to see as
-many cards as possible, and the other is the need to conserve cantrips for your
-combo turns. This balancing act gets easier with practice. Cast your Preordains
-first. Hold onto Brainstorms as long as possible. Remember that BW is a
-pseudo-cantrip into a DD pile since it can get you a Draw4. Doomsday won't be
-your main plan in some matchups and then you can use your cantrips more
-aggressively to set up another kind of kill.
+many cards as possible, and the other is the need to conserve cantrips for use as a combo peice alongside Doomsday. This balancing act gets easier with practice. Cast your Preordains first. Hold onto Brainstorms as long as possible. Remember that BW is a pseudo-cantrip into a DD pile since it can get you a Draw4. Doomsday won't be your main plan in some matchups and then you can use your cantrips more aggressively to set up another kind of kill.  
+
+Have a plan from the start of the game. Obviously this plan can change, but if you don't have a plan and know what you need to execute it, you will cantrip poorly, duress poorly, fetch poorly, just generally spend your resources poorly. A lack of a plan will lose you games you could otherwise win. I think this concept applies to most every deck, but it's particularly important in proactive combo decks that require careful resource management. Look at your opening hand, determine whether you think you'll be winning with DD, Natural Storm, EtW, spend your resources in the way that best facilitates the plan. It's ok if sometimes the plan is "gather info and resources", but if you can't quickly devise a more concrete plan you put yourself at a disadvantage. 
 
 Don't be afraid to cast a Draw4 for value. Untapping with a full grip is insane,
 even if it cost you half your life. There can be a steep learning curve to
@@ -371,7 +367,7 @@ cards. Burning Wish is also decent since if it resolves you can still do
 something produtive with it like grab a Draw4 or a PiF. Be careful when using
 Doomsday as a bait spell. Most of the time opponents will throw counters at it
 without a second thought, but if they call your bluff you can very well lose the
-game.
+game. Ideally you only use DD as bait if it seems like you can actually go off with it, both because you won't lose to yourself if it resolves, but also because it makes your opponent more likely to counter it.
 
 Draw4s are the best single card for desperation plays and opportunistically
 taking advantage of windows your opponent gives you. Any time you resolve a draw
