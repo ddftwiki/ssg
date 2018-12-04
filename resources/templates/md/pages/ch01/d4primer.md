@@ -54,7 +54,7 @@ Main
 1 Swamp
 
 Sideboard
-1 Doomdsay
+1 Doomsday
 1 Tendrils of Agony
 1 Infernal Contract
 1 Past in Flames (PiF)
@@ -77,7 +77,7 @@ extraction effects.
 
 One of the things I disliked about previous Doomsday lists is that they had
 "dead" cards in them. Ideas Unbound, Act on Impulse, Laboratory Maniac, all
-these cards feel bad to draw. While they are not completely useless, Generally
+these cards feel bad to draw when not "going off". While they are not completely useless, Generally
 drawing them feels about the same as skipping your draw step. So my main
 motivation with this list was to attempt the reduce the number of "dead" cards,
 preferably all the way to 0. A Draw4 is powerful card advantage against decks
@@ -110,15 +110,16 @@ cast aside any fear you have of dealing damage to yourself. I win many games at
 a single digit life total, often just 1 life. It's possible that another discard
 spell could be better, but Thoughtseize is just the best at what it does. The
 number of games I've lost because of it is negligible, and the number of games
-I've won because of it is considerable.
+I've won because of it is considerable. (Editor - "The only life that matters,
+is the last" is a key lesson many people need to learn in magic).
 
-#### Why play Doomdsay over other Storm decks?
+#### Why play Doomsday over other Storm decks?
 
 The primary reason is because it's sweet. It's a fun deck that makes you feel
 smart. Potential benefits over other Storm lists include the flexibility
 provided by Burning Wish, resilience to discard due to real card advantage
 elements and access to Past in Flames, and its ability to often ignore graveyard
-hate. It also relies substantially less on Lion's Eye Diamond than decks with
+hate. It also (now) relies substantially less on Lion's Eye Diamond than decks with
 Infernal Tutor, which can be helpful at times. But in practice it likely isn't
 as good as other Storm decks and if you have interest in the deck you should
 come to terms with this before proceeding.
@@ -141,22 +142,28 @@ one is Tendrils of Agony. the reamining cards usually generate mana.
 
 #### Basic Piles
 
-`[IC, LP, DR, DR, ToA]`
+```
+Cantrip in hand.
+-> IC, LP, DR, DR, ToA                 BBB+UBBB (7)   7 Storm
+```
 
 For this pile, you'd cast Infernal Contract, drawing the remaining 4 cards, then
 cast the 2 Rituals off the Lotus Petal, then finish up with Tendrils of Agony.
-This generates 5 storm on its own. The remaining storm generally comes from a
-ritual(6) to cast a Doomsday(7), maybe an LED(8) to generate the mana for IC,
-and a Ponder(9) to draw into the pile. The 10th spell might be a Duress to see
+This generates 7 storm on its own taking into account the cantrip and Doomsday itself.
+The remaining storm generally comes from a Ritual (6) to cast a Doomsday (7) and 
+maybe an LED (8) to generate the mana for IC. The 10th spell might be a Duress to see
 if the coast is clear, or an extra ritual or something.
 
 Now imagine a scenario where you have an untapped Island and Swamp, and a hand
-of DD, LED, PN, DR. You can cast Doomdsay, you have a cantrip to draw into the
+of DD, LED, PN, DR. You can cast Doomsday, you have a cantrip to draw into the
 pile, and you have an LED to make mana for the Draw4. That's 4 storm, plus 5
 from the pile makes you 1 short. Fortunately you can squeeze that 10th storm out
 of your pile with a slight modification:
 
-`[IC, LP, DR, CB, ToA]`
+```
+Cantrip in hand.
+-> IC, LP, DR, CB, ToA                 BBB+UBBB (7)   8 Storm
+```
 
 Now you use IC to draw the remaining 4 cards, cast DR off the LP, use the
 floating BBB to cast CB (BB leftover), activate CB targeting DR to recycle it,
@@ -166,9 +173,12 @@ Bauble is in the deck. Notably, this pile does not dodge graveyard hate. If you
 need an extra storm from your pile and need to dodge gravehate, you can do it
 for 1 extra mana of any color:
 
-`[IC, LED, LED, LP, BW]`
+```
+Cantrip in hand.
+-> IC, LED, LED, LP, BW(ToA)            BBB+UBBB1 (8)   8 Storm
+```
 
-With 1 floating mana leftover after casting IC, you can make red with the LP to
+With 1 floating mana left over after casting IC, you can make red with the LP to
 BW for ToA and use the LEDs to generate the mana for it.
 
 The vast majority of piles are going to be variations on these. Something I've
@@ -185,14 +195,18 @@ to execute one of these piles. Many of these piles can be quite mana hungry.
 **IC in hand**
 
 ```
-[LP, DR, DR, CB, ToA]
-[LED, LED, LP, Pre, BW]
+IC in hand.
+-> LP, DR, DR, CB, ToA                 BBB+BBB (6)   8 Storm
+
+IC in hand.
+-> LED, LED, LP, Pre, BW(ToA)          BBB+BBB (6)   8 Storm
 ```
 
-**Think the opponent is being cute and sandbagging a counterspell**
+**Think the opponent is being cute and sandbagging an answer to Tendrils**
 
 ```
-[IC, DR, DR, Dur, ToA]
+Cantrip in hand.
+-> IC, DR, DR, Dur, ToA                BBB+UBBBB (8)   7 Storm
 ```
 
 **Need to get rid of something like a Gaddock Teeg or Leyline of Sanctity**
