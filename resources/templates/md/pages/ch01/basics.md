@@ -60,7 +60,7 @@ SW in hand.
 
 This means that IU is the top card and BW is the bottom card. BBB+UUU represents
 the mana cost, (6) is the total converted mana cost required to complete the
-pile. 8 Storm represents the amount of storm that executing this pile will
+pile. 7 Storm represents the amount of storm that executing this pile will
 generate, this includes the Doomsday you've cast to create this pile as well as
 the initial cantrip (if applicable) and the Tendrils of Agony (including the non-copy original
 spell) at the end of the pile. The original Tendrils is included for simplicity,
