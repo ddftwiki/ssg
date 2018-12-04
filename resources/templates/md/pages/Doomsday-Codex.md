@@ -40,7 +40,7 @@ This repository, and all of its contents, is licensed under [CC-BY-4.0](https://
 # Table of Contents
 
 ## Post Gitaxian Probe Ban
-Chapter 1, the Fundamentals Revisited: 
+Chapter 1, the Fundamentals Revisited:   
 [Back to the Basics](/pages-output/ch01/basics)  
 [The Draw 4 Primer](/pages-output/ch01/draw4primer)  
 Brainstorm in Doomsday - Under construction
